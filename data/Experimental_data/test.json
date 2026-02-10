@@ -1,0 +1,9 @@
+{
+  "contract": [
+    "../Experimental_data/set3/polyNetwork/ERC20Template.sol"
+
+  ],
+  "bugs": [
+    "inconsistent state update\n"
+  ]
+}

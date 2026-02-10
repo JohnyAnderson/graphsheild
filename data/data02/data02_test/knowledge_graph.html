@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 100vh;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#d632cd", "description": "Float Capital is a financial organization that develops blockchain-based protocols and has been audited for vulnerabilities in their smart contracts.", "entity_id": "Float Capital", "entity_type": "organization", "file_path": "unknown_source", "id": "Float Capital", "label": "Float Capital", "shape": "dot", "size": 10, "source_id": "chunk-cddf5af383cd7643a8aea872a1ac6606", "title": "Float Capital is a financial organization that develops blockchain-based protocols and has been audited for vulnerabilities in their smart contracts."}, {"color": "#eeb96b", "description": "gpersoon is an individual who reported a vulnerability related to indexing issues in the token contract of Float Capital.", "entity_id": "gpersoon", "entity_type": "person", "file_path": "unknown_source", "id": "gpersoon", "label": "gpersoon", "shape": "dot", "size": 10, "source_id": "chunk-cddf5af383cd7643a8aea872a1ac6606", "title": "gpersoon is an individual who reported a vulnerability related to indexing issues in the token contract of Float Capital."}, {"color": "#b7c0e1", "description": "Jason is a representative from Float Capital who confirmed the reported issue about indexing variables in the token contract.", "entity_id": "Jason", "entity_type": "person", "file_path": "unknown_source", "id": "Jason", "label": "Jason", "shape": "dot", "size": 10, "source_id": "chunk-cddf5af383cd7643a8aea872a1ac6606", "title": "Jason is a representative from Float Capital who confirmed the reported issue about indexing variables in the token contract."}, {"color": "#f505b6", "description": "The code line mentioned, Staker.sol L622, is part of the smart contract where the bug was identified.", "entity_id": "Staker.sol L622", "entity_type": "category", "file_path": "unknown_source", "id": "Staker.sol L622", "label": "Staker.sol L622", "shape": "dot", "size": 10, "source_id": "chunk-cddf5af383cd7643a8aea872a1ac6606", "title": "The code line mentioned, Staker.sol L622, is part of the smart contract where the bug was identified."}, {"color": "#ccd866", "description": "maxsam4, representing Sushi, confirmed the severity of the issue and recommended bumping it to High severity level.", "entity_id": "maxsam4 (Sushi) ", "entity_type": "organization", "file_path": "unknown_source", "id": "maxsam4 (Sushi) ", "label": "maxsam4 (Sushi) ", "shape": "dot", "size": 10, "source_id": "chunk-cddf5af383cd7643a8aea872a1ac6606", "title": "maxsam4, representing Sushi, confirmed the severity of the issue and recommended bumping it to High severity level."}, {"color": "#f4d285", "description": "The ConstantProductPool.burnSingle function is a part of the smart contract that handles token burn operations.", "entity_id": "ConstantProductPool.burnSingle", "entity_type": "category", "file_path": "unknown_source", "id": "ConstantProductPool.burnSingle", "label": "ConstantProductPool.burnSingle", "shape": "dot", "size": 10, "source_id": "chunk-cddf5af383cd7643a8aea872a1ac6606", "title": "The ConstantProductPool.burnSingle function is a part of the smart contract that handles token burn operations."}, {"color": "#4e893d", "description": "The HybridPool.burnSingle function is another part of the smart contract related to handling token burn operations in a hybrid pool.", "entity_id": "HybridPool.burnSingle", "entity_type": "category", "file_path": "unknown_source", "id": "HybridPool.burnSingle", "label": "HybridPool.burnSingle", "shape": "dot", "size": 10, "source_id": "chunk-cddf5af383cd7643a8aea872a1ac6606", "title": "The HybridPool.burnSingle function is another part of the smart contract related to handling token burn operations in a hybrid pool."}, {"color": "#0de34c", "description": "alcueca provided a comment on the reported vulnerability, praising gpersoon for bringing this issue to light.", "entity_id": "alcueca (judge) ", "entity_type": "person", "file_path": "unknown_source", "id": "alcueca (judge) ", "label": "alcueca (judge) ", "shape": "dot", "size": 10, "source_id": "chunk-cddf5af383cd7643a8aea872a1ac6606", "title": "alcueca provided a comment on the reported vulnerability, praising gpersoon for bringing this issue to light."}, {"color": "#e38c25", "description": "JasoonS, representing Float Capital, acknowledged and fixed the identified bug related to indexing.", "entity_id": "JasoonS (Float) ", "entity_type": "person", "file_path": "unknown_source", "id": "JasoonS (Float) ", "label": "JasoonS (Float) ", "shape": "dot", "size": 10, "source_id": "chunk-cddf5af383cd7643a8aea872a1ac6606", "title": "JasoonS, representing Float Capital, acknowledged and fixed the identified bug related to indexing."}, {"color": "#a384e4", "description": "cmichel is an individual who reported a bug concerning incorrect computations within the ConstantProductPool.burnSingle function.", "entity_id": "cmichel", "entity_type": "person", "file_path": "unknown_source", "id": "cmichel", "label": "cmichel", "shape": "dot", "size": 10, "source_id": "chunk-cddf5af383cd7643a8aea872a1ac6606", "title": "cmichel is an individual who reported a bug concerning incorrect computations within the ConstantProductPool.burnSingle function."}, {"color": "#0dac76", "description": "Sushi is a decentralized finance (DeFi) platform that develops and maintains smart contracts, including those with vulnerabilities reported by C4Rena.", "entity_id": "Sushi", "entity_type": "organization", "file_path": "unknown_source", "id": "Sushi", "label": "Sushi", "shape": "dot", "size": 10, "source_id": "chunk-cddf5af383cd7643a8aea872a1ac6606", "title": "Sushi is a decentralized finance (DeFi) platform that develops and maintains smart contracts, including those with vulnerabilities reported by C4Rena."}]);
+                  edges = new vis.DataSet([{"description": "Float Capital acknowledged and fixed a bug reported by gpersoon regarding indexing issues in their smart contracts.", "file_path": "unknown_source", "from": "Float Capital", "keywords": "vulnerability reporting, fix confirmation", "source_id": "chunk-cddf5af383cd7643a8aea872a1ac6606", "title": "Float Capital acknowledged and fixed a bug reported by gpersoon regarding indexing issues in their smart contracts.", "to": "gpersoon", "width": 8.0}, {"description": "Jason from Float Capital confirmed the issue reported by gpersoon about indexing variables in the token contract.", "file_path": "unknown_source", "from": "Float Capital", "keywords": "bug validation, communication", "source_id": "chunk-cddf5af383cd7643a8aea872a1ac6606", "title": "Jason from Float Capital confirmed the issue reported by gpersoon about indexing variables in the token contract.", "to": "Jason", "width": 9.0}, {"description": "The bug reported by gpersoon is related to a specific line of code in Staker.sol L622.", "file_path": "unknown_source", "from": "gpersoon", "keywords": "code line association, issue reporting", "source_id": "chunk-cddf5af383cd7643a8aea872a1ac6606", "title": "The bug reported by gpersoon is related to a specific line of code in Staker.sol L622.", "to": "Staker.sol L622", "width": 7.0}, {"description": "maxsam4, representing Sushi, confirmed the severity of issues identified by gpersoon.", "file_path": "unknown_source", "from": "gpersoon", "keywords": "bug confirmation, platform involvement", "source_id": "chunk-cddf5af383cd7643a8aea872a1ac6606", "title": "maxsam4, representing Sushi, confirmed the severity of issues identified by gpersoon.", "to": "maxsam4 (Sushi) ", "width": 8.0}, {"description": "cmichel noted that the same issue occurs in both ConstantProductPool.burnSingle and HybridPool.burnSingle functions.", "file_path": "unknown_source", "from": "ConstantProductPool.burnSingle", "keywords": "function similarity, vulnerability impact", "source_id": "chunk-cddf5af383cd7643a8aea872a1ac6606", "title": "cmichel noted that the same issue occurs in both ConstantProductPool.burnSingle and HybridPool.burnSingle functions.", "to": "HybridPool.burnSingle", "width": 8.0}, {"description": "maxsam4 confirmed the high severity of the bug related to the ConstantProductPool.burnSingle function and suggested bumping it to High severity level.", "file_path": "unknown_source", "from": "ConstantProductPool.burnSingle", "keywords": "bug severity, fix recommendation", "source_id": "chunk-cddf5af383cd7643a8aea872a1ac6606", "title": "maxsam4 confirmed the high severity of the bug related to the ConstantProductPool.burnSingle function and suggested bumping it to High severity level.", "to": "maxsam4 (Sushi) ", "width": 9.0}, {"description": "alcueca commented positively on the reported vulnerability from gpersoon regarding the ConstantProductPool.burnSingle function.", "file_path": "unknown_source", "from": "ConstantProductPool.burnSingle", "keywords": "vulnerability analysis, positive feedback", "source_id": "chunk-cddf5af383cd7643a8aea872a1ac6606", "title": "alcueca commented positively on the reported vulnerability from gpersoon regarding the ConstantProductPool.burnSingle function.", "to": "alcueca (judge) ", "width": 7.0}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

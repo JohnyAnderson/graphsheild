@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d9" for="edge" attr.name="file_path" attr.type="string" />
+  <key id="d8" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d7" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d6" for="edge" attr.name="description" attr.type="string" />
+  <key id="d5" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d4" for="node" attr.name="file_path" attr.type="string" />
+  <key id="d3" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d2" for="node" attr.name="description" attr.type="string" />
+  <key id="d1" for="node" attr.name="entity_type" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_id" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Float Capital">
+      <data key="d0">Float Capital</data>
+      <data key="d1">organization</data>
+      <data key="d2">Float Capital is a financial organization that develops blockchain-based protocols and has been audited for vulnerabilities in their smart contracts.</data>
+      <data key="d3">chunk-cddf5af383cd7643a8aea872a1ac6606</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="gpersoon">
+      <data key="d0">gpersoon</data>
+      <data key="d1">person</data>
+      <data key="d2">gpersoon is an individual who reported a vulnerability related to indexing issues in the token contract of Float Capital.</data>
+      <data key="d3">chunk-cddf5af383cd7643a8aea872a1ac6606</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Staker.sol L622">
+      <data key="d0">Staker.sol L622</data>
+      <data key="d1">category</data>
+      <data key="d2">The code line mentioned, Staker.sol L622, is part of the smart contract where the bug was identified.</data>
+      <data key="d3">chunk-cddf5af383cd7643a8aea872a1ac6606</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Jason">
+      <data key="d0">Jason</data>
+      <data key="d1">person</data>
+      <data key="d2">Jason is a representative from Float Capital who confirmed the reported issue about indexing variables in the token contract.</data>
+      <data key="d3">chunk-cddf5af383cd7643a8aea872a1ac6606</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="JasoonS (Float) ">
+      <data key="d0">JasoonS (Float) </data>
+      <data key="d1">person</data>
+      <data key="d2">JasoonS, representing Float Capital, acknowledged and fixed the identified bug related to indexing.</data>
+      <data key="d3">chunk-cddf5af383cd7643a8aea872a1ac6606</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ConstantProductPool.burnSingle">
+      <data key="d0">ConstantProductPool.burnSingle</data>
+      <data key="d1">category</data>
+      <data key="d2">The ConstantProductPool.burnSingle function is a part of the smart contract that handles token burn operations.</data>
+      <data key="d3">chunk-cddf5af383cd7643a8aea872a1ac6606</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="HybridPool.burnSingle">
+      <data key="d0">HybridPool.burnSingle</data>
+      <data key="d1">category</data>
+      <data key="d2">The HybridPool.burnSingle function is another part of the smart contract related to handling token burn operations in a hybrid pool.</data>
+      <data key="d3">chunk-cddf5af383cd7643a8aea872a1ac6606</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="cmichel">
+      <data key="d0">cmichel</data>
+      <data key="d1">person</data>
+      <data key="d2">cmichel is an individual who reported a bug concerning incorrect computations within the ConstantProductPool.burnSingle function.</data>
+      <data key="d3">chunk-cddf5af383cd7643a8aea872a1ac6606</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="maxsam4 (Sushi) ">
+      <data key="d0">maxsam4 (Sushi) </data>
+      <data key="d1">organization</data>
+      <data key="d2">maxsam4, representing Sushi, confirmed the severity of the issue and recommended bumping it to High severity level.</data>
+      <data key="d3">chunk-cddf5af383cd7643a8aea872a1ac6606</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="alcueca (judge) ">
+      <data key="d0">alcueca (judge) </data>
+      <data key="d1">person</data>
+      <data key="d2">alcueca provided a comment on the reported vulnerability, praising gpersoon for bringing this issue to light.</data>
+      <data key="d3">chunk-cddf5af383cd7643a8aea872a1ac6606</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Sushi">
+      <data key="d0">Sushi</data>
+      <data key="d1">organization</data>
+      <data key="d2">Sushi is a decentralized finance (DeFi) platform that develops and maintains smart contracts, including those with vulnerabilities reported by C4Rena.</data>
+      <data key="d3">chunk-cddf5af383cd7643a8aea872a1ac6606</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <edge source="Float Capital" target="gpersoon">
+      <data key="d5">8.0</data>
+      <data key="d6">Float Capital acknowledged and fixed a bug reported by gpersoon regarding indexing issues in their smart contracts.</data>
+      <data key="d7">vulnerability reporting, fix confirmation</data>
+      <data key="d8">chunk-cddf5af383cd7643a8aea872a1ac6606</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Float Capital" target="Jason">
+      <data key="d5">9.0</data>
+      <data key="d6">Jason from Float Capital confirmed the issue reported by gpersoon about indexing variables in the token contract.</data>
+      <data key="d7">bug validation, communication</data>
+      <data key="d8">chunk-cddf5af383cd7643a8aea872a1ac6606</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="gpersoon" target="Staker.sol L622">
+      <data key="d5">7.0</data>
+      <data key="d6">The bug reported by gpersoon is related to a specific line of code in Staker.sol L622.</data>
+      <data key="d7">code line association, issue reporting</data>
+      <data key="d8">chunk-cddf5af383cd7643a8aea872a1ac6606</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="gpersoon" target="maxsam4 (Sushi) ">
+      <data key="d5">8.0</data>
+      <data key="d6">maxsam4, representing Sushi, confirmed the severity of issues identified by gpersoon.</data>
+      <data key="d7">bug confirmation, platform involvement</data>
+      <data key="d8">chunk-cddf5af383cd7643a8aea872a1ac6606</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ConstantProductPool.burnSingle" target="HybridPool.burnSingle">
+      <data key="d5">8.0</data>
+      <data key="d6">cmichel noted that the same issue occurs in both ConstantProductPool.burnSingle and HybridPool.burnSingle functions.</data>
+      <data key="d7">function similarity, vulnerability impact</data>
+      <data key="d8">chunk-cddf5af383cd7643a8aea872a1ac6606</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ConstantProductPool.burnSingle" target="maxsam4 (Sushi) ">
+      <data key="d5">9.0</data>
+      <data key="d6">maxsam4 confirmed the high severity of the bug related to the ConstantProductPool.burnSingle function and suggested bumping it to High severity level.</data>
+      <data key="d7">bug severity, fix recommendation</data>
+      <data key="d8">chunk-cddf5af383cd7643a8aea872a1ac6606</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ConstantProductPool.burnSingle" target="alcueca (judge) ">
+      <data key="d5">7.0</data>
+      <data key="d6">alcueca commented positively on the reported vulnerability from gpersoon regarding the ConstantProductPool.burnSingle function.</data>
+      <data key="d7">vulnerability analysis, positive feedback</data>
+      <data key="d8">chunk-cddf5af383cd7643a8aea872a1ac6606</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+  </graph>
+</graphml>

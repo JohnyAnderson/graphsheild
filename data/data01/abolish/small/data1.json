@@ -1,0 +1,20 @@
+[
+  {
+    "code": "1 pragma solidity >=0.4.24 <0.6.0;\n\n2 contract ExternalFunctionCall {\n\n3     function foo(uint x) public returns (uint ret) {\n4         ret = x + 2;\n5     }\n\n6     function testExternalFunctionCall(uint x) public {",
+    "transaction-context": "The transaction context is cross-function",
+    "Critical-points": "Critical program points are 7+",
+    "invariants": "7+ assert (y == x + 2);",
+    "critical-invariants": "7+ assert (y == x + 2);",
+    "ranks": "7+ assert (y == x + 2);",
+    "vulnerabilities": "healthy"
+  },
+  {
+    "code": "1 pragma solidity >=0.4.24 <0.6.0;\n2 contract B {\n3    function funcB() public pure returns (uint) {\n4        return 42;\n5    }\n6    constructor() public {}\n7 }\n\n8 contract A {",
+    "transaction-context": "The transaction context is cross-function\narithmetics",
+    "Critical-points": "Critical program points are 20+",
+    "invariants": "20+ assert(funcA2(funcA1())==12);\n20+ assert(funcA3().funcB()==42);",
+    "critical-invariants": "20+ assert(funcA2(funcA1())==12);\n20+ assert(funcA3().funcB()==42);",
+    "ranks": "20+ assert(funcA2(funcA1())==12);\n20+ assert(funcA3().funcB()==42);",
+    "vulnerabilities": "healthy"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "chunk-b849a7db9c7b2372183fab1d07fd9625": {
+    "tokens": 384,
+    "content": "[\n  {\n    \"code\": \"1 pragma solidity >=0.4.24 <0.6.0;\\n\\n2 contract ExternalFunctionCall {\\n\\n3     function foo(uint x) public returns (uint ret) {\\n4         ret = x + 2;\\n5     }\\n\\n6     function testExternalFunctionCall(uint x) public {\",\n    \"transaction-context\": \"The transaction context is cross-function\",\n    \"Critical-points\": \"Critical program points are 7+\",\n    \"invariants\": \"7+ assert (y == x + 2);\",\n    \"critical-invariants\": \"7+ assert (y == x + 2);\",\n    \"ranks\": \"7+ assert (y == x + 2);\",\n    \"vulnerabilities\": \"healthy\"\n  },\n  {\n    \"code\": \"1 pragma solidity >=0.4.24 <0.6.0;\\n2 contract B {\\n3    function funcB() public pure returns (uint) {\\n4        return 42;\\n5    }\\n6    constructor() public {}\\n7 }\\n\\n8 contract A {\",\n    \"transaction-context\": \"The transaction context is cross-function\\narithmetics\",\n    \"Critical-points\": \"Critical program points are 20+\",\n    \"invariants\": \"20+ assert(funcA2(funcA1())==12);\\n20+ assert(funcA3().funcB()==42);\",\n    \"critical-invariants\": \"20+ assert(funcA2(funcA1())==12);\\n20+ assert(funcA3().funcB()==42);\",\n    \"ranks\": \"20+ assert(funcA2(funcA1())==12);\\n20+ assert(funcA3().funcB()==42);\",\n    \"vulnerabilities\": \"healthy\"\n  }\n]",
+    "chunk_order_index": 0,
+    "full_doc_id": "doc-b849a7db9c7b2372183fab1d07fd9625",
+    "file_path": "unknown_source"
+  }
+}

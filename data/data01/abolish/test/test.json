@@ -1,0 +1,389 @@
+[
+  {
+    "code": "1 pragma solidity >=0.4.24 <0.6.0;\n\n2 contract ArrayFixedSize {\n\n3     uint[2] a;\n\n4     constructor() public {}\n\n5     function test() public {",
+    "transaction-context": "The transaction context is simple",
+    "Critical-points": "Critical program points are 8+ \n9+ ",
+    "invariants": "8+ assert(a[0] == 1);\n9+ assert(a[1] == 2);",
+    "critical-invariants": "8+ assert(a[0] == 1);\n9+ assert(a[1] == 2);",
+    "ranks": "8+ assert(a[0] == 1);\n9+ assert(a[1] == 2);",
+    "vulnerabilities": "healthy "
+  },
+  {
+    "code": "1 pragma solidity >=0.4.24 <0.6.0;\n\n2 // This test shows an order in which base constructors for C are called:\n3 // B(a) calls base ctor A(a) {x = a};\n4 // ctor B is called {x++};\n5 // ctor C is called {x++}\n\n\n6 contract A {",
+    "transaction-context": "The transaction context is arithmetics",
+    "Critical-points": "Critical program points are 13+ ",
+    "invariants": "13+ assert (x == a + 2);",
+    "critical-invariants": "13+ assert (x == a + 2);",
+    "ranks": "13+ assert (x == a + 2);",
+    "vulnerabilities": "healthy "
+  },
+  {
+    "code": "1 contract FlippazOne is ERC721, ERC721URIStorage, Ownable {\n2     using Counters for Counters.Counter;\n\n3     Counters.Counter private _tokenIdCounter;\n\n4     string  public              baseURI;\n5     address public              proxyRegistryAddress;\n\n6     uint256 public constant     MAX_SUPPLY           = 1;",
+    "transaction-context": "The transaction context is bidding",
+    "Critical-points": "Critical program points are 105         \n106        \n107         \n108        \n110        \n121         \n122       \n123       \n124         \n135        \n145        \n149        \n151        \n154       \n156       \n160    \n162   \n164       \n168   \n169     \n171        \n183         ",
+    "invariants": "105         require(auctionStarted, \"Auction has not yet started\");\n106         require(!auctionEnded, \"Auction has been finished\");\n107         require(block.timestamp < auctionEndTimestamp, \"Auction has been finished\");\n108         require(!boughtNow, \"Sorry! Somebody already used BUY NOW button\");\n110         require(msg.value == currentBuyPrice - bids[_msgSender()], \"Invalid funds provided\");\n121         require(auctionStarted, \"Auction has not yet started\");\n122         require(!auctionEnded, \"You cannot end the action again\");\n123         require(block.timestamp >= auctionEndTimestamp, \"Auction duration has not yet elapsed\");\n124         uint256 tokenId = _tokenIdCounter.current();\n135         require(auctionEnded, \"Please end the auction firstly\");\n145         require(_isApprovedOrOwner(_msgSender(), tokenId), \"Not approved to burn.\");\n149         require(auctionEnded || block.timestamp > auctionEndTimestamp, \"Cannot withdraw until auction is ended\");\n151         require(success, \"Failed to withdraw funds.\");\n154         require(auctionEnded || block.timestamp > auctionEndTimestamp, \"Cannot withdraw until auction is ended\");\n156         require(success, \"Failed to withdraw funds.\");\n160         require(success, \"Failed to withdraw funds.\");\n162         onlyOwner\n164         require(success, \"Failed to withdraw funds.\");\n168         require(totalBid > 0, \"Nothing to withdraw\");\n169         require(highestBidder != _msgSender(), \"You cannot withdraw as your bid is the highest bid\");\n171         require(success, \"Failed to withdraw funds.\");\n183         require(_exists(tokenId), \"Token does not exist\");",
+    "critical-invariants": "162         onlyOwner\n145         require(_isApprovedOrOwner(_msgSender(), tokenId), \"Not approved to burn.\");\n105         require(auctionStarted, \"Auction has not yet started\");\n106         require(!auctionEnded, \"Auction has been finished\");\n107         require(block.timestamp < auctionEndTimestamp, \"Auction has been finished\");\n121         require(auctionStarted, \"Auction has not yet started\");\n122         require(!auctionEnded, \"You cannot end the action again\");\n123         require(block.timestamp >= auctionEndTimestamp, \"Auction duration has not yet elapsed\");\n149         require(auctionEnded || block.timestamp > auctionEndTimestamp, \"Cannot withdraw until auction is ended\");\n154         require(auctionEnded || block.timestamp > auctionEndTimestamp, \"Cannot withdraw until auction is ended\");",
+    "ranks": "162         onlyOwner\n145         require(_isApprovedOrOwner(_msgSender(), tokenId), \"Not approved to burn.\");\n105         require(auctionStarted, \"Auction has not yet started\");\n106         require(!auctionEnded, \"Auction has been finished\");\n107         require(block.timestamp < auctionEndTimestamp, \"Auction has been finished\");\n121         require(auctionStarted, \"Auction has not yet started\");\n122         require(!auctionEnded, \"You cannot end the action again\");\n123         require(block.timestamp >= auctionEndTimestamp, \"Auction duration has not yet elapsed\");\n149         require(auctionEnded || block.timestamp > auctionEndTimestamp, \"Cannot withdraw until auction is ended\");\n154         require(auctionEnded || block.timestamp > auctionEndTimestamp, \"Cannot withdraw until auction is ended\");",
+    "vulnerabilities": "incorrect ownership/visibility"
+  },
+  {
+    "code": "1 /**\n2  *Submitted for verification at Etherscan.io on 2018-05-09\n3 */\n\n4 pragma solidity ^0.4.21;\n\n\n5 /**\n6  * @title SafeMath",
+    "transaction-context": "The transaction context is ERC",
+    "Critical-points": "Critical program points are 17+  \n32+ \n39+ \n84+ \n85+ ",
+    "invariants": "17+  assert(c / a == b);\n32+ assert(b <= a);\n39+  assert(c >= a);\n84+  require(_to != address(0));\n85+ require(_value <= balances[msg.sender]);",
+    "critical-invariants": "17+  assert(c / a == b);\n32+ assert(b <= a);\n39+  assert(c >= a);\n84+  require(_to != address(0));\n85+ require(_value <= balances[msg.sender]);",
+    "ranks": "17+  assert(c / a == b);\n32+ assert(b <= a);\n39+  assert(c >= a);\n84+  require(_to != address(0));\n85+ require(_value <= balances[msg.sender]);",
+    "vulnerabilities": "arithmetic flaw \ninteger overflow/underflow\nincorrect visibility/ownership"
+  },
+  {
+    "code": "1 pragma solidity ^0.5.0;\n\n\n2 contract ERC20Interface {\n3     function totalSupply() public view returns (uint);\n4     function balanceOf(address tokenOwner) public view returns (uint balance);\n5     function allowance(address tokenOwner, address spender) public view returns (uint remaining);\n6     function transfer(address to, uint tokens) public returns (bool success);\n7     function approve(address spender, uint tokens) public returns (bool success);",
+    "transaction-context": "The transaction context is ERC",
+    "Critical-points": "Critical program points are 15+ \n17+ \n21+ \n",
+    "invariants": "15+ require(c >= a);\n17+ require(b <= a);\n21+ require(a == 0 || c / a == b);\n",
+    "critical-invariants": "15+ require(c >= a);\n17+ require(b <= a);\n21+ require(a == 0 || c / a == b);",
+    "ranks": "15+ require(c >= a);\n17+ require(b <= a);\n21+ require(a == 0 || c / a == b);",
+    "vulnerabilities": "healthy"
+  },
+  {
+    "code": "1 // SPDX-License-Identifier: MIT\n2 pragma solidity 0.8.4;\n3 import \"./IOracle.sol\";\n4 \n5 \n6 interface IAggregator {\n7     function latestAnswer() external view returns (int256 answer);\n8 }\n9 ",
+    "transaction-context": "The transaction context is asset swapping",
+    "Critical-points": "Critical program points are 24+ \n26+ \n\n\n",
+    "invariants": "24+ assert(Old((wavaxReserve * avaxPrice + usdcReserve * usdcPrice * 1e12) / uint256(joePair.totalSupply())) == price);\n26+ require(price <= Old((wavaxReserve * avaxPrice + usdcReserve * usdcPrice * 1e12) / uint256(joePair.totalSupply())) *k, \"watch out for flashloan attacks\");\n",
+    "critical-invariants": "26+ require(price <= Old((wavaxReserve * avaxPrice + usdcReserve * usdcPrice * 1e12) / uint256(joePair.totalSupply())) *k, \"watch out for flashloan attacks\");\n",
+    "ranks": "26+ require(price <= Old((wavaxReserve * avaxPrice + usdcReserve * usdcPrice * 1e12) / uint256(joePair.totalSupply())) *k, \"watch out for flashloan attacks\");\n",
+    "vulnerabilities": "price manipulation"
+  },
+  {
+    "code": "1 / SPDX-License-Identifier: MIT\n2  pragma solidity >=0.4.24 <0.6.0;\n3  \n4  contract ether{\n5         function payout(address[] recipients,\n6                         uint256[] amounts) {\n7         require(recipients.length==amounts.length);\n8         for (uint i = 0; i < recipients.length; i++) {\n9         recipients[i].send(amounts[i]);",
+    "transaction-context": "The transaction context is funds transfer",
+    "Critical-points": "Critical program points are 6+\n",
+    "invariants": "6+  assert(address(this)==msg.sender);\n",
+    "critical-invariants": "6+  assert(address(this)==msg.sender);\n",
+    "ranks": "6+  assert(address(this)==msg.sender);\n",
+    "vulnerabilities": "ether leakage"
+  },
+  {
+    "code": "1  pragma solidity ^0.8.13;\n2 pragma experimental ABIEncoderV2;\n3 \n4 import './interfaces/IFlashCallback.sol';\n5 \n6 import \"../lib/openzeppelin-contracts/contracts/token/ERC20/utils/SafeERC20.sol\";\n7 \n8 import \"./lib/ABDKMath64x64.sol\";\n9 ",
+    "transaction-context": "The transaction context is money market",
+    "Critical-points": "Critical program points are 189 \n190 \n216\n217\n266\n271\n278\n283\n288\n293\n298\n303\n308\n313\n346\n352\n382 \n388\n394\n400\n401\n421\n431\n443\n460\n470\n482\n502\n503\n504 \n505\n506\n529 \n530\n531\n532 \n533\n534\n546 \n560\n561\n574\n575\n576 \n590\n618\n626 \n635\n638\n639 \n655 \n656 ",
+    "invariants": "189 require(sender != address(0), \"ERC20: transfer from the zero address\");\n190 require(recipient != address(0), \"ERC20: transfer to the zero address\");\n216 require(_owner != address(0), \"ERC20: approve from the zero address\");\n217 require(spender != address(0), \"ERC20: approve to the zero address\");\n266     modifier onlyOwner() {\n           require(msg.sender == owner, \"Curve/caller-is-not-owner\");        \n            _;\n     }\n\n271     modifier nonReentrant() {\n               require(notEntered, \"Curve/re-entered\");\n               notEntered = false;\n                _;\n               notEntered = true;\n          }\n\n278     modifier transactable() {\n              require(!frozen, \"Curve/frozen-only-allowing-proportional-withdraw\");\n               _;\n         }\n\n283     modifier isEmergency() {\n             require(emergency, \"Curve/emergency-only-allowing-emergency-proportional-withdraw\");\n             _;\n        }\n    \n288     modifier isNotEmergency() {\n              require(!emergency, \"Curve/emergency-only-allowing-emergency-proportional-withdraw\");\n             _;\n     }\n\n293     modifier deadline(uint256 _deadline) {\n             require(block.timestamp < _deadline, \"Curve/tx-deadline-passed\");\n              _;\n         }\n \n298     modifier inWhitelistingStage() {\n              require(whitelistingStage, \"Curve/whitelist-stage-stopped\");\n                _;\n           }\n   \n303     modifier notInWhitelistingStage() {\n              require(!whitelistingStage, \"Curve/whitelist-stage-on-going\");\n        }\n  \n308     modifier globallyTransactable() {\n           require(!ICurveFactory(address(curveFactory)).getGlobalFrozenState(), \"Curve/frozen-globally-only-allowing-proportional-withdraw\");\n              _;\n     }\n    \n313     modifier isFlashable() {\n            require(ICurveFactory(address(curveFactory)).getFlashableState(), \"Curve/flashloans-paused\");\n            _;\n   }\n346 onlyOwner\n352  onlyOwner\n382  onlyOwner \n388  onlyOwner\n394  onlyOwner\n400 onlyOwner\n401 require(_newOwner != address(0), \"Curve/new-owner-cannot-be-zeroth-address\");\n421  noDelegateCall isNotEmergency nonReentrant\n431  require(targetAmount_ >= _minTargetAmount, \"Curve/below-min-target-amount\");\n443 globallyTransactable transactable\n460 globallyTransactable transactable noDelegateCall isNotEmergency nonReentrant \n470 require(originAmount_ <= _maxOriginAmount, \"Curve/above-max-origin-amount\");\n482 globallyTransactable transactable\n502 globallyTransactable transactable nonReentrant noDelegateCall\n503 require(amount == 1, \"Curve/invalid-amount\");\n504 require(index <= 473, \"Curve/index-out-of-range\" );\n505 require(isWhitelisted(index, account, amount, merkleProof), \"Curve/not-whitelisted\");\n506 require(msg.sender == account, \"Curve/not-approved-user\");\n529 globallyTransactable\n530 transactable\n531 nonReentrant\n532 noDelegateCall\n533 notInWhitelistingStage\n534 isNotEmergency\n546 globallyTransactable transactable\n560 nonReentrant\n561 noDelegateCall\n574 nonReentrant\n575 noDelegateCall\n576 isNotEmergency\n590 globallyTransactable transactable \n618 nonReentrant noDelegateCall isNotEmergency\n626 nonReentrant noDelegateCall\n635 isFlashable globallyTransactable nonReentrant noDelegateCall transactable isNotEmergency \n638 require(IERC20(derivatives[0]).balanceOf(address(this)) > 0, 'Curve/token0-zero-liquidity-depth');\n639 require(IERC20(derivatives[1]).balanceOf(address(this)) > 0, 'Curve/token1-zero-liquidity-depth');\n655 require(balance0Before.add(fee0) <= balance0After, 'Curve/insufficient-token0-returned');\n656 require(balance1Before.add(fee1) <= balance1After, 'Curve/insufficient-token1-returned');",
+    "critical-invariants": "266     modifier onlyOwner() {\n           require(msg.sender == owner, \"Curve/caller-is-not-owner\");        \n            _;\n     }\n\n271     modifier nonReentrant() {\n               require(notEntered, \"Curve/re-entered\");\n               notEntered = false;\n                _;\n               notEntered = true;\n          }\n\n278     modifier transactable() {\n              require(!frozen, \"Curve/frozen-only-allowing-proportional-withdraw\");\n               _;\n         }\n\n283     modifier isEmergency() {\n             require(emergency, \"Curve/emergency-only-allowing-emergency-proportional-withdraw\");\n             _;\n        }\n    \n288     modifier isNotEmergency() {\n              require(!emergency, \"Curve/emergency-only-allowing-emergency-proportional-withdraw\");\n             _;\n     }\n\n293     modifier deadline(uint256 _deadline) {\n             require(block.timestamp < _deadline, \"Curve/tx-deadline-passed\");\n              _;\n         }\n \n298     modifier inWhitelistingStage() {\n              require(whitelistingStage, \"Curve/whitelist-stage-stopped\");\n                _;\n           }\n   \n303     modifier notInWhitelistingStage() {\n              require(!whitelistingStage, \"Curve/whitelist-stage-on-going\");\n        }\n  \n308     modifier globallyTransactable() {\n           require(!ICurveFactory(address(curveFactory)).getGlobalFrozenState(), \"Curve/frozen-globally-only-allowing-proportional-withdraw\");\n              _;\n     }\n    \n313     modifier isFlashable() {\n            require(ICurveFactory(address(curveFactory)).getFlashableState(), \"Curve/flashloans-paused\");\n            _;\n   }\n346 onlyOwner\n352  onlyOwner\n382  onlyOwner \n388  onlyOwner\n394  onlyOwner\n400 onlyOwner\n529 globallyTransactable\n530 transactable\n531 nonReentrant\n532 noDelegateCall\n533 notInWhitelistingStage\n534 isNotEmergency\n546 globallyTransactable transactable\n560 nonReentrant\n561 noDelegateCall\n574 nonReentrant\n575 noDelegateCall\n576 isNotEmergency\n590 globallyTransactable transactable \n618 nonReentrant noDelegateCall isNotEmergency\n626 nonReentrant noDelegateCall",
+    "ranks": "266     modifier onlyOwner() {\n           require(msg.sender == owner, \"Curve/caller-is-not-owner\");        \n            _;\n     }\n\n271     modifier nonReentrant() {\n               require(notEntered, \"Curve/re-entered\");\n               notEntered = false;\n                _;\n               notEntered = true;\n          }\n\n278     modifier transactable() {\n              require(!frozen, \"Curve/frozen-only-allowing-proportional-withdraw\");\n               _;\n         }\n\n283     modifier isEmergency() {\n             require(emergency, \"Curve/emergency-only-allowing-emergency-proportional-withdraw\");\n             _;\n        }\n    \n288     modifier isNotEmergency() {\n              require(!emergency, \"Curve/emergency-only-allowing-emergency-proportional-withdraw\");\n             _;\n     }\n\n293     modifier deadline(uint256 _deadline) {\n             require(block.timestamp < _deadline, \"Curve/tx-deadline-passed\");\n              _;\n         }\n \n298     modifier inWhitelistingStage() {\n              require(whitelistingStage, \"Curve/whitelist-stage-stopped\");\n                _;\n           }\n   \n303     modifier notInWhitelistingStage() {\n              require(!whitelistingStage, \"Curve/whitelist-stage-on-going\");\n        }\n  \n308     modifier globallyTransactable() {\n           require(!ICurveFactory(address(curveFactory)).getGlobalFrozenState(), \"Curve/frozen-globally-only-allowing-proportional-withdraw\");\n              _;\n     }\n    \n313     modifier isFlashable() {\n            require(ICurveFactory(address(curveFactory)).getFlashableState(), \"Curve/flashloans-paused\");\n            _;\n   }\n346 onlyOwner\n352  onlyOwner\n382  onlyOwner \n388  onlyOwner\n394  onlyOwner\n400 onlyOwner\n529 globallyTransactable\n530 transactable\n531 nonReentrant\n532 noDelegateCall\n533 notInWhitelistingStage\n534 isNotEmergency\n546 globallyTransactable transactable\n560 nonReentrant\n561 noDelegateCall\n574 nonReentrant\n575 noDelegateCall\n576 isNotEmergency\n590 globallyTransactable transactable \n618 nonReentrant noDelegateCall isNotEmergency\n626 nonReentrant noDelegateCall",
+    "vulnerabilities": "healthy "
+  },
+  {
+    "code": "1  contract Lottery {\n2  // user address -> lottery id -> count\n3  mapping (address => mapping(uint64 => uint))\n4  public tickets;\n5  uint64 winningId; // the winning id\n6  bool drawingPhase; // whether the owner is drawing\n\n7  // invoked every day to reset a round\n8  function reset() external onlyOwner {",
+    "transaction-context": "require(winningId == 0, \"already drawn\");",
+    "Critical-points": "require(drawingPhase, \"not drawing\");",
+    "invariants": "require(id != 0, \"invalid winning number\");",
+    "critical-invariants": "require(winningId == 0, \"already drawn\");\npause();",
+    "ranks": "assert(lastRoundAssets > 0);",
+    "vulnerabilities": "assert(amount > 0);"
+  },
+  {
+    "code": "1 /**\n2  *Submitted for verification at BscScan.com on 2021-07-30\n3 */\n\n4 //SPDX-License-Identifier: MIT\n5 pragma solidity ^0.8.0;\n\n\n6 /**",
+    "transaction-context": "require(b > 0, errorMessage);",
+    "Critical-points": "require(b != 0, errorMessage);",
+    "invariants": "require(address(this).balance >= amount, \"Address: insufficient balance\");",
+    "critical-invariants": "require(success, \"Address: unable to send value, recipient may have reverted\");",
+    "ranks": "require(address(this).balance >= value, \"Address: insufficient balance for call\");",
+    "vulnerabilities": "require(isContract(target), \"Address: call to non-contract\");"
+  },
+  {
+    "code": "1 // SPDX-License-Identifier: GPL-3.0-or-later\n2 \n3 pragma solidity >=0.8.0;\n4 \n5 \n6 contract ConcentratedLiquidityPool is IPool {\n7     using Ticks for mapping(int24 => Ticks.Tick);\n8 \n9     event Burn(address indexed sender, uint256 amount0, uint256 amount1, address indexed recipient);",
+    "transaction-context": "The transaction context is asset swapping",
+    "Critical-points": "Critical program points are 42+\n152+ \n",
+    "invariants": "42+ assert(Old(reserve0) == reserve0);\n42+ assert(Old(reserve1) == reserve1);\n152+ assert(Old(reserve0) == reserve0 + amount0);\n152+ assert(Old(reserve1) == reserve1+ amount1);\n",
+    "critical-invariants": "152+ assert(Old(reserve0) == reserve0 + amount0);\n152+ assert(Old(reserve1) == reserve1+ amount1);\n",
+    "ranks": "152+ assert(Old(reserve0) == reserve0 + amount0);\n152+ assert(Old(reserve1) == reserve1+ amount1);\n",
+    "vulnerabilities": "price manipulation"
+  },
+  {
+    "code": "1 pragma solidity ^0.5.0;\n\n2 import \"./IERC20.sol\";\n3 import \"./SafeMath.sol\";\n4 import \"./Libraries/VeriSolContracts.sol\"; //change \n\n\n5 /**\n6  * A highly simplified Token to express basic specifications",
+    "transaction-context": "The transaction context is ERC",
+    "Critical-points": "Critical program points are 17+ \n47+ \n66+ ",
+    "invariants": "17+ require(msg.sender != address(0));\n47+ assert (msg.sender == recipient || _balances[recipient] >= VeriSol.Old(_balances[recipient])); \n66+ require(_balances[sender] >= amount);",
+    "critical-invariants": "47+ assert (msg.sender == recipient || _balances[recipient] >= VeriSol.Old(_balances[recipient])); ",
+    "ranks": "47+ assert (msg.sender == recipient || _balances[recipient] >= VeriSol.Old(_balances[recipient])); ",
+    "vulnerabilities": "incorrect visibility/ownership\nbusiness logic flaw\ninteger overflow/underflow"
+  },
+  {
+    "code": "1  contract ArrayInit {\n\n2     uint[2] a;\n3     uint[2] b;\n    \n4     constructor() public {\n5        b[1] = 22;\n6        a[1] = 33;\n7        assert (b[1] == 22);",
+    "transaction-context": "The transaction context is simple",
+    "Critical-points": "Critical program points are 7+ ",
+    "invariants": "7+ assert (b[1] == 22);",
+    "critical-invariants": "7+ assert (b[1] == 22);",
+    "ranks": "7+ assert (b[1] == 22);",
+    "vulnerabilities": "healthy "
+  },
+  {
+    "code": "1 pragma solidity >=0.4.24 <0.6.0;\n\n2 contract LoopFor {\n\n3     uint[2] a;\n\n4     function testBoundedForLoop() public {\n5         for (uint i = 0; i < 2; i += 1) {\n6             a[i] = i;",
+    "transaction-context": "The transaction context is loop",
+    "Critical-points": "Critical program points are 7+  \n15+",
+    "invariants": "7+  assert (a[0] == 0);\n7+ assert (a[1] == 1);\n15+ assert (b[j] == j);\n",
+    "critical-invariants": "7+  assert (a[0] == 0);\n7+ assert (a[1] == 1);\n15+ assert (b[j] == j);",
+    "ranks": "7+  assert (a[0] == 0);\n7+ assert (a[1] == 1);\n15+ assert (b[j] == j);",
+    "vulnerabilities": "healthy "
+  },
+  {
+    "code": "1 pragma solidity >=0.4.24 <0.6.0;\n\n2 contract A {\n3    function testTuple() public pure{\n4       // (uint a, uint b) = (1, 3); //cannot handle multiple declarations in tuples\n5       uint a;\n6       uint b;\n7       /* only support function returns as tuples\n8       (a,  b) = (1, 3);",
+    "transaction-context": "The transaction context is simple",
+    "Critical-points": "Critical program points are 9+   \n10+      \n13+    \n14+     \n16+     \n17+      ",
+    "invariants": "9+       assert (a == 1);\n10+       assert (b == 3);\n13+       assert (a == 4);\n14+       assert (b == 40);\n16+       assert (a == 5);\n17+       assert (b == 55);\n",
+    "critical-invariants": "9+       assert (a == 1);\n10+       assert (b == 3);\n13+       assert (a == 4);\n14+       assert (b == 40);\n16+       assert (a == 5);\n17+       assert (b == 55);",
+    "ranks": "9+       assert (a == 1);\n10+       assert (b == 3);\n13+       assert (a == 4);\n14+       assert (b == 40);\n16+       assert (a == 5);\n17+       assert (b == 55);",
+    "vulnerabilities": "healthy "
+  },
+  {
+    "code": "1 pragma solidity >=0.4.24 <0.6.0;\n\n2 contract A {\n\n3    function get_a()  public returns (uint) {\n4        return 2;\n5    }\n6 }\n",
+    "transaction-context": "The transaction context is cross-function",
+    "Critical-points": "Critical program points are 33+",
+    "invariants": "33+  assert (y == 2*x + 4); ",
+    "critical-invariants": "33+  assert (y == 2*x + 4);",
+    "ranks": "33+  assert (y == 2*x + 4);",
+    "vulnerabilities": "healthy"
+  },
+  {
+    "code": "1 library SafeMath {\n2   function mul(uint256 a, uint256 b) internal constant returns (uint256) {\n3     uint256 c = a * b;\n4     assert(a == 0 || c / a == b);\n5     return c;\n6   }\n7 \n8   function div(uint256 a, uint256 b) internal constant returns (uint256) {\n9     // assert(b > 0); // Solidity automatically throws when dividing by 0",
+    "transaction-context": "The transaction context is safemath library",
+    "Critical-points": "Critical program points are 4 \n16 \n22 ",
+    "invariants": "4 assert(a == 0 || c / a == b);\n16 assert(b <= a);\n22 assert(c >= a);",
+    "critical-invariants": "4 assert(a == 0 || c / a == b);\n16 assert(b <= a);\n22 assert(c >= a);",
+    "ranks": "4 assert(a == 0 || c / a == b);\n16 assert(b <= a);\n22 assert(c >= a);",
+    "vulnerabilities": "healthy "
+  },
+  {
+    "code": "1 pragma solidity >=0.4.24 <0.6.0;\n\n2 contract ArrayFixedSize {\n\n3     uint[2] a;\n\n4     constructor() public {}\n\n5     function test() public {",
+    "transaction-context": "The transaction context is simple",
+    "Critical-points": "Critical program points are 7+",
+    "invariants": "7+  assert(a[0] == 1);    \n7+  assert(a[1] == 2);",
+    "critical-invariants": "7+  assert(a[0] == 1);    \n7+  assert(a[1] == 2);",
+    "ranks": "7+  assert(a[0] == 1);    \n7+  assert(a[1] == 2);",
+    "vulnerabilities": "healthy "
+  },
+  {
+    "code": "1 pragma solidity ^0.4.25;\n\n2 library SafeMath {\n3   function mul(uint256 a, uint256 b) internal pure returns (uint256) {\n4     uint256 c = a * b;\n5     return c;\n6   }\n\n7   function div(uint256 a, uint256 b) internal pure returns (uint256) {",
+    "transaction-context": "assert(a == 0 || c / a == b);",
+    "Critical-points": "assert(b > 0); ",
+    "invariants": "assert(b > 0); ",
+    "critical-invariants": "assert(c >= a);",
+    "ranks": "assert(uint112(a) == a);",
+    "vulnerabilities": "assert(uint128(a) == a);"
+  },
+  {
+    "code": "1 /**\n2  *Submitted for verification at Etherscan.io on 2018-02-09\n3 */\n\n4 pragma solidity ^0.4.16;\n\n5 /**\n6  * @title SafeMath\n7  * @dev Math operations with safety checks that throw on error",
+    "transaction-context": "assert(a == 0 || c / a == b);",
+    "Critical-points": "assert(b <= a);",
+    "invariants": "assert(c >= a);",
+    "critical-invariants": "require(_to != address(0));\nrequire(_value > 0 && _value <= balances[msg.sender]);",
+    "ranks": "require(msg.sender == owner);",
+    "vulnerabilities": " require(newOwner != address(0));"
+  },
+  {
+    "code": "1   // SPDX-License-Identifier: MIT\n2 pragma solidity ^0.6.8;\n3 pragma experimental ABIEncoderV2;\n4 \n5 \n6 contract Chain  {\n7   IStakingBank public immutable stakingBank;\n8 \n9   event LogMint(address indexed minter, uint256 blockId, uint256 staked, uint256 power);",
+    "transaction-context": "The transaction context is money market",
+    "Critical-points": "Critical program points are 30+",
+    "invariants": "30+ assert(msg.sender == _contractRegistry);\n30+ assert(msg.sender == _contractRegistry);",
+    "critical-invariants": "30+ assert(msg.sender == _contractRegistry);",
+    "ranks": "30+ assert(msg.sender == _contractRegistry);",
+    "vulnerabilities": "incorrect visibility/ownership"
+  },
+  {
+    "code": "1 pragma solidity >=0.4.24 <0.6.0;\n2 \n3 contract AssertFalse {\n4 \n5     function test1() public {\n6               _;\n7 \n8     }\n9 ",
+    "transaction-context": "The transaction context is simple",
+    "Critical-points": "Critical program points are 6+ \n",
+    "invariants": "6+ assert (!false);\n",
+    "critical-invariants": "6+ assert (!false);",
+    "ranks": "6+ assert (!false);",
+    "vulnerabilities": "healthy "
+  },
+  {
+    "code": "1 contract Vote {\n2    struct Proposal {\n3       uint160 sTime; address newOwner;\n4  }\n5   IERC20 votingToken;\n6   IERC20 LockedToken;\n7   address owner;\n8   Proposal proposal;\n",
+    "transaction-context": "assert(Old(votingToken.balanceOf(address(this))) == votingToken.balanceOf(address(this)));\nassert(Old(votingToken.balanceOf(address(this)))==votingToken.balanceOf(address(this)));",
+    "Critical-points": "require(proposal.sTime != 0, \"no proposal\");",
+    "invariants": " require(proposal.sTime + 2 days < block.timestamp, \"voting has not ended\");",
+    "critical-invariants": "require(votingToken.balanceOf(address(this))*2 >votingToken.totalSupply(), \"vote failed\");",
+    "ranks": "assert(Old(votingToken.balanceOf(address(this)))==votingToken.balanceOf(address(this)));",
+    "vulnerabilities": "assert(Old(reserve0) == reserve0);\nassert(Old(reserve1) == reserve1);"
+  },
+  {
+    "code": "pragma solidity >=0.4.24 <0.6.0;\n\n//simple library with no internal state\n\nlibrary Lib {\n    function add(uint _a, uint _b) public view returns (uint r) {\n        address x = address(this);       \n        r = _a + _b;\n    }",
+    "transaction-context": "assert(x == msg.sender);",
+    "Critical-points": "assert (z == 3);",
+    "invariants": "assert(x + y == n);",
+    "critical-invariants": "assert (y == n);",
+    "ranks": "assert(x + y == n);",
+    "vulnerabilities": "assert (y == n);"
+  },
+  {
+    "code": "1 // SPDX-License-Identifier: MIT\n2 // OpenZeppelin Contracts (last updated v4.8.0-rc.2) (token/ERC721/ERC721.sol)\n\n3 pragma solidity ^0.8.0;\n\n4 import \"./IERC721.sol\";\n5 import \"./IERC721Receiver.sol\";\n6 import \"./extensions/IERC721Metadata.sol\";\n7 import \"../../utils/Address.sol\";",
+    "transaction-context": "require(owner != address(0), \"ERC721: address zero is not a valid owner\");\n",
+    "Critical-points": "require(owner != address(0), \"ERC721: invalid token ID\");",
+    "invariants": "require(to != owner, \"ERC721: approval to current owner\");\n",
+    "critical-invariants": "require(_msgSender() == owner || isApprovedForAll(owner, _msgSender()), \"ERC721: approve caller is not token owner or approved for all\");",
+    "ranks": "assert(Old(_balances[from] + _balances[to]) == _balances[from] + _balances[to]);",
+    "vulnerabilities": "assert(Old(_balances[from] + _balances[to]) == _balances[from] + _balances[to]);"
+  },
+  {
+    "code": "1 pragma solidity ^0.4.11;\n2 \n3 contract Vote {\n4         struct Proposal {\n5         uint160 sTime; address newOwner;\n6         }\n7         IERC20 votingToken;\n8         address owner;\n9         Proposal proposal;",
+    "transaction-context": "The transaction context is voting \nbidding proposal",
+    "Critical-points": "Critical program points are  13+ \n17+ \n24+ \n",
+    "invariants": "13+ assert(Old(votingToken.balanceOf(address(this))) == 0);\n17+ assert(Old(votingToken.balanceOf(address(this))) == votingToken.balanceOf(address(this)));\n24+ assert(Old(votingToken.balanceOf(address(this)))==votingToken.balanceOf(address(this)));\n",
+    "critical-invariants": "24+ assert(Old(votingToken.balanceOf(address(this)))==votingToken.balanceOf(address(this)));",
+    "ranks": "24+ assert(Old(votingToken.balanceOf(address(this)))==votingToken.balanceOf(address(this)));",
+    "vulnerabilities": "privilege escalation\ninteger overlow/underflow"
+  },
+  {
+    "code": "1 pragma solidity ^0.4.11;\n\n2 contract Token {\n3     uint256 public totalSupply;\n4     function balanceOf(address _owner) constant returns (uint256 balance);\n5     function transfer(address _to, uint256 _value) returns (bool success);\n6     function transferFrom(address _from, address _to, uint256 _value) returns (bool success);\n7     function approve(address _spender, uint256 _value) returns (bool success);\n8     function allowance(address _owner, address _spender) constant returns (uint256 remaining);",
+    "transaction-context": "The transaction context is tokenSale\nfunds transfer",
+    "Critical-points": "Critical program points are 12+ \n22+   \n62+ \n69+",
+    "invariants": "12+ assert(!disabled);\n22+ assert(!disabled);  \n22+ assert(balances[_from] >= _value);\n22+ assert(allowed[_from][msg.sender] >= _value && _value > 0);\n62+ assert(msg.sender == owner);\n69+ assert(msg.sender == owner);",
+    "critical-invariants": "22+ assert(!disabled);  \n22+ assert(balances[_from] >= _value);\n22+ assert(allowed[_from][msg.sender] >= _value && _value > 0);\n69+ assert(msg.sender == owner);",
+    "ranks": "22+ assert(!disabled);  \n22+ assert(balances[_from] >= _value);\n22+ assert(allowed[_from][msg.sender] >= _value && _value > 0);\n69+ assert(msg.sender == owner);",
+    "vulnerabilities": "incorrect invisibility/ownership\natomicity violation\ninteger overflow/underflow"
+  },
+  {
+    "code": "1 // SPDX-License-Identifier: BUSL-1.1\n\n2 pragma solidity 0.7.6;\n\n3 import \"@openzeppelin/contracts/math/SafeMath.sol\";\n4 import \"@openzeppelin/contracts/token/ERC20/ERC20.sol\";\n5 import \"@openzeppelin/contracts/token/ERC20/IERC20.sol\";\n6 import \"@openzeppelin/contracts/token/ERC20/SafeERC20.sol\";\n7 import \"@openzeppelin/contracts/access/Ownable.sol\";",
+    "transaction-context": "require(msg.sender == owner, \"only owner\");",
+    "Critical-points": "require(visrDeposit > 0, \"deposits must be nonzero\");",
+    "invariants": "require(to != address(0) && to != address(this), \"to\");",
+    "critical-invariants": "require(from != address(0) && from != address(this), \"from\");",
+    "ranks": "require(IVisor(from).owner() == msg.sender); ",
+    "vulnerabilities": " assert( IVisor(from) !=  address(this)); "
+  },
+  {
+    "code": "1 contract Bridge {\n2   function init(\n3     uint32 _callSite,\n4     address _sender,\n5     bytes32 _merkleRoot\n6      ) public {\n7         base_initialize(_sender);\n8         callSite = _callSite;\n9         committedRoot = _merkleRoot;",
+    "transaction-context": "assert(_merkleRoot != 0);",
+    "Critical-points": "assert(_msgHash != 0);",
+    "invariants": "assert(_root != 0);",
+    "critical-invariants": "require(amount > 0);\n",
+    "ranks": "assert(lastRoundAssets > 0);",
+    "vulnerabilities": "require(depositQueue.size()==1, \"Cannot process multiple deposits\");"
+  },
+  {
+    "code": "1 pragma solidity ^0.4.11;\n2 \n3 contract Vote {\n4         struct Proposal {\n5         uint160 sTime; address newOwner;\n6         }\n7         IERC20 votingToken;\n8         address owner;\n9         Proposal proposal;",
+    "transaction-context": "The transaction context is voting \nbidding proposal",
+    "Critical-points": "Critical program points are  13+ \n17+ \n24+ \n",
+    "invariants": "13+ assert(Old(votingToken.balanceOf(address(this))) == 0);\n17+ assert(Old(votingToken.balanceOf(address(this))) == votingToken.balanceOf(address(this)));\n24+ assert(Old(votingToken.balanceOf(address(this)))==votingToken.balanceOf(address(this)));\n",
+    "critical-invariants": "24+ assert(Old(votingToken.balanceOf(address(this)))==votingToken.balanceOf(address(this)));",
+    "ranks": "24+ assert(Old(votingToken.balanceOf(address(this)))==votingToken.balanceOf(address(this)));",
+    "vulnerabilities": "privilege escalation\ninteger overlow/underflow"
+  },
+  {
+    "code": "1 pragma solidity >=0.4.24 <0.6.0;\n\n2 // Possible bug:\n3 // In this test, ctor D is NOT called twice -\n4 // Only ctor C is called\n5 // compare with ConstructorChaining2_fail.sol\n\n6 contract D {\n7         uint a;",
+    "transaction-context": "The transaction context is arithmetics",
+    "Critical-points": "Critical program points are 14+",
+    "invariants": "14+ assert (a == x + 2);",
+    "critical-invariants": "14+ assert (a == x + 2);",
+    "ranks": "14+ assert (a == x + 2);",
+    "vulnerabilities": "arithmetic flaw"
+  },
+  {
+    "code": "1/ / SPDX-License-Identifier: MIT\n2  pragma solidity >=0.4.24 <0.6.0;\n3  \n4  contract overflow{\n5         function pay(address[] recipients,\n6                         uint256[] amounts) {\n7         require(recipients.length==amounts.length);\n8         for (uint i = 0; i < recipients.length; i++) {\n9         recipients[i].send(amounts[i]);",
+    "transaction-context": "The transaction context is asset swapping",
+    "Critical-points": "Critical program points are 7+\n8+ ",
+    "invariants": "7+ require(recipients.length==amounts.length);\n8+ assert(amounts[i] >= 0); ",
+    "critical-invariants": "8+ assert(amounts[i] >= 0); ",
+    "ranks": "8+ assert(amounts[i] >= 0); ",
+    "vulnerabilities": "integer overflow/underflow\ninsufficient gas"
+  },
+  {
+    "code": "1 pragma solidity ^0.4.4;\n\n2 contract Token {\n\n3     function totalSupply() constant returns (uint256 supply) {}\n4     function balanceOf(address _owner) constant returns (uint256 balance) {}\n\n5     function transfer(address _to, uint256 _value) returns (bool success) {}\n",
+    "transaction-context": "The transaction context is tokenSale\nfunds transfer",
+    "Critical-points": "Critical program points are 13+ ",
+    "invariants": "13+ assert(balances[msg.sender] >= _value);\n13+ assert( _value > 0); \n",
+    "critical-invariants": "13+ assert(balances[msg.sender] >= _value);\n13+ assert( _value > 0); ",
+    "ranks": "13+ assert(balances[msg.sender] >= _value);\n13+ assert( _value > 0); ",
+    "vulnerabilities": "integer overflow/underflow\narithmetic flaw"
+  },
+  {
+    "code": "1 // SPDX-License-Identifier: MIT\n2 pragma experimental ABIEncoderV2;\n3 pragma solidity 0.6.12;\n\n4 import \"./ParaToken.sol\";\n5 import \"./interfaces/IERC20.sol\";\n6 import \"./libraries/SafeERC20.sol\";\n7 import \"./libraries/EnumerableSet.sol\";\n8 import \"./libraries/SafeMath_para.sol\";",
+    "transaction-context": "require(admin == msg.sender, \"Ownable: caller is not the owner\");",
+    "Critical-points": "require(_whitelist[msg.sender] != address(0), \"only white\");",
+    "invariants": "require(paths.length == 2,\"deposit: PE\");",
+    "critical-invariants": "require(_amount > 0, \"deposit: zero\");",
+    "ranks": "require(paths.length == 2,\"deposit: PE\");",
+    "vulnerabilities": "require(vars.newBalance > vars.oldBalance, \"B:E\");"
+  },
+  {
+    "code": "1 // SPDX-License-Identifier: MIT\n2 pragma solidity >=0.5.0;\n\n3 interface IERC20 {\n4     event Approval(address indexed owner, address indexed spender, uint value);\n5     event Transfer(address indexed from, address indexed to, uint value);\n\n6     function name() external view returns (string memory);\n7     function symbol() external view returns (string memory);",
+    "transaction-context": "The transaction context is asset swapping",
+    "Critical-points": "Critical program points are 63+\n73+\n",
+    "invariants": "63+ assert(Old(USDC.balanceOf(address(pair)) /\n            WETH.balanceOf(address(pair))) == USDC.balanceOf(address(pair)) /\n            WETH.balanceOf(address(pair)));\n73+ require(USDC.balanceOf(address(pair)) /\n            WETH.balanceOf(address(pair)) <= Old(USDC.balanceOf(address(pair)) /\n            WETH.balanceOf(address(pair)) * k, \"watch out for flashloan attack!\");\n",
+    "critical-invariants": "73+ require(USDC.balanceOf(address(pair)) /\n            WETH.balanceOf(address(pair)) <= Old(USDC.balanceOf(address(pair)) /\n            WETH.balanceOf(address(pair)) * k, \"watch out for flashloan attack!\");",
+    "ranks": "73+ require(USDC.balanceOf(address(pair)) /\n            WETH.balanceOf(address(pair)) <= Old(USDC.balanceOf(address(pair)) /\n            WETH.balanceOf(address(pair)) * k, \"watch out for flashloan attack!\");",
+    "vulnerabilities": "price manipulation"
+  },
+  {
+    "code": "1 pragma solidity ^0.5.16;\n\n2 import \"./CToken.sol\";\n3 import \"./ERC3156FlashLenderInterface.sol\";\n4 import \"./ERC3156FlashBorrowerInterface.sol\";\n\n5 /**\n6  * @title Cream's CCollateralCapErc20 Contract\n7  * @notice CTokens which wrap an EIP-20 underlying with collateral cap",
+    "transaction-context": "The transaction context is tokenSale",
+    "Critical-points": "Critical program points are 44+   \n190+  \n194+ \n206+ \n217+ \n491+ \n552+  \n584+  \n586+  ",
+    "invariants": "44+   require(err == 0, \"mint failed\");\n190+  require(\n            receiver.onFlashLoan(initiator, underlying, amount, totalFee, data) ==\n                keccak256(\"ERC3156FlashBorrowerInterface.onFlashLoan\"),\n            \"IERC3156: Callback failed\"\n        );\n194+ require(cashOnChainAfter == add_(cashOnChainBefore, totalFee), \"BALANCE_INCONSISTENT\");\n206+ require(msg.sender == address(comptroller), \"comptroller only\");\n217+ require(msg.sender == address(comptroller), \"comptroller only\");\n491+ require(accrualBlockNumber == getBlockNumber(), \"market not fresh\");\n552+  require(redeemTokensIn == 0 || redeemAmountIn == 0, \"bad input\");\n584+  require(comptroller.redeemAllowed(address(this), redeemer, collateralTokens) == 0, \"comptroller rejection\");\n586+  require(getCashPrior() >= vars.redeemAmount, \"insufficient cash\");\n",
+    "critical-invariants": "44+   require(err == 0, \"mint failed\");\n190+  require(\n            receiver.onFlashLoan(initiator, underlying, amount, totalFee, data) ==\n                keccak256(\"ERC3156FlashBorrowerInterface.onFlashLoan\"),\n            \"IERC3156: Callback failed\"\n        );\n194+ require(cashOnChainAfter == add_(cashOnChainBefore, totalFee), \"BALANCE_INCONSISTENT\");\n491+ require(accrualBlockNumber == getBlockNumber(), \"market not fresh\");\n552+  require(redeemTokensIn == 0 || redeemAmountIn == 0, \"bad input\");\n584+  require(comptroller.redeemAllowed(address(this), redeemer, collateralTokens) == 0, \"comptroller rejection\");\n586+  require(getCashPrior() >= vars.redeemAmount, \"insufficient cash\");",
+    "ranks": "44+   require(err == 0, \"mint failed\");\n190+  require(\n            receiver.onFlashLoan(initiator, underlying, amount, totalFee, data) ==\n                keccak256(\"ERC3156FlashBorrowerInterface.onFlashLoan\"),\n            \"IERC3156: Callback failed\"\n        );\n194+ require(cashOnChainAfter == add_(cashOnChainBefore, totalFee), \"BALANCE_INCONSISTENT\");\n491+ require(accrualBlockNumber == getBlockNumber(), \"market not fresh\");\n552+  require(redeemTokensIn == 0 || redeemAmountIn == 0, \"bad input\");\n584+  require(comptroller.redeemAllowed(address(this), redeemer, collateralTokens) == 0, \"comptroller rejection\");\n586+  require(getCashPrior() >= vars.redeemAmount, \"insufficient cash\");",
+    "vulnerabilities": "cross bridge\ninconsistent state update \nID uniqueness violation\narithmetic flaw"
+  },
+  {
+    "code": "\n1 pragma solidity ^0.4.11;\n\n2 interface tokenRecipient { function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData); }\n\n3 contract owned {\n4     address public owner;\n\n5     function owned() {",
+    "transaction-context": "require(pylonSelled + tokens <= bonusCap); ",
+    "Critical-points": "equire(balanceOf[investor] + tokens <= maxTokens); ",
+    "invariants": "assert(a == 0 || c / a == b);",
+    "critical-invariants": "assert(b <= a);",
+    "ranks": " assert(c >= a);",
+    "vulnerabilities": "assert(msg.sender == owner);"
+  },
+  {
+    "code": "1 pragma solidity >=0.4.24 <0.6.0;\n2 pragma solidity >=0.4.24 <0.6.0;\n\n3 contract Consts {\n\n4     constructor () public {\n5         uint a;\n6         address b;\n7         address c;",
+    "transaction-context": " assert(b != c);",
+    "Critical-points": "assert (a == 1 || a == 2);\n",
+    "invariants": "assert (a == 1 || a == 2);",
+    "critical-invariants": " assert (sum == 1);",
+    "ranks": "assert (c == _a + _b);",
+    "vulnerabilities": "assert (c == _a - _b);"
+  },
+  {
+    "code": "1 contract ArrayInit {\n\n2     uint[2] a;\n3     uint[2] b;\n    \n4     constructor() public {\n5        b[1] = 22;\n6        a[1] = 33;\n7        assert (b[1] == 22);",
+    "transaction-context": "The transaction context is simple",
+    "Critical-points": "Critical program points are 7+ ",
+    "invariants": "7+ assert (b[1] == 22);",
+    "critical-invariants": "7+ assert (b[1] == 22);",
+    "ranks": "7+ assert (b[1] == 22);",
+    "vulnerabilities": "healthy "
+  },
+  {
+    "code": "1 /**\n2  *Submitted for verification at Etherscan.io on 2020-10-07\n3 */\n\n4 // File: openzeppelin-solidity-2.3.0/contracts/ownership/Ownable.sol\n\n5 pragma solidity ^0.5.0;\n\n6 contract Bank{",
+    "transaction-context": "The transaction context is money market",
+    "Critical-points": "Critical program points are 18+       \n19+ \n20+     \n24+       \n25+        \n31+       \n40+         \n43+    ",
+    "invariants": "18+         require(id < nextPositionID, \"bad position id\");\n19+         require(positions[id].goblin == goblin, \"bad position goblin\");\n20+         require(positions[id].owner == msg.sender, \"not position owner\");\n24+         require(config.isGoblin(goblin), \"not a goblin\");\n25+        require(loan == 0 || config.acceptDebt(goblin), \"goblin not accept more debt\");\n31+        require(sendETH <= address(this).balance, \"insufficient ETH in the bank\");\n40+         require(debt >= config.minDebtSize(), \"too small debt size\");\n43+         require(health.mul(workFactor) >= debt.mul(10000), \"bad work factor\");",
+    "critical-invariants": "18+         require(id < nextPositionID, \"bad position id\");\n",
+    "ranks": "18+         require(id < nextPositionID, \"bad position id\");\n",
+    "vulnerabilities": "healthy"
+  },
+  {
+    "code": "1 // SPDX-License-Identifier: MIT OR Apache-2.0\n2 pragma solidity >=0.6.11;\n\n3  */\n4 contract Replica {\n \n5     /**\n6      * @notice Emitted when message is processed\n7      * @param messageHash Hash of message that failed to process",
+    "transaction-context": "assert(_committedRoot !=0); ",
+    "Critical-points": "require(winningId == 0, \"already drawn\");",
+    "invariants": "require(!drawingPhase, \"drawing\")",
+    "critical-invariants": "require(winningId == 0, \"already drawn\");",
+    "ranks": " require(drawingPhase, \"not drawing\");",
+    "vulnerabilities": "require(id != 0, \"invalid winning number\");"
+  },
+  {
+    "code": "1 // SPDX-License-Identifier: LGPL-3.0-only\n2 pragma solidity 0.6.12;\n3 pragma experimental ABIEncoderV2;\n\n4 import \"../interfaces/IDepositExecute.sol\";\n5 import \"./HandlerHelpers.sol\";\n6 import \"../ERC721Safe.sol\";\n7 import \"@openzeppelin/contracts/introspection/ERC165Checker.sol\";\n8 import \"@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol\";",
+    "transaction-context": "The transaction context is nan",
+    "Critical-points": "Critical program points are nan",
+    "invariants": "43+  require(_contractWhitelist[tokenAddress], \"provided tokenAddress is not whitelisted\");\n83+  require(_contractWhitelist[address(tokenAddress)], \"provided tokenAddress is not whitelisted\");\n",
+    "critical-invariants": "nan",
+    "ranks": "nan",
+    "vulnerabilities": "nan"
+  },
+  {
+    "code": "1 pragma solidity ^0.5.16;\n2 pragma experimental ABIEncoderV2;\n3 \n4 import \"./Denominations.sol\";\n5 import \"./PriceOracle.sol\";\n6 import \"./interfaces/CurveTokenInterface.sol\";\n7 import \"./interfaces/FeedRegistryInterface.sol\";\n8 import \"./interfaces/UniswapV2Interface.sol\";\n9 import \"./interfaces/V1PriceOracleInterface.sol\";",
+    "transaction-context": "require(msg.sender == admin, \"only the admin may set Yvault tokens\");",
+    "Critical-points": "require(tokenAddresses.length == version.length, \"mismatched data\");",
+    "invariants": "require(msg.sender == admin, \"only the admin may set curve pool tokens\");",
+    "critical-invariants": " require(tokenAddresses.length == version.length &&                         tokenAddresses.length == poolType.length && tokenAddresses.length == swap.length, \"mismatched data\" );",
+    "ranks": " require(CurveTokenV3Interface(tokenAddresses[i]).minter() == swap[i], \"incorrect pool\");",
+    "vulnerabilities": "nan"
+  }
+]

@@ -1,0 +1,2402 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d9" for="edge" attr.name="file_path" attr.type="string" />
+  <key id="d8" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d7" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d6" for="edge" attr.name="description" attr.type="string" />
+  <key id="d5" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d4" for="node" attr.name="file_path" attr.type="string" />
+  <key id="d3" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d2" for="node" attr.name="description" attr.type="string" />
+  <key id="d1" for="node" attr.name="entity_type" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_id" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="ExternalFunctionCall">
+      <data key="d0">ExternalFunctionCall</data>
+      <data key="d1">organization</data>
+      <data key="d2">ExternalFunctionCall is a smart contract that contains functions to handle external function calls.</data>
+      <data key="d3">chunk-c53bcb89f1d36a46f079245174533c69</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="B">
+      <data key="d0">B</data>
+      <data key="d1">organization</data>
+      <data key="d2">Contract B is defined with functions funcB and constructor.</data>
+      <data key="d3">chunk-c53bcb89f1d36a46f079245174533c69</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="A">
+      <data key="d0">A</data>
+      <data key="d1">organization</data>
+      <data key="d2">A contract that serves as a base constructor for C, with nested constructors and an assertion (x == a + 2).&lt;SEP&gt;Contract A inherits from B and contains multiple assert statements for validation.&lt;SEP&gt;Contract A is a Solidity smart contract that includes functions and constructors to demonstrate different aspects of arithmetic operations and tuple handling.</data>
+      <data key="d3">chunk-c53bcb89f1d36a46f079245174533c69&lt;SEP&gt;chunk-c67ff13ef76f5e0ac115907768857f6e&lt;SEP&gt;chunk-a77647b9e63bedf9a7876085e1af9bc8</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="LoopFor">
+      <data key="d0">LoopFor</data>
+      <data key="d1">organization</data>
+      <data key="d2">LoopFor is a smart contract that involves loop arithmetics and invariants.&lt;SEP&gt;LoopFor is a smart contract utilizing a bounded for loop to modify an array.&lt;SEP&gt;LoopFor is the name of a Solidity smart contract which contains a bounded for loop.&lt;SEP&gt;The contract LoopFor contains a function with a for loop that initializes an array with specific values based on the loop counter.</data>
+      <data key="d3">chunk-b45eea23b06c7cccc14772d56dd0cbc2&lt;SEP&gt;chunk-c67ff13ef76f5e0ac115907768857f6e&lt;SEP&gt;chunk-cb98eb5257cce0926c33c9cecbe74f8e&lt;SEP&gt;chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="VeriSolContracts.sol">
+      <data key="d0">VeriSolContracts.sol</data>
+      <data key="d1">organization</data>
+      <data key="d2">VeriSolContracts.sol is a library or contract used in the code for verifying and solving contracts.</data>
+      <data key="d3">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;Lib&quot;\">
+      <data key="d0">"Lib"\</data>
+      <data key="d1">organization</data>
+      <data key="d2">Lib is a simple library that performs addition operations, not directly involved in critical program points but part of the overall contract structure.</data>
+      <data key="d3">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="LoopFor Constructor">
+      <data key="d0">LoopFor Constructor</data>
+      <data key="d1">event</data>
+      <data key="d2">The LoopFor constructor initializes variables and sets initial conditions for the loop arithmetics.</data>
+      <data key="d3">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;x&quot;\">
+      <data key="d0">"x"\</data>
+      <data key="d1">category</data>
+      <data key="d2">x is an integer variable used in arithmetic operations within the contracts.</data>
+      <data key="d3">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;y&quot;\">
+      <data key="d0">"y"\</data>
+      <data key="d1">category</data>
+      <data key="d2">y is an integer variable used in arithmetic operations within the contracts.</data>
+      <data key="d3">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Lib">
+      <data key="d0">Lib</data>
+      <data key="d1">organization</data>
+      <data key="d2">Lib is a simple library that performs addition operations, not directly involved in critical program points but part of the overall contract structure.</data>
+      <data key="d3">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="x">
+      <data key="d0">x</data>
+      <data key="d1">category</data>
+      <data key="d2">x is an integer variable used in arithmetic operations within the contracts.</data>
+      <data key="d3">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="y">
+      <data key="d0">y</data>
+      <data key="d1">category</data>
+      <data key="d2">y is an integer variable used in arithmetic operations within the contracts.</data>
+      <data key="d3">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="World Athletics Championship">
+      <data key="d0">World Athletics Championship</data>
+      <data key="d1">event</data>
+      <data key="d2">The World Athletics Championship is a global sports competition featuring top athletes in track and field.</data>
+      <data key="d3">chunk-cb98eb5257cce0926c33c9cecbe74f8e&lt;SEP&gt;chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Tokyo">
+      <data key="d0">Tokyo</data>
+      <data key="d1">location</data>
+      <data key="d2">Tokyo is the host city of the World Athletics Championship.</data>
+      <data key="d3">chunk-cb98eb5257cce0926c33c9cecbe74f8e&lt;SEP&gt;chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Noah Carter">
+      <data key="d0">Noah Carter</data>
+      <data key="d1">athlete</data>
+      <data key="d2">Noah Carter is a sprinter who set a new record in the 100m sprint at the World Athletics Championship.</data>
+      <data key="d3">chunk-cb98eb5257cce0926c33c9cecbe74f8e&lt;SEP&gt;chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="100m Sprint Record">
+      <data key="d0">100m Sprint Record</data>
+      <data key="d1">record</data>
+      <data key="d2">The 100m Sprint Record is a benchmark in athletics, recently broken by Noah Carter.&lt;SEP&gt;The 100m sprint record is a benchmark in athletics, recently broken by Noah Carter.</data>
+      <data key="d3">chunk-cb98eb5257cce0926c33c9cecbe74f8e&lt;SEP&gt;chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Carbon-Fiber Spikes">
+      <data key="d0">Carbon-Fiber Spikes</data>
+      <data key="d1">equipment</data>
+      <data key="d2">Carbon-Fiber Spikes are advanced sprinting shoes that provide enhanced speed and traction.&lt;SEP&gt;Carbon-fiber spikes are advanced sprinting shoes that provide enhanced speed and traction.</data>
+      <data key="d3">chunk-cb98eb5257cce0926c33c9cecbe74f8e&lt;SEP&gt;chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="World Athletics Federation">
+      <data key="d0">World Athletics Federation</data>
+      <data key="d1">organization</data>
+      <data key="d2">The World Athletics Federation is the governing body overseeing the World Athletics Championship and record validations.</data>
+      <data key="d3">chunk-cb98eb5257cce0926c33c9cecbe74f8e&lt;SEP&gt;chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="msg.sender">
+      <data key="d0">msg.sender</data>
+      <data key="d1">person</data>
+      <data key="d2">msg.sender is a generic term used to refer to the sender of a transaction or contract function.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="recipient">
+      <data key="d0">recipient</data>
+      <data key="d1">person</data>
+      <data key="d2">recipient is a term used in the context of transactions, often representing the account receiving funds or data.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="_balances">
+      <data key="d0">_balances</data>
+      <data key="d1">category</data>
+      <data key="d2">_balances refers to a mapping of addresses to balance values within a contract.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="VeriSol.Old">
+      <data key="d0">VeriSol.Old</data>
+      <data key="d1">organization</data>
+      <data key="d2">VeriSol.Old is likely an old version of a function or state variable in the contract, possibly used for comparison purposes.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="_totalSupply">
+      <data key="d0">_totalSupply</data>
+      <data key="d1">category</data>
+      <data key="d2">_totalSupply is a common state variable in ERC20 tokens representing the total supply of tokens issued by the token contract.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="stakingToken">
+      <data key="d0">stakingToken</data>
+      <data key="d1">organization</data>
+      <data key="d2">stakingToken likely refers to an external token contract used for staking or rewards within the context of a smart contract.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="amount">
+      <data key="d0">amount</data>
+      <data key="d1">category</data>
+      <data key="d2">amount is a variable representing the quantity of tokens or value being transferred in transactions.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="_to">
+      <data key="d0">_to</data>
+      <data key="d1">person</data>
+      <data key="d2">"_to is an address parameter used to specify the recipient of funds or data within transaction contexts.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="address(0)">
+      <data key="d0">address(0)</data>
+      <data key="d1">organization</data>
+      <data key="d2">address(0) represents a special address with no owner in Ethereum, often used as a default value for invalid addresses.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="owner">
+      <data key="d0">owner</data>
+      <data key="d1">person</data>
+      <data key="d2">owner refers to the contract owner who has administrative rights and can perform certain actions like changing ownership or pausing/continuing operations.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="newOwner">
+      <data key="d0">newOwner</data>
+      <data key="d1">person</data>
+      <data key="d2">newOwner is a parameter representing the address of the new owner that will take over the ownership rights in a contract.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="paused">
+      <data key="d0">paused</data>
+      <data key="d1">category</data>
+      <data key="d2">paused is likely a state variable indicating whether certain functionalities within the contract are currently disabled or active.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="goblin">
+      <data key="d0">goblin</data>
+      <data key="d1">person</data>
+      <data key="d2">"goblin appears to be a custom term used within the context of some game logic or smart contract, possibly representing non-fungible tokens (NFTs) or specific entities within the contract's domain.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="id">
+      <data key="d0">id</data>
+      <data key="d1">category</data>
+      <data key="d2">id is a variable often used as an index in arrays or mappings to identify specific elements within the contract's state or logic.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="nextPositionID">
+      <data key="d0">nextPositionID</data>
+      <data key="d1">category</data>
+      <data key="d2">"nextPositionID likely represents the next available position ID, which could be used for tracking positions or entities within the smart contract's domain.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="config">
+      <data key="d0">config</data>
+      <data key="d1">organization</data>
+      <data key="d2">"config is a state variable or function reference that holds configuration details of the contract, possibly related to settings and rules governing token transfers or other functionalities.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="loan">
+      <data key="d0">loan</data>
+      <data key="d1">category</data>
+      <data key="d2">"loan seems to be a term used in the context of financial operations within the smart contract, likely representing some form of borrowing or debt mechanism.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="health">
+      <data key="d0">health</data>
+      <data key="d1">category</data>
+      <data key="d2">"health appears to be a state variable or function parameter that represents the health or vitality of an entity within the contract's domain, possibly related to goblins' status in a game logic context.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="workFactor">
+      <data key="d0">workFactor</data>
+      <data key="d1">category</data>
+      <data key="d2">"workFactor seems to be another state variable or function parameter used for calculating work-related metrics or conditions within the contract's operations.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;_balances">
+      <data key="d0">"_balances</data>
+      <data key="d1">category</data>
+      <data key="d2">_balances represents the mapping of addresses to balance values in smart contracts.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;_totalSupply">
+      <data key="d0">"_totalSupply</data>
+      <data key="d1">category</data>
+      <data key="d2">_totalSupply is a common state variable representing the total supply of tokens issued by token contracts.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;amount">
+      <data key="d0">"amount</data>
+      <data key="d1">category</data>
+      <data key="d2">Amount is a variable representing the quantity of tokens or value being transferred in transactions.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;_to">
+      <data key="d0">"_to</data>
+      <data key="d1">person</data>
+      <data key="d2">To is an address parameter specifying the recipient of funds or data within transaction contexts.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;owner">
+      <data key="d0">"owner</data>
+      <data key="d1">person</data>
+      <data key="d2">Owner refers to the contract owner who has administrative rights and can perform certain actions like changing ownership or pausing/continuing operations.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;paused">
+      <data key="d0">"paused</data>
+      <data key="d1">category</data>
+      <data key="d2">Paused is likely a state variable indicating whether certain functionalities within the contract are currently disabled or active.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;goblin">
+      <data key="d0">"goblin</data>
+      <data key="d1">person</data>
+      <data key="d2">Goblin appears to be a custom term used within smart contracts, possibly representing non-fungible tokens (NFTs) or specific entities within the contract's domain.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;id">
+      <data key="d0">"id</data>
+      <data key="d1">category</data>
+      <data key="d2">Id is a variable often used as an index in arrays or mappings to identify specific elements within the contract's state or logic.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;nextPositionID">
+      <data key="d0">"nextPositionID</data>
+      <data key="d1">category</data>
+      <data key="d2">NextPositionID likely represents the next available position ID, which could be used for tracking positions or entities within the smart contract's domain.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;config">
+      <data key="d0">"config</data>
+      <data key="d1">organization</data>
+      <data key="d2">Config is a state variable or function reference that holds configuration details of the contract, possibly related to settings and rules governing token transfers or other functionalities.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;loan">
+      <data key="d0">"loan</data>
+      <data key="d1">category</data>
+      <data key="d2">Loan seems to be a term used in the context of financial operations within smart contracts, likely representing some form of borrowing or debt mechanism.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;health">
+      <data key="d0">"health</data>
+      <data key="d1">category</data>
+      <data key="d2">Health appears to be a state variable or function parameter that represents the health or vitality of an entity within the contract's domain, possibly related to goblins' status in game logic context.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;workFactor">
+      <data key="d0">"workFactor</data>
+      <data key="d1">category</data>
+      <data key="d2">WorkFactor seems to be another state variable or function parameter used for calculating work-related metrics or conditions within the contract's operations.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="BscScan.com">
+      <data key="d0">BscScan.com</data>
+      <data key="d1">organization</data>
+      <data key="d2">BscScan.com is a verification site for smart contract submissions.</data>
+      <data key="d3">chunk-aea33e7eb4aa337056ef47da5255a233</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Reentrancy Guard">
+      <data key="d0">Reentrancy Guard</data>
+      <data key="d1">category</data>
+      <data key="d2">Reentrancy Guard is a security measure implemented in smart contracts to prevent reentrancy attacks.</data>
+      <data key="d3">chunk-aea33e7eb4aa337056ef47da5255a233</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="SafeMath">
+      <data key="d0">SafeMath</data>
+      <data key="d1">category</data>
+      <data key="d2">SafeMath is a library for ensuring safe arithmetic operations in smart contracts to prevent overflows and underflows.</data>
+      <data key="d3">chunk-aea33e7eb4aa337056ef47da5255a233</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Address">
+      <data key="d0">Address</data>
+      <data key="d1">category</data>
+      <data key="d2">The Address utility in smart contracts checks balances, sends values, and ensures that no zero addresses are used.</data>
+      <data key="d3">chunk-aea33e7eb4aa337056ef47da5255a233</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ERC20">
+      <data key="d0">ERC20</data>
+      <data key="d1">category</data>
+      <data key="d2">ERC20 is an Ethereum Token Standard that defines functions and behaviors for token contracts.</data>
+      <data key="d3">chunk-aea33e7eb4aa337056ef47da5255a233</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Ownable">
+      <data key="d0">Ownable</data>
+      <data key="d1">category</data>
+      <data key="d2">The Ownable contract role in smart contracts controls the ability of the owner to perform specific functions.</data>
+      <data key="d3">chunk-aea33e7eb4aa337056ef47da5255a233</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ERC20: transfer from the zero address">
+      <data key="d0">ERC20: transfer from the zero address</data>
+      <data key="d1">event</data>
+      <data key="d2">This event indicates that a transaction was attempted with the sender being the zero address, which is not allowed.</data>
+      <data key="d3">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ERC20: transfer to the zero address">
+      <data key="d0">ERC20: transfer to the zero address</data>
+      <data key="d1">event</data>
+      <data key="d2">This event indicates that a transaction was attempted with the recipient being the zero address, which is not allowed.</data>
+      <data key="d3">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ERC20: mint to the zero address">
+      <data key="d0">ERC20: mint to the zero address</data>
+      <data key="d1">event</data>
+      <data key="d2">This event indicates that an attempt was made to mint tokens to the zero address, which is not valid.</data>
+      <data key="d3">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="SafeMath: addition overflow">
+      <data key="d0">SafeMath: addition overflow</data>
+      <data key="d1">event</data>
+      <data key="d2">This error occurs when there is an overflow in an arithmetic operation within the SafeMath library used for addition.</data>
+      <data key="d3">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="SafeMath: multiplication overflow">
+      <data key="d0">SafeMath: multiplication overflow</data>
+      <data key="d1">event</data>
+      <data key="d2">This error occurs during a multiplication operation that results in an overflow, triggering a validation failure.</data>
+      <data key="d3">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="SafeMath: division by zero">
+      <data key="d0">SafeMath: division by zero</data>
+      <data key="d1">event</data>
+      <data key="d2">This event is triggered when there's an attempt to divide by zero, which is not allowed and causes a division operation to fail.</data>
+      <data key="d3">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Address: insufficient balance">
+      <data key="d0">Address: insufficient balance</data>
+      <data key="d1">event</data>
+      <data key="d2">This error occurs when the contract does not have sufficient balance to complete a transfer or call operation.</data>
+      <data key="d3">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Address: unable to send value, recipient may have reverted">
+      <data key="d0">Address: unable to send value, recipient may have reverted</data>
+      <data key="d1">event</data>
+      <data key="d2">This event indicates that a value transfer failed because the recipient could not receive it due to an internal revert from the recipient.</data>
+      <data key="d3">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Address: call to non-contract">
+      <data key="d0">Address: call to non-contract</data>
+      <data key="d1">event</data>
+      <data key="d2">This error occurs when trying to call a function on an address that does not implement any functions, indicating a non-contract target for the call.</data>
+      <data key="d3">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ReentrancyGuard: reentrant call">
+      <data key="d0">ReentrancyGuard: reentrant call</data>
+      <data key="d1">event</data>
+      <data key="d2">This event is triggered if a contract attempts to re-enter itself before the previous call has completed, leading to security vulnerabilities.</data>
+      <data key="d3">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="cannot sell above token amount">
+      <data key="d0">cannot sell above token amount</data>
+      <data key="d1">event</data>
+      <data key="d2">This error message indicates that an attempt was made to sell more tokens than are available in the seller's balance.</data>
+      <data key="d3">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="purchase not included in balance">
+      <data key="d0">purchase not included in balance</data>
+      <data key="d1">event</data>
+      <data key="d2">This error occurs when a purchase is attempted but exceeds the current contract balance, indicating insufficient funds for the transaction.</data>
+      <data key="d3">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="arithmetic flaw">
+      <data key="d0">arithmetic flaw</data>
+      <data key="d1">category</data>
+      <data key="d2">Arithmetic flaw involves potential overflows or underflows in calculations within smart contracts.&lt;SEP&gt;Arithmetic flaws refer to errors in calculations that can lead to incorrect results or unexpected behavior within smart contracts.</data>
+      <data key="d3">chunk-38fde34d7adb700e8e07890f86fe5f6a&lt;SEP&gt;chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="reentrancy">
+      <data key="d0">reentrancy</data>
+      <data key="d1">category</data>
+      <data key="d2">Reentrancy is a common vulnerability in smart contract development where an external call can re-enter the same contract, leading to potential security breaches and loss of funds.</data>
+      <data key="d3">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Owner">
+      <data key="d0">Owner</data>
+      <data key="d1">person</data>
+      <data key="d2">The Owner is a key figure in the contract who has specific permissions and roles.</data>
+      <data key="d3">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="AddressRegistry">
+      <data key="d0">AddressRegistry</data>
+      <data key="d1">organization</data>
+      <data key="d2">AddressRegistry is an external contract used to manage addresses within the smart contract ecosystem.</data>
+      <data key="d3">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="RevestToken">
+      <data key="d0">RevestToken</data>
+      <data key="d1">category</data>
+      <data key="d2">RevestToken refers to a token managed by the Revest protocol, often used in financial transactions and interactions.</data>
+      <data key="d3">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="IVisor">
+      <data key="d0">IVisor</data>
+      <data key="d1">organization</data>
+      <data key="d2">IVisor is an interface that represents a visor contract within the smart contract environment.</data>
+      <data key="d3">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Visor">
+      <data key="d0">Visor</data>
+      <data key="d1">category</data>
+      <data key="d2">Visor is a type of contract or module that interacts with the RevestToken in the context of ownership and management.</data>
+      <data key="d3">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ERC1155Token">
+      <data key="d0">ERC1155Token</data>
+      <data key="d1">category</data>
+      <data key="d2">ERC1155Token is a token standard (ERC-1155) used for minting unique non-fungible tokens (FNFTs).</data>
+      <data key="d3">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ILiFi">
+      <data key="d0">ILiFi</data>
+      <data key="d1">organization</data>
+      <data key="d2">ILiFi is an interface representing cross-chain communication and transfer functionalities.</data>
+      <data key="d3">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ICBridge">
+      <data key="d0">ICBridge</data>
+      <data key="d1">organization</data>
+      <data key="d2">ICBridge is a contract or module responsible for bridge operations across different blockchain networks.</data>
+      <data key="d3">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Replica">
+      <data key="d0">Replica</data>
+      <data key="d1">organization</data>
+      <data key="d2">Replica is a smart contract designed to handle cross-bridge operations in blockchain networks.</data>
+      <data key="d3">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="IEthCrossChainManager.sol">
+      <data key="d0">IEthCrossChainManager.sol</data>
+      <data key="d1">category</data>
+      <data key="d2">IEthCrossChainManager.sol is an interface that defines methods for managing cross-chain transactions.</data>
+      <data key="d3">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="UpgradableECCM.sol">
+      <data key="d0">UpgradableECCM.sol</data>
+      <data key="d1">organization</data>
+      <data key="d2">UpgradableECCM.sol is a contract library providing upgradeable functionality for ECCM operations.</data>
+      <data key="d3">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="EthCrossChainUtils.sol">
+      <data key="d0">EthCrossChainUtils.sol</data>
+      <data key="d1">organization</data>
+      <data key="d2">EthCrossChainUtils.sol contains utility functions for handling cross-chain communications in Ethereum networks.</data>
+      <data key="d3">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ZeroCopySource.sol">
+      <data key="d0">ZeroCopySource.sol</data>
+      <data key="d1">category</data>
+      <data key="d2">ZeroCopySource.sol is a library providing zero-copy source functionalities.</data>
+      <data key="d3">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="SafeMath.sol">
+      <data key="d0">SafeMath.sol</data>
+      <data key="d1">category</data>
+      <data key="d2">SafeMath.sol provides safe math operations to prevent overflow and underflow issues.</data>
+      <data key="d3">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Utils.sol">
+      <data key="d0">Utils.sol</data>
+      <data key="d1">organization</data>
+      <data key="d2">Utils.sol is a utility contract containing various helper functions for blockchain operations.</data>
+      <data key="d3">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="EthCrossChain">
+      <data key="d0">EthCrossChain</data>
+      <data key="d1">organization</data>
+      <data key="d2">EthCrossChain is a cross-chain protocol used in blockchain transactions.</data>
+      <data key="d3">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="IDepositExecute.sol">
+      <data key="d0">IDepositExecute.sol</data>
+      <data key="d1">category</data>
+      <data key="d2">IDepositExecute.sol is an interface or contract related to deposit and execution functions within the protocol.</data>
+      <data key="d3">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="HandlerHelpers.sol">
+      <data key="d0">HandlerHelpers.sol</data>
+      <data key="d1">category</data>
+      <data key="d2">HandlerHelpers.sol is a helper library or contract providing utility functions for handling operations in the protocol.</data>
+      <data key="d3">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ERC721Safe.sol">
+      <data key="d0">ERC721Safe.sol</data>
+      <data key="d1">category</data>
+      <data key="d2">ERC721Safe.sol is an ERC-721 standard-compliant safe implementation used in the protocol.</data>
+      <data key="d3">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ERC165Checker.sol">
+      <data key="d0">ERC165Checker.sol</data>
+      <data key="d1">category</data>
+      <data key="d2">ERC165Checker.sol provides introspection capabilities to check if a contract implements specific interfaces.</data>
+      <data key="d3">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="IERC721Metadata.sol">
+      <data key="d0">IERC721Metadata.sol</data>
+      <data key="d1">category</data>
+      <data key="d2">IERC721Metadata.sol is an interface providing metadata for ERC-721 tokens, likely used in the protocol.</data>
+      <data key="d3">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="_contractWhitelist">
+      <data key="d0">_contractWhitelist</data>
+      <data key="d1">category</data>
+      <data key="d2">_contractWhitelist is a mapping or set of whitelisted contract addresses used to verify token addresses in transactions.</data>
+      <data key="d3">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;_contractWhitelist&quot;">
+      <data key="d0">"_contractWhitelist"</data>
+      <data key="d1">category</data>
+      <data key="d2">_contractWhitelist is a mapping or set of whitelisted contract addresses used to verify and validate token transactions in the protocol.</data>
+      <data key="d3">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ArrayFixedSize">
+      <data key="d0">ArrayFixedSize</data>
+      <data key="d1">organization</data>
+      <data key="d2">ArrayFixedSize is a Solidity contract that uses fixed-size arrays and asserts specific values for these arrays.&lt;SEP&gt;ArrayFixedSize is a smart contract defined with a fixed-size array and assertions for its values.</data>
+      <data key="d3">chunk-b45eea23b06c7cccc14772d56dd0cbc2&lt;SEP&gt;chunk-f5db9991987c4fd1d1b55e25df0fbd93</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ArrayNestedFixedSize">
+      <data key="d0">ArrayNestedFixedSize</data>
+      <data key="d1">organization</data>
+      <data key="d2">ArrayNestedFixedSize is a Solidity contract that uses nested fixed-size arrays and performs assertions on their values.&lt;SEP&gt;ArrayNestedFixedSize is a Solidity contract with array definitions and constructors.&lt;SEP&gt;ArrayNestedFixedSize is a complex smart contract defining nested fixed-size arrays and multiple assert statements.</data>
+      <data key="d3">chunk-b45eea23b06c7cccc14772d56dd0cbc2&lt;SEP&gt;chunk-f5db9991987c4fd1d1b55e25df0fbd93&lt;SEP&gt;chunk-6f8802d5b7f60985a7345ddf5d9c85cb</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ArrayDynamicStorage">
+      <data key="d0">ArrayDynamicStorage</data>
+      <data key="d1">organization</data>
+      <data key="d2">ArrayDynamicStorage is a contract that initializes an array in dynamic storage and performs assertions on its length.&lt;SEP&gt;ArrayDynamicStorage is a smart contract using dynamic storage array with initial assertions about its values.</data>
+      <data key="d3">chunk-b45eea23b06c7cccc14772d56dd0cbc2&lt;SEP&gt;chunk-f5db9991987c4fd1d1b55e25df0fbd93</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Foo">
+      <data key="d0">Foo</data>
+      <data key="d1">organization</data>
+      <data key="d2">Foo is a simple smart contract defined with a single state variable and constructor.</data>
+      <data key="d3">chunk-b45eea23b06c7cccc14772d56dd0cbc2</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Fixed-size Array">
+      <data key="d0">Fixed-size Array</data>
+      <data key="d1">category</data>
+      <data key="d2">A fixed-size array in a smart contract with predetermined number of elements.</data>
+      <data key="d3">chunk-b45eea23b06c7cccc14772d56dd0cbc2</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Dynamic Storage Array">
+      <data key="d0">Dynamic Storage Array</data>
+      <data key="d1">category</data>
+      <data key="d2">A dynamic storage array in a smart contract that can resize and holds variable number of elements.</data>
+      <data key="d3">chunk-b45eea23b06c7cccc14772d56dd0cbc2</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Bounded For Loop">
+      <data key="d0">Bounded For Loop</data>
+      <data key="d1">category</data>
+      <data key="d2">A for loop with upper bound defined in the smart contract.</data>
+      <data key="d3">chunk-b45eea23b06c7cccc14772d56dd0cbc2</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Assert Statement">
+      <data key="d0">Assert Statement</data>
+      <data key="d1">category</data>
+      <data key="d2">An assert statement in the smart contract used to validate conditions.</data>
+      <data key="d3">chunk-b45eea23b06c7cccc14772d56dd0cbc2</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Initialization Code">
+      <data key="d0">Initialization Code</data>
+      <data key="d1">category</data>
+      <data key="d2">Code in the constructor of a smart contract responsible for setting initial state variables.</data>
+      <data key="d3">chunk-b45eea23b06c7cccc14772d56dd0cbc2</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Transaction Context">
+      <data key="d0">Transaction Context</data>
+      <data key="d1">category</data>
+      <data key="d2">Contextual information about the transaction environment.</data>
+      <data key="d3">chunk-b45eea23b06c7cccc14772d56dd0cbc2</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;testBoundedForLoop()&lt;function&gt;">
+      <data key="d0">"testBoundedForLoop()&lt;function&gt;</data>
+      <data key="d1">category</data>
+      <data key="d2">The testBoundedForLoop() function in the LoopFor contract involves a for loop with specific assertions on an array 'a'.</data>
+      <data key="d3">chunk-c67ff13ef76f5e0ac115907768857f6e</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;testTuple()&lt;function&gt;">
+      <data key="d0">"testTuple()&lt;function&gt;</data>
+      <data key="d1">category</data>
+      <data key="d2">The testTuple() function in the A contract demonstrates tuple usage and arithmetic operations.</data>
+      <data key="d3">chunk-c67ff13ef76f5e0ac115907768857f6e</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;constructor()&lt;function&gt;">
+      <data key="d0">"constructor()&lt;function&gt;</data>
+      <data key="d1">category</data>
+      <data key="d2">Constructor functions are used to initialize contracts with specific parameters.</data>
+      <data key="d3">chunk-c67ff13ef76f5e0ac115907768857f6e</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;assert()&lt;function&gt;">
+      <data key="d0">"assert()&lt;function&gt;</data>
+      <data key="d1">category</data>
+      <data key="d2">Assert statements are used for invariant checks within Solidity contracts.</data>
+      <data key="d3">chunk-c67ff13ef76f5e0ac115907768857f6e</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="testBoundedForLoop()">
+      <data key="d0">testBoundedForLoop()</data>
+      <data key="d1">category</data>
+      <data key="d2">The testBoundedForLoop() function in the LoopFor contract involves a for loop with specific assertions on an array 'a' using inline comments.</data>
+      <data key="d3">chunk-c67ff13ef76f5e0ac115907768857f6e</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="testTuple()">
+      <data key="d0">testTuple()</data>
+      <data key="d1">category</data>
+      <data key="d2">The testTuple() function in Contract A demonstrates tuple usage and arithmetic operations, along with inline comments.</data>
+      <data key="d3">chunk-c67ff13ef76f5e0ac115907768857f6e</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="constructor()">
+      <data key="d0">constructor()</data>
+      <data key="d1">category</data>
+      <data key="d2">Constructor functions are used to initialize contracts with specific parameters.</data>
+      <data key="d3">chunk-c67ff13ef76f5e0ac115907768857f6e</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="assert()">
+      <data key="d0">assert()</data>
+      <data key="d1">category</data>
+      <data key="d2">Assert statements within Solidity contracts are used for invariant checks on variables or conditions.</data>
+      <data key="d3">chunk-c67ff13ef76f5e0ac115907768857f6e</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Consts">
+      <data key="d0">Consts</data>
+      <data key="d1">organization</data>
+      <data key="d2">A contract with assertions to ensure b != c, indicating the integrity of address comparisons.&lt;SEP&gt;Consts is a Solidity contract that defines constructors and uses multiple address types in its definition.</data>
+      <data key="d3">chunk-a77647b9e63bedf9a7876085e1af9bc8&lt;SEP&gt;chunk-6f8802d5b7f60985a7345ddf5d9c85cb</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Branch">
+      <data key="d0">Branch</data>
+      <data key="d1">organization</data>
+      <data key="d2">A contract containing a simple if statement that returns a value based on a boolean condition, ensuring that a is either 1 or 2.&lt;SEP&gt;Branch is a Solidity contract with a function to test if statements and includes assertions for validation.</data>
+      <data key="d3">chunk-a77647b9e63bedf9a7876085e1af9bc8&lt;SEP&gt;chunk-6f8802d5b7f60985a7345ddf5d9c85cb</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="DoWhileLoop">
+      <data key="d0">DoWhileLoop</data>
+      <data key="d1">organization</data>
+      <data key="d2">A contract with a do-while loop that sums up the variable i, asserting that sum == 1.</data>
+      <data key="d3">chunk-a77647b9e63bedf9a7876085e1af9bc8</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Arithmetics">
+      <data key="d0">Arithmetics</data>
+      <data key="d1">organization</data>
+      <data key="d2">A contract containing basic arithmetic operations and assertions to validate them.</data>
+      <data key="d3">chunk-a77647b9e63bedf9a7876085e1af9bc8</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Crowdsale">
+      <data key="d0">Crowdsale</data>
+      <data key="d1">organization</data>
+      <data key="d2">A contract with variables raised, goal, and deadline that manage the progress of a crowdsale, including boolean flags for finished and canceled.</data>
+      <data key="d3">chunk-a77647b9e63bedf9a7876085e1af9bc8</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="JAY">
+      <data key="d0">JAY</data>
+      <data key="d1">organization</data>
+      <data key="d2">JAY is an ERC20 token contract and involves critical program points for money market transactions.</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="dev">
+      <data key="d0">dev</data>
+      <data key="d1">person</data>
+      <data key="d2">dev refers to the developer of JAY, involved in transaction context and critical points.</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="priceFeed">
+      <data key="d0">priceFeed</data>
+      <data key="d1">organization</data>
+      <data key="d2">Price feed is a part of the ERC20 contract that provides real-time price data for assets.</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="MIN">
+      <data key="d0">MIN</data>
+      <data key="d1">category</data>
+      <data key="d2">MIN is a constant value set to 1000 in the JAY contract, used as a threshold for transactions.</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="start">
+      <data key="d0">start</data>
+      <data key="d1">category</data>
+      <data key="d2">Start is a boolean variable that tracks if the transaction context has started, critical in transaction validation.</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="lockDev">
+      <data key="d0">lockDev</data>
+      <data key="d1">category</data>
+      <data key="d2">LockDev is a boolean variable that prevents certain operations by the developer in JAY contract.</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="buyNftFeeEth">
+      <data key="d0">buyNftFeeEth</data>
+      <data key="d1">category</data>
+      <data key="d2">buyNFTFeeEth represents the fee for buying NFTs denominated in ETH, used in transaction validation.</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="sellNftFeeEth">
+      <data key="d0">sellNftFeeEth</data>
+      <data key="d1">category</data>
+      <data key="d2">sellNFTFeeEth represents the fee for selling NFTs denominated in ETH, used in transaction validation.</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="value">
+      <data key="d0">value</data>
+      <data key="d1">category</data>
+      <data key="d2">Value refers to the amount of ETH involved in transactions and is critical for validation.</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="total">
+      <data key="d0">total</data>
+      <data key="d1">category</data>
+      <data key="d2">Total represents the overall value or quantity involved in transactions, used for fee calculations.</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="success2">
+      <data key="d0">success2</data>
+      <data key="d1">category</data>
+      <data key="d2">Success2 is a boolean variable indicating the success of an ETH transfer, crucial for transaction validation.</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Atomicity Violation">
+      <data key="d0">Atomicity Violation</data>
+      <data key="d1">vulnerability</data>
+      <data key="d2">Atomicity violation refers to issues where transactions are not completed atomically, affecting the integrity of state updates.</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Arithmetic Flaw">
+      <data key="d0">Arithmetic Flaw</data>
+      <data key="d1">vulnerability</data>
+      <data key="d2">Arithmetic flaw involves potential overflows or underflows in calculations within smart contracts.</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Inconsistent State Update">
+      <data key="d0">Inconsistent State Update</data>
+      <data key="d1">vulnerability</data>
+      <data key="d2">Inconsistent state update occurs when the contract's state is not updated correctly, leading to logical errors.</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Business Logic Flaw">
+      <data key="d0">Business Logic Flaw</data>
+      <data key="d1">vulnerability</data>
+      <data key="d2">Business logic flaw involves flaws in the core logic of the smart contract that can lead to unexpected behavior.</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="MonoX:BAD_AMOUNT">
+      <data key="d0">MonoX:BAD_AMOUNT</data>
+      <data key="d1">category</data>
+      <data key="d2">MonoX:BAD_AMOUNT is a custom error in the contract related to transaction validation.</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="liquidity">
+      <data key="d0">liquidity</data>
+      <data key="d1">category</data>
+      <data key="d2">Liquidity refers to the amount of assets available for trading, critical for asset swapping transactions.</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="to">
+      <data key="d0">to</data>
+      <data key="d1">category</data>
+      <data key="d2">To represents the recipient address, used in ETH transfers and transaction validation.</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="atomicity violation">
+      <data key="d0">atomicity violation</data>
+      <data key="d1">vulnerability</data>
+      <data key="d2">Atomicity violation refers to issues where transactions are not completed atomically, affecting the integrity of state updates.</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="inconsistent state update">
+      <data key="d0">inconsistent state update</data>
+      <data key="d1">vulnerability</data>
+      <data key="d2">Inconsistent state update occurs when the contract's state is not updated correctly, leading to logical errors.</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="business logic flaw">
+      <data key="d0">business logic flaw</data>
+      <data key="d1">vulnerability</data>
+      <data key="d2">Business logic flaw involves flaws in the core logic of the smart contract that can lead to unexpected behavior.</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="asset swapping">
+      <data key="d0">asset swapping</data>
+      <data key="d1">event</data>
+      <data key="d2">Asset swapping is a critical operation involving the exchange of tokens or assets within the JAY contract.</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="MonoX">
+      <data key="d0">MonoX</data>
+      <data key="d1">organization</data>
+      <data key="d2">MonoX is a smart contract protocol related to liquidity management and record validation.</data>
+      <data key="d3">chunk-ee2e71198e3d7e3c9e9900a6206224b9</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="admin">
+      <data key="d0">admin</data>
+      <data key="d1">person</data>
+      <data key="d2">Admin refers to the authorized user with privileges to initialize markets and set parameters.</data>
+      <data key="d3">chunk-ee2e71198e3d7e3c9e9900a6206224b9</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="market initialization">
+      <data key="d0">market initialization</data>
+      <data key="d1">event</data>
+      <data key="d2">Market initialization is a critical process involving setting initial parameters for a market on the MonoX protocol.</data>
+      <data key="d3">chunk-ee2e71198e3d7e3c9e9900a6206224b9</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="comptroller">
+      <data key="d0">comptroller</data>
+      <data key="d1">organization</data>
+      <data key="d2">Comptroller is an entity responsible for overseeing the operation and validation of markets on the MonoX protocol.</data>
+      <data key="d3">chunk-ee2e71198e3d7e3c9e9900a6206224b9</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="interest rate model">
+      <data key="d0">interest rate model</data>
+      <data key="d1">category</data>
+      <data key="d2">Interest rate model is a component that determines borrowing rates in the market based on various factors.</data>
+      <data key="d3">chunk-ee2e71198e3d7e3c9e9900a6206224b9</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="borrowRateMaxMantissa">
+      <data key="d0">borrowRateMaxMantissa</data>
+      <data key="d1">category</data>
+      <data key="d2">borrowRateMaxMantissa is a parameter defining the maximum allowable borrow rate in the market.</data>
+      <data key="d3">chunk-ee2e71198e3d7e3c9e9900a6206224b9</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Comptroller Interface">
+      <data key="d0">Comptroller Interface</data>
+      <data key="d1">organization</data>
+      <data key="d2">The Comptroller Interface is an interface used to interact with the comptroller's functions and configurations.</data>
+      <data key="d3">chunk-ee2e71198e3d7e3c9e9900a6206224b9</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="CTokenInterface">
+      <data key="d0">CTokenInterface</data>
+      <data key="d1">category</data>
+      <data key="d2">CTokenInterface refers to the interface that defines the interaction points for CToken objects on the protocol.</data>
+      <data key="d3">chunk-ee2e71198e3d7e3c9e9900a6206224b9</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ErrorReporter Interface">
+      <data key="d0">ErrorReporter Interface</data>
+      <data key="d1">organization</data>
+      <data key="d2">The ErrorReporter Interface is used to report errors during transaction execution and handle exceptions.</data>
+      <data key="d3">chunk-ee2e71198e3d7e3c9e9900a6206224b9</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Exponential Interface">
+      <data key="d0">Exponential Interface</data>
+      <data key="d1">category</data>
+      <data key="d2">The Exponential Interface provides functions related to exponential calculations for interest rate modeling.</data>
+      <data key="d3">chunk-ee2e71198e3d7e3c9e9900a6206224b9</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="EIP20Interface">
+      <data key="d0">EIP20Interface</data>
+      <data key="d1">organization</data>
+      <data key="d2">EIP20Interface is an interface that implements the ERC-20 token standard, allowing interactions with tokens on the protocol.</data>
+      <data key="d3">chunk-ee2e71198e3d7e3c9e9900a6206224b9</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="EIP20NonStandardInterface">
+      <data key="d0">EIP20NonStandardInterface</data>
+      <data key="d1">category</data>
+      <data key="d2">EIP20NonStandardInterface handles non-standard implementations of the ERC-20 token standard.</data>
+      <data key="d3">chunk-ee2e71198e3d7e3c9e9900a6206224b9</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="InterestRateModel Interface">
+      <data key="d0">InterestRateModel Interface</data>
+      <data key="d1">organization</data>
+      <data key="d2">The InterestRateModel Interface is used to define and implement interest rate models for borrowing on the protocol.</data>
+      <data key="d3">chunk-ee2e71198e3d7e3c9e9900a6206224b9</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="tokenSale event">
+      <data key="d0">tokenSale event</data>
+      <data key="d1">event</data>
+      <data key="d2">Token sale refers to the process of selling tokens through a smart contract transaction.</data>
+      <data key="d3">chunk-ee2e71198e3d7e3c9e9900a6206224b9</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="CToken.sol">
+      <data key="d0">CToken.sol</data>
+      <data key="d1">organization</data>
+      <data key="d2">CToken.sol is a contract file used in the Compound protocol that defines CErc20 tokens, which wrap an EIP-20 underlying token.</data>
+      <data key="d3">chunk-a738278cd494f90924318ab2fcb57fed</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Comptroller">
+      <data key="d0">Comptroller</data>
+      <data key="d1">person</data>
+      <data key="d2">Comptroller refers to a governance role within the Compound protocol responsible for certain validations and permissions.&lt;SEP&gt;The Comptroller is a regulatory body that oversees certain financial and operational activities of smart contracts.</data>
+      <data key="d3">chunk-cd1cd6ef8a200cfbcb8a2a761a2a189a&lt;SEP&gt;chunk-a738278cd494f90924318ab2fcb57fed</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="receiver.onFlashLoan">
+      <data key="d0">receiver.onFlashLoan</data>
+      <data key="d1">function</data>
+      <data key="d2">receiver.onFlashLoan is a function called by the Compound protocol to process flash loan requests and ensure correct handling of funds during transactions.</data>
+      <data key="d3">chunk-a738278cd494f90924318ab2fcb57fed</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="setFlashPointCallback">
+      <data key="d0">setFlashPointCallback</data>
+      <data key="d1">function</data>
+      <data key="d2">setFlashPointCallback is a function that sets the callback address for flash loan operations.</data>
+      <data key="d3">chunk-a738278cd494f90924318ab2fcb57fed</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="setFlashPoint">
+      <data key="d0">setFlashPoint</data>
+      <data key="d1">function</data>
+      <data key="d2">setFlashPoint is a function that sets the address for handling flash loan operations.</data>
+      <data key="d3">chunk-a738278cd494f90924318ab2fcb57fed</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="setFlashpoints">
+      <data key="d0">setFlashpoints</data>
+      <data key="d1">function</data>
+      <data key="d2">setFlashpoints is a function that sets multiple addresses for handling flash loan operations.</data>
+      <data key="d3">chunk-a738278cd494f90924318ab2fcb57fed</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Market Not Fresh Error">
+      <data key="d0">Market Not Fresh Error</data>
+      <data key="d1">category</data>
+      <data key="d2">Market Not Fresh is an error condition indicating the market data has not been updated recently, which can affect various transactions.</data>
+      <data key="d3">chunk-cd1cd6ef8a200cfbcb8a2a761a2a189a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Seize Allowed Function">
+      <data key="d0">Seize Allowed Function</data>
+      <data key="d1">function</data>
+      <data key="d2">The Seize Allowed function is a method that checks if it's permissible to seize assets from a borrower by a liquidator under specific conditions.</data>
+      <data key="d3">chunk-cd1cd6ef8a200cfbcb8a2a761a2a189a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Invalid Account Pair Error">
+      <data key="d0">Invalid Account Pair Error</data>
+      <data key="d1">category</data>
+      <data key="d2">Invalid Account Pair refers to an error condition where the borrower and liquidator are the same, which is not allowed in certain operations.</data>
+      <data key="d3">chunk-cd1cd6ef8a200cfbcb8a2a761a2a189a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Redeem Underlying Internal Function">
+      <data key="d0">Redeem Underlying Internal Function</data>
+      <data key="d1">function</data>
+      <data key="d2">The Redeem Underlying Internal function handles the process of redeeming underlying assets from a smart contract, ensuring sufficient cash prior to execution.</data>
+      <data key="d3">chunk-cd1cd6ef8a200cfbcb8a2a761a2a189a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Borrow Internal Function">
+      <data key="d0">Borrow Internal Function</data>
+      <data key="d1">function</data>
+      <data key="d2">The Borrow Internal function manages the borrowing of tokens or assets within a smart contract, enforcing conditions such as market freshness and token availability.</data>
+      <data key="d3">chunk-cd1cd6ef8a200cfbcb8a2a761a2a189a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Mint Allowed Function">
+      <data key="d0">Mint Allowed Function</data>
+      <data key="d1">function</data>
+      <data key="d2">The Mint Allowed function checks if it's permissible to mint new tokens in a smart contract under specific conditions.</data>
+      <data key="d3">chunk-cd1cd6ef8a200cfbcb8a2a761a2a189a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Etherscan.io verification submission date">
+      <data key="d0">Etherscan.io verification submission date</data>
+      <data key="d1">event</data>
+      <data key="d2">A code was submitted for verification at Etherscan.io on 2018-05-09.</data>
+      <data key="d3">chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="SafeMath contract">
+      <data key="d0">SafeMath contract</data>
+      <data key="d1">organization</data>
+      <data key="d2">The SafeMath contract is a smart contract that provides safe mathematical operations to avoid overflows and underflows.</data>
+      <data key="d3">chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Critical program points in SafeMath">
+      <data key="d0">Critical program points in SafeMath</data>
+      <data key="d1">category</data>
+      <data key="d2">The critical program points in the SafeMath contract are at lines 4, 7, 12, and 15. These points are essential for the correct functioning of the smart contract.</data>
+      <data key="d3">chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="require(c / a == b)">
+      <data key="d0">require(c / a == b)</data>
+      <data key="d1">event</data>
+      <data key="d2">This invariant ensures that c divided by a equals b, which is critical for arithmetic correctness in the SafeMath contract.</data>
+      <data key="d3">chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="assert(b &lt;= a)">
+      <data key="d0">assert(b &lt;= a)</data>
+      <data key="d1">event</data>
+      <data key="d2">This invariant asserts that b should be less than or equal to a, ensuring proper handling of values within the contract's logic.</data>
+      <data key="d3">chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="require(_to != address(0))">
+      <data key="d0">require(_to != address(0))</data>
+      <data key="d1">event</data>
+      <data key="d2">This invariant ensures that the recipient's address is not zero, preventing unintended transactions in smart contracts.</data>
+      <data key="d3">chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="require(_value &lt;= balances[msg.sender])">
+      <data key="d0">require(_value &lt;= balances[msg.sender])</data>
+      <data key="d1">event</data>
+      <data key="d2">This invariant checks if the sender has enough balance to transfer _value tokens, ensuring proper token transfers in ERC20 compliant contracts.</data>
+      <data key="d3">chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="TokenERC20 contract">
+      <data key="d0">TokenERC20 contract</data>
+      <data key="d1">organization</data>
+      <data key="d2">The TokenERC20 contract implements an ERC20 token standard with functionalities like transferring tokens and allowing approvals.</data>
+      <data key="d3">chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="require(balanceOf[msg.sender] &gt;= _value)">
+      <data key="d0">require(balanceOf[msg.sender] &gt;= _value)</data>
+      <data key="d1">event</data>
+      <data key="d2">This invariant checks if the sender has enough balance to transfer the specified amount of tokens, ensuring proper token transfers.</data>
+      <data key="d3">chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="require(balanceOf[_from] &gt;= _value)">
+      <data key="d0">require(balanceOf[_from] &gt;= _value)</data>
+      <data key="d1">event</data>
+      <data key="d2">This invariant ensures that the sender has sufficient funds before transferring tokens. It prevents underflow and maintains token integrity.</data>
+      <data key="d3">chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="require(_value &lt;= allowance[_from][msg.sender])">
+      <data key="d0">require(_value &lt;= allowance[_from][msg.sender])</data>
+      <data key="d1">event</data>
+      <data key="d2">This invariant checks if the transferred amount is within the allowed value by the sender, ensuring proper approval-based transfers in ERC20 contracts.</data>
+      <data key="d3">chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ArrayLength contract">
+      <data key="d0">ArrayLength contract</data>
+      <data key="d1">organization</data>
+      <data key="d2">The ArrayLength contract demonstrates a potential issue with copying array variables in smart contracts.</data>
+      <data key="d3">chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="require(d[1] == 5)">
+      <data key="d0">require(d[1] == 5)</data>
+      <data key="d1">event</data>
+      <data key="d2">This invariant checks if the first element of the input array d is equal to 5. Any failure here could lead to incorrect state or transactions.</data>
+      <data key="d3">chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ArrayInit">
+      <data key="d0">ArrayInit</data>
+      <data key="d1">organization</data>
+      <data key="d2">ArrayInit is a Solidity contract that initializes arrays with specific values and includes an assertion in its constructor.&lt;SEP&gt;ArrayInit is a Solidity contract that initializes multiple arrays with specific values and performs an assertion on one of them.</data>
+      <data key="d3">chunk-f5db9991987c4fd1d1b55e25df0fbd93&lt;SEP&gt;chunk-6f8802d5b7f60985a7345ddf5d9c85cb</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="AssemblyTest">
+      <data key="d0">AssemblyTest</data>
+      <data key="d1">organization</data>
+      <data key="d2">AssemblyTest is a Solidity contract that tests the generation of non-deterministic results using inline assembly.</data>
+      <data key="d3">chunk-6f8802d5b7f60985a7345ddf5d9c85cb</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="contract Consts">
+      <data key="d0">contract Consts</data>
+      <data key="d1">organization</data>
+      <data key="d2">The contract Consts is a smart contract defined in the Solidity programming language with constructors and variables.</data>
+      <data key="d3">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="address b, address c">
+      <data key="d0">address b, address c</data>
+      <data key="d1">person</data>
+      <data key="d2">b and c are addresses representing entities within the context of the smart contract Consts.</data>
+      <data key="d3">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="contract Foo">
+      <data key="d0">contract Foo</data>
+      <data key="d1">organization</data>
+      <data key="d2">The contract Foo is a simple smart contract with a single variable 'a' initialized in its constructor.</data>
+      <data key="d3">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="uint a">
+      <data key="d0">uint a</data>
+      <data key="d1">category</data>
+      <data key="d2">A uint variable named 'a' representing an unsigned integer value in the smart contract context.</data>
+      <data key="d3">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="contract A, B, C, D">
+      <data key="d0">contract A, B, C, D</data>
+      <data key="d1">organization</data>
+      <data key="d2">Contracts A, B, C, and D are defined with specific functions, constructors, and arithmetic assertions to test various aspects of smart contract development.</data>
+      <data key="d3">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="uint x, uint a, uint b, uint j, uint[2] a">
+      <data key="d0">uint x, uint a, uint b, uint j, uint[2] a</data>
+      <data key="d1">category</data>
+      <data key="d2">x, a, b, and j represent unsigned integer variables used in various contracts. [a] is an array of uints representing multiple values in the smart contract context.</data>
+      <data key="d3">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="assert (x == a + 2)">
+      <data key="d0">assert (x == a + 2)</data>
+      <data key="d1">event</data>
+      <data key="d2">The event 'assert (x == a + 2)' is a condition check to ensure that x equals a+2 within the contract's logic.</data>
+      <data key="d3">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="assert (a != 1)">
+      <data key="d0">assert (a != 1)</data>
+      <data key="d1">event</data>
+      <data key="d2">The event 'assert (a != 1)' is a condition check to ensure that variable 'a' does not equal 1 within the contract's logic.</data>
+      <data key="d3">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="assert (a == 1)">
+      <data key="d0">assert (a == 1)</data>
+      <data key="d1">event</data>
+      <data key="d2">The event 'assert (a == 1)' is a condition check to ensure that variable 'a' equals 1 within the contract's logic.</data>
+      <data key="d3">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="pragma solidity &gt;=0.4.24 &lt;0.6.0;">
+      <data key="d0">pragma solidity &gt;=0.4.24 &lt;0.6.0;</data>
+      <data key="d1">category</data>
+      <data key="d2">Solidity version specification for contracts, indicating compatibility with certain versions of Solidity compiler.</data>
+      <data key="d3">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="b, c">
+      <data key="d0">b, c</data>
+      <data key="d1">person</data>
+      <data key="d2">Addresses b and c are variables representing entities within the context of the smart contract Consts.</data>
+      <data key="d3">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="a">
+      <data key="d0">a</data>
+      <data key="d1">category</data>
+      <data key="d2">Variable 'a' is an unsigned integer used in the smart contracts as part of various checks and operations.</data>
+      <data key="d3">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="x, j">
+      <data key="d0">x, j</data>
+      <data key="d1">category</data>
+      <data key="d2">Variables 'x' and 'j' represent unsigned integers used in the contracts for various operations and checks.</data>
+      <data key="d3">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;a[0], a[1]&quot;\">
+      <data key="d0">"a[0], a[1]"\</data>
+      <data key="d1">category</data>
+      <data key="d2">Array elements 'a[0]' and 'a[1]' are used to store and check values within the LoopFor contract's bounded loop.</data>
+      <data key="d3">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&lt;&quot;ArrayInit&quot;&gt;">
+      <data key="d0">&lt;"ArrayInit"&gt;</data>
+      <data key="d1">&lt;"organization"&gt;</data>
+      <data key="d2">&lt;"ArrayInit is a contract that initializes arrays with specific values."</data>
+      <data key="d3">chunk-0b3bb7f84b8f8810c52744084a582d0a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&lt;&quot;Consts&quot;&gt;">
+      <data key="d0">&lt;"Consts"&gt;</data>
+      <data key="d1">&lt;"organization"&gt;</data>
+      <data key="d2">&lt;"Consts is a contract that involves address and uint variables in its constructor."</data>
+      <data key="d3">chunk-0b3bb7f84b8f8810c52744084a582d0a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&lt;&quot;Assert&quot;&gt;">
+      <data key="d0">&lt;"Assert"&gt;</data>
+      <data key="d1">&lt;"category"&gt;</data>
+      <data key="d2">&lt;"Assert is used to validate conditions within the contracts, ensuring values are correct."</data>
+      <data key="d3">chunk-0b3bb7f84b8f8810c52744084a582d0a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&quot;VeriSolContracts(sol&quot;\">
+      <data key="d0">"VeriSolContracts(sol"\</data>
+      <data key="d3">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d2">"VeriSolContracts.sol uses y in assert statements to validate conditions."\</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Critical program points">
+      <data key="d0">Critical program points</data>
+      <data key="d3">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d2">"The constructor's initial conditions are critical to setting up invariants and assertions throughout the contract."\</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="_balances&quot;">
+      <data key="d0">_balances"</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d2">Amount is a variable used in transfers that affect _balances.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Critical program points are 7+ ">
+      <data key="d0">Critical program points are 7+ </data>
+      <data key="d3">chunk-b45eea23b06c7cccc14772d56dd0cbc2</data>
+      <data key="d2">The contract ArrayFixedSize has critical program points that equal or exceed 7.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Critical program points are 20+ ">
+      <data key="d0">Critical program points are 20+ </data>
+      <data key="d3">chunk-b45eea23b06c7cccc14772d56dd0cbc2</data>
+      <data key="d2">The contract ArrayNestedFixedSize has critical program points that significantly exceed 13+ in complexity.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Critical program points are 9+ ">
+      <data key="d0">Critical program points are 9+ </data>
+      <data key="d3">chunk-b45eea23b06c7cccc14772d56dd0cbc2</data>
+      <data key="d2">The contract ArrayDynamicStorage has critical program points that equal or exceed 9. The value of sa[0] and sa[1] is asserted to be 10 and 11 respectively, and the length is also checked.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="constructor () public {} ">
+      <data key="d0">constructor () public {} </data>
+      <data key="d3">chunk-b45eea23b06c7cccc14772d56dd0cbc2</data>
+      <data key="d2">The constructor of the contract Foo initializes variable 'a' to 1.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="buyNftFeeEth, sellNftFeeEth">
+      <data key="d0">buyNftFeeEth, sellNftFeeEth</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d2">The constant MIN affects fee calculations for both buying and selling NFTs in JAY contract.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Atomicity Violation, Inconsistent State Update, Business Logic Flaw">
+      <data key="d0">Atomicity Violation, Inconsistent State Update, Business Logic Flaw</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d2">Value is critical in transaction validation, impacting multiple vulnerabilities such as atomicity and state consistency.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="atomicity violation, inconsistent state update, business logic flaw">
+      <data key="d0">atomicity violation, inconsistent state update, business logic flaw</data>
+      <data key="d3">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d2">Value is critical in transaction validation, impacting multiple vulnerabilities such as atomicity and state consistency.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="transaction-context">
+      <data key="d0">transaction-context</data>
+      <data key="d3">chunk-6f8802d5b7f60985a7345ddf5d9c85cb</data>
+      <data key="d2">The transaction context for ArrayNestedFixedSize is simple, indicating minimal complexity or external interactions.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="assert (b != c)">
+      <data key="d0">assert (b != c)</data>
+      <data key="d3">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d2">The contract Consts uses an assert statement to check that addresses b and c are not the same.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="contract A">
+      <data key="d0">contract A</data>
+      <data key="d3">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d2">The contract A uses an arithmetic assertion to ensure that the variable x equals a+2 after certain operations are performed on it.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="assert (x != 1)">
+      <data key="d0">assert (x != 1)</data>
+      <data key="d3">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d2">Contract D includes an assert statement ensuring that variable 'x' is not equal to 1.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="contract D">
+      <data key="d0">contract D</data>
+      <data key="d3">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d2">Contract D includes an assert statement ensuring that variable 'x' is not equal to 1.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="uint a, uint b">
+      <data key="d0">uint a, uint b</data>
+      <data key="d3">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d2">Variable 'a' and 'b' are used in multiple assert statements within contract A for various validations.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&lt;&quot;None Identified&quot;&gt;">
+      <data key="d0">&lt;"None Identified"&gt;</data>
+      <data key="d3">chunk-0b3bb7f84b8f8810c52744084a582d0a</data>
+      <data key="d2">&lt;"No relationships identified between any entities."&gt;</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&lt;&quot;ArrayInit&quot;">
+      <data key="d0">&lt;"ArrayInit"</data>
+      <data key="d3">chunk-0b3bb7f84b8f8810c52744084a582d0a</data>
+      <data key="d2">&lt;"Both ArrayInit and Consts involve constructor functions which can be considered part of the same project or codebase."</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&lt;&quot;Consts&quot;">
+      <data key="d0">&lt;"Consts"</data>
+      <data key="d3">chunk-0b3bb7f84b8f8810c52744084a582d0a</data>
+      <data key="d2">&lt;"Both ArrayInit and Consts involve constructor functions which can be considered part of the same project or codebase."</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="&lt;&quot;Assert&quot;">
+      <data key="d0">&lt;"Assert"</data>
+      <data key="d3">chunk-0b3bb7f84b8f8810c52744084a582d0a</data>
+      <data key="d2">&lt;"Assert is used in both ArrayInit and Consts to validate conditions, indicating a common purpose for validation logic."</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <edge source="ExternalFunctionCall" target="B">
+      <data key="d5">6.0</data>
+      <data key="d6">Both contracts are part of the same transaction context.</data>
+      <data key="d7">contract inheritance, cross-function context</data>
+      <data key="d8">chunk-c53bcb89f1d36a46f079245174533c69</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ExternalFunctionCall" target="A">
+      <data key="d5">6.0</data>
+      <data key="d6">Both contracts are part of the same transaction context.</data>
+      <data key="d7">contract interaction, cross-function context</data>
+      <data key="d8">chunk-c53bcb89f1d36a46f079245174533c69</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="B" target="A">
+      <data key="d5">23.0</data>
+      <data key="d6">Constructor B calls base constructor A, indicating an inheritance relationship.&lt;SEP&gt;Contract B is called by Contract A during its execution.</data>
+      <data key="d7">cross-contract interaction&lt;SEP&gt;inheritance, constructor call</data>
+      <data key="d8">chunk-c53bcb89f1d36a46f079245174533c69&lt;SEP&gt;chunk-a77647b9e63bedf9a7876085e1af9bc8</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="A" target="&quot;testTuple()&lt;function&gt;">
+      <data key="d5">7.0</data>
+      <data key="d6">The testTuple() function in Contract A demonstrates tuple usage with arithmetic operations.</data>
+      <data key="d7">tuple handling, arithmetics</data>
+      <data key="d8">chunk-c67ff13ef76f5e0ac115907768857f6e</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="A" target="&quot;constructor()&lt;function&gt;">
+      <data key="d5">6.0</data>
+      <data key="d6">Constructor functions are used to initialize the Contract A when it is deployed.</data>
+      <data key="d7">initialization, constructor</data>
+      <data key="d8">chunk-c67ff13ef76f5e0ac115907768857f6e</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="A" target="testTuple()">
+      <data key="d5">7.0</data>
+      <data key="d6">The testTuple() function in Contract A demonstrates tuple usage with arithmetic operations.</data>
+      <data key="d7">tuple handling, arithmetics</data>
+      <data key="d8">chunk-c67ff13ef76f5e0ac115907768857f6e</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="A" target="constructor()">
+      <data key="d5">6.0</data>
+      <data key="d6">Constructor functions in Contract A are used to initialize the contract with specific parameters.</data>
+      <data key="d7">initialization, constructor</data>
+      <data key="d8">chunk-c67ff13ef76f5e0ac115907768857f6e</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="LoopFor" target="VeriSolContracts.sol">
+      <data key="d5">8.0</data>
+      <data key="d6">"VeriSolContracts.sol is imported and utilized in the LoopFor contract for verifying conditions."\</data>
+      <data key="d7">import, verification</data>
+      <data key="d8">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="LoopFor" target="Lib">
+      <data key="d5">12.0</data>
+      <data key="d6">"Lib is part of the contract structure and is used for arithmetic operations within LoopFor."\&lt;SEP&gt;Lib is part of the contract structure and is used for arithmetic operations within LoopFor.</data>
+      <data key="d7">arithmetic operations, library usage</data>
+      <data key="d8">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="LoopFor" target="Critical program points are 7+ ">
+      <data key="d5">9.0</data>
+      <data key="d6">The contract LoopFor has critical program points that equal or exceed 7. It includes a bounded for loop which modifies an array.</data>
+      <data key="d7">code complexity, loop usage</data>
+      <data key="d8">chunk-b45eea23b06c7cccc14772d56dd0cbc2</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="LoopFor" target="Bounded For Loop">
+      <data key="d5">9.0</data>
+      <data key="d6">The contract LoopFor contains a bounded for loop which iterates through an array.</data>
+      <data key="d7">loop type, usage context</data>
+      <data key="d8">chunk-b45eea23b06c7cccc14772d56dd0cbc2</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="LoopFor" target="&quot;testBoundedForLoop()&lt;function&gt;">
+      <data key="d5">8.0</data>
+      <data key="d6">The testBoundedForLoop() function is part of the LoopFor contract and involves assertions on array 'a' using a bounded for loop.</data>
+      <data key="d7">loop, assertion, initialization</data>
+      <data key="d8">chunk-c67ff13ef76f5e0ac115907768857f6e</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="LoopFor" target="&quot;assert()&lt;function&gt;">
+      <data key="d5">7.0</data>
+      <data key="d6">Assert statements within LoopFor contract are used for invariant checks on array 'a'.</data>
+      <data key="d7">invariant check, assertions</data>
+      <data key="d8">chunk-c67ff13ef76f5e0ac115907768857f6e</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="LoopFor" target="testBoundedForLoop()">
+      <data key="d5">8.0</data>
+      <data key="d6">The testBoundedForLoop() function is part of the LoopFor contract and involves assertions on array 'a' using a bounded for loop.</data>
+      <data key="d7">loop, assertion, initialization</data>
+      <data key="d8">chunk-c67ff13ef76f5e0ac115907768857f6e</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="LoopFor" target="assert()">
+      <data key="d5">7.0</data>
+      <data key="d6">Assert statements within LoopFor contract are used for invariant checks on array 'a'.</data>
+      <data key="d7">invariant check, assertions</data>
+      <data key="d8">chunk-c67ff13ef76f5e0ac115907768857f6e</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="LoopFor" target="contract D">
+      <data key="d5">6.0</data>
+      <data key="d6">Contract D shows a critical invariant that might be related to the loop structure in LoopFor due to their context involving arithmetic and values.</data>
+      <data key="d7">loop structure, arithmetic validation</data>
+      <data key="d8">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="VeriSolContracts.sol" target="&quot;x&quot;\">
+      <data key="d5">9.0</data>
+      <data key="d6">"VeriSolContracts.sol uses x in assert statements to validate conditions."\</data>
+      <data key="d7">assertion, validation</data>
+      <data key="d8">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="VeriSolContracts.sol" target="x">
+      <data key="d5">18.0</data>
+      <data key="d6">"VeriSolContracts.sol uses x in assert statements to validate conditions."\&lt;SEP&gt;VeriSolContracts.sol uses x in assert statements to validate conditions.</data>
+      <data key="d7">assertion, validation</data>
+      <data key="d8">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="LoopFor Constructor" target="&quot;x&quot;\">
+      <data key="d5">7.0</data>
+      <data key="d6">"The constructor initializes variable x with a value."\</data>
+      <data key="d7">initialization, construction</data>
+      <data key="d8">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="LoopFor Constructor" target="&quot;y&quot;\">
+      <data key="d5">7.0</data>
+      <data key="d6">"The constructor initializes variable y with a value."\</data>
+      <data key="d7">initialization, construction</data>
+      <data key="d8">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="LoopFor Constructor" target="x">
+      <data key="d5">14.0</data>
+      <data key="d6">"The constructor initializes variable x with a value."\&lt;SEP&gt;The constructor initializes variable x with a value.</data>
+      <data key="d7">initialization, construction</data>
+      <data key="d8">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="LoopFor Constructor" target="y">
+      <data key="d5">14.0</data>
+      <data key="d6">"The constructor initializes variable y with a value."\&lt;SEP&gt;The constructor initializes variable y with a value.</data>
+      <data key="d7">initialization, construction</data>
+      <data key="d8">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="LoopFor Constructor" target="Critical program points">
+      <data key="d5">18.0</data>
+      <data key="d6">"The constructor's initial conditions are critical to setting up invariants and assertions throughout the contract."\</data>
+      <data key="d7">initialization, setup</data>
+      <data key="d8">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="&quot;y&quot;\" target="&quot;VeriSolContracts(sol&quot;\">
+      <data key="d5">9.0</data>
+      <data key="d6">"VeriSolContracts.sol uses y in assert statements to validate conditions."\</data>
+      <data key="d7">assertion, validation</data>
+      <data key="d8">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="World Athletics Championship" target="Tokyo">
+      <data key="d5">8.0</data>
+      <data key="d6">"The World Athletics Championship is being hosted in Tokyo."\</data>
+      <data key="d7">event location, international competition</data>
+      <data key="d8">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Noah Carter" target="100m Sprint Record">
+      <data key="d5">20.0</data>
+      <data key="d6">"Noah Carter set a new 100m sprint record at the championship."\&lt;SEP&gt;Noah Carter set a new 100m sprint record at the championship.</data>
+      <data key="d7">athlete achievement, record-breaking</data>
+      <data key="d8">chunk-cb98eb5257cce0926c33c9cecbe74f8e&lt;SEP&gt;chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Noah Carter" target="Carbon-Fiber Spikes">
+      <data key="d5">14.0</data>
+      <data key="d6">"Noah Carter used carbon-fiber spikes to enhance performance during the race."\&lt;SEP&gt;Noah Carter used carbon-fiber spikes to enhance performance during the race.</data>
+      <data key="d7">athletic equipment, performance boost</data>
+      <data key="d8">chunk-cb98eb5257cce0926c33c9cecbe74f8e&lt;SEP&gt;chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="100m Sprint Record" target="World Athletics Federation">
+      <data key="d5">18.0</data>
+      <data key="d6">"The World Athletics Federation is responsible for validating and recognizing new sprint records."\&lt;SEP&gt;The World Athletics Federation is responsible for validating and recognizing new sprint records.</data>
+      <data key="d7">sports regulation, record certification</data>
+      <data key="d8">chunk-cb98eb5257cce0926c33c9cecbe74f8e&lt;SEP&gt;chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="msg.sender" target="recipient">
+      <data key="d5">7.0</data>
+      <data key="d6">msg.sender can perform actions on behalf of recipient in certain transaction contexts.</data>
+      <data key="d7">sender-recipient relationship, transaction context</data>
+      <data key="d8">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="msg.sender" target="_to">
+      <data key="d5">6.0</data>
+      <data key="d6">The value of _to can be set by msg.sender during contract transactions.</data>
+      <data key="d7">transaction parameter, sender control</data>
+      <data key="d8">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="VeriSol.Old" target="config">
+      <data key="d5">8.0</data>
+      <data key="d6">Configurations managed by config can affect the behavior of VeriSol.Old function calls in older versions of contracts.</data>
+      <data key="d7">configuration impact, version compatibility</data>
+      <data key="d8">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="amount" target="_balances&quot;">
+      <data key="d5">6.0</data>
+      <data key="d6">Amount is a variable used in transfers that affect _balances.</data>
+      <data key="d7">value transfer, balance update</data>
+      <data key="d8">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="owner" target="paused">
+      <data key="d5">7.0</data>
+      <data key="d6">The state of paused can be controlled by the owner who has administrative rights to change it.</data>
+      <data key="d7">contract management, administrative control</data>
+      <data key="d8">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="owner" target="newOwner">
+      <data key="d5">6.0</data>
+      <data key="d6">NewOwner is a parameter that can be set by the current owner.</data>
+      <data key="d7">ownership transfer, contract management</data>
+      <data key="d8">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="goblin" target="id">
+      <data key="d5">5.0</data>
+      <data key="d6">id is used to identify goblins or positions related to them within the smart contract.</data>
+      <data key="d7">identification, position tracking</data>
+      <data key="d8">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="goblin" target="health">
+      <data key="d5">5.0</data>
+      <data key="d6">Goblins' health status may affect their interaction with other entities within smart contracts.</data>
+      <data key="d7">entity state, condition evaluation</data>
+      <data key="d8">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="health" target="workFactor">
+      <data key="d5">7.0</data>
+      <data key="d6">The value of health is calculated using workFactor to determine the status of an entity within the contract.</data>
+      <data key="d7">status calculation, metric evaluation</data>
+      <data key="d8">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="BscScan.com" target="Reentrancy Guard">
+      <data key="d5">16.0</data>
+      <data key="d6">The code submissions at BscScan.com likely include reentrancy guard implementations for enhanced security.</data>
+      <data key="d7">verification, security</data>
+      <data key="d8">chunk-aea33e7eb4aa337056ef47da5255a233</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Reentrancy Guard" target="SafeMath">
+      <data key="d5">14.0</data>
+      <data key="d6">Both Reentrancy Guard and SafeMath are used to enhance the security of smart contracts.</data>
+      <data key="d7">security, protection</data>
+      <data key="d8">chunk-aea33e7eb4aa337056ef47da5255a233</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="SafeMath" target="Address">
+      <data key="d5">12.0</data>
+      <data key="d6">The Address and SafeMath libraries both provide essential functionalities for managing balances and performing safe operations in smart contracts.</data>
+      <data key="d7">utilities, operations</data>
+      <data key="d8">chunk-aea33e7eb4aa337056ef47da5255a233</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ERC20" target="Ownable">
+      <data key="d5">14.0</data>
+      <data key="d6">Both ERC20 and Ownable are common components in Ethereum token contracts.</data>
+      <data key="d7">standards, roles</data>
+      <data key="d8">chunk-aea33e7eb4aa337056ef47da5255a233</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="SafeMath: addition overflow" target="SafeMath: multiplication overflow">
+      <data key="d5">6.0</data>
+      <data key="d6">Both SafeMath events indicate arithmetic operations that could lead to over/underflows, highlighting a common risk in smart contracts.</data>
+      <data key="d7">arithmetic safety, error handling</data>
+      <data key="d8">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="SafeMath: division by zero" target="Address: insufficient balance">
+      <data key="d5">7.0</data>
+      <data key="d6">The `division by zero` event can cause issues similar to `insufficient balance`, both indicating potential failure states in arithmetic operations or transfers within smart contracts.</data>
+      <data key="d7">arithmetic safety, contract failure</data>
+      <data key="d8">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ReentrancyGuard: reentrant call" target="reentrancy">
+      <data key="d5">8.0</data>
+      <data key="d6">Both events indicate security vulnerabilities related to re-entrance in the contract logic, which can be exploited for attacks.</data>
+      <data key="d7">security flaw, smart contract risk</data>
+      <data key="d8">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="cannot sell above token amount" target="purchase not included in balance">
+      <data key="d5">7.0</data>
+      <data key="d6">These error messages are related as they both indicate issues with transaction limits and available balances within the smart contracts.</data>
+      <data key="d7">transaction validation, balance check</data>
+      <data key="d8">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Owner" target="IVisor">
+      <data key="d5">16.0</data>
+      <data key="d6">The owner's permissions are checked via the IVisor interface, indicating a direct relationship related to ownership management.</data>
+      <data key="d7">ownership, permission</data>
+      <data key="d8">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="AddressRegistry" target="IVisor">
+      <data key="d5">14.0</data>
+      <data key="d6">AddressRegistry is used to manage addresses in the context of IVisor, indicating an indirect but significant relationship for address validation.</data>
+      <data key="d7">address management, interface interaction</data>
+      <data key="d8">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="RevestToken" target="Visor">
+      <data key="d5">18.0</data>
+      <data key="d6">RevestToken interacts with Visor through various methods, suggesting a core functionality and interaction between token and visor contracts.</data>
+      <data key="d7">token management, interaction</data>
+      <data key="d8">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="RevestToken" target="ERC1155Token">
+      <data key="d5">16.0</data>
+      <data key="d6">Both ERC1155Token and RevestToken are involved in token-related operations, implying a common usage context within the contract.</data>
+      <data key="d7">token interaction, financial operations</data>
+      <data key="d8">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ILiFi" target="ICBridge">
+      <data key="d5">18.0</data>
+      <data key="d6">ILiFi interacts with ICBridge for cross-chain communication and transfer functionalities, suggesting collaboration or dependency between them.</data>
+      <data key="d7">cross-chain, interface interaction</data>
+      <data key="d8">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Replica" target="IEthCrossChainManager.sol">
+      <data key="d5">7.0</data>
+      <data key="d6">Replica interacts with IEthCrossChainManager.sol to manage cross-chain transactions.</data>
+      <data key="d7">contract interaction, transaction management</data>
+      <data key="d8">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Replica" target="UpgradableECCM.sol">
+      <data key="d5">8.0</data>
+      <data key="d6">Replica uses UpgradableECCM.sol for handling upgradeable functionalities during cross-bridge operations.</data>
+      <data key="d7">functionality enhancement, smart contract evolution</data>
+      <data key="d8">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Replica" target="EthCrossChainUtils.sol">
+      <data key="d5">9.0</data>
+      <data key="d6">Replica utilizes EthCrossChainUtils.sol for handling specific Ethereum cross-chain utilities.</data>
+      <data key="d7">cross-chain utility functions, blockchain interoperability</data>
+      <data key="d8">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Replica" target="ZeroCopySource.sol">
+      <data key="d5">8.0</data>
+      <data key="d6">Replica uses ZeroCopySource.sol to handle efficient data transfer during cross-bridge operations.</data>
+      <data key="d7">data transfer optimization, efficiency enhancement</data>
+      <data key="d8">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Replica" target="SafeMath.sol">
+      <data key="d5">7.0</data>
+      <data key="d6">Replica employs SafeMath.sol to prevent integer overflow/underflow issues in its operations.</data>
+      <data key="d7">error prevention, security measure</data>
+      <data key="d8">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Replica" target="Utils.sol">
+      <data key="d5">8.0</data>
+      <data key="d6">Replica relies on Utils.sol for various utility functions required during cross-bridge transactions.</data>
+      <data key="d7">utility support, function dependency</data>
+      <data key="d8">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="EthCrossChain" target="IDepositExecute.sol">
+      <data key="d5">8.0</data>
+      <data key="d6">IDepositExecute.sol is part of the EthCrossChain protocol, likely defining specific functionalities.</data>
+      <data key="d7">protocol components, functionality definition</data>
+      <data key="d8">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="EthCrossChain" target="HandlerHelpers.sol">
+      <data key="d5">7.0</data>
+      <data key="d6">HandlerHelpers.sol provides utility functions used within the EthCrossChain protocol to handle operations.</data>
+      <data key="d7">utility functions, operational support</data>
+      <data key="d8">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="EthCrossChain" target="ERC721Safe.sol">
+      <data key="d5">6.0</data>
+      <data key="d6">ERC721Safe.sol is integrated into the EthCrossChain protocol for managing ERC-721 tokens securely.</data>
+      <data key="d7">token management, security implementation</data>
+      <data key="d8">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="EthCrossChain" target="ERC165Checker.sol">
+      <data key="d5">9.0</data>
+      <data key="d6">ERC165Checker.sol is used by EthCrossChain to check if contracts implement specific interfaces, ensuring compatibility.</data>
+      <data key="d7">interface compliance, protocol integrity</data>
+      <data key="d8">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="EthCrossChain" target="IERC721Metadata.sol">
+      <data key="d5">5.0</data>
+      <data key="d6">IERC721Metadata.sol provides metadata for tokens managed within the EthCrossChain protocol.</data>
+      <data key="d7">metadata provision, token management</data>
+      <data key="d8">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="EthCrossChain" target="&quot;_contractWhitelist&quot;">
+      <data key="d5">9.0</data>
+      <data key="d6">"_contractWhitelist is crucial for validating and verifying token transactions in the EthCrossChain protocol, ensuring only whitelisted addresses can participate.</data>
+      <data key="d7">address validation, transaction security</data>
+      <data key="d8">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="IDepositExecute.sol" target="_contractWhitelist">
+      <data key="d5">8.0</data>
+      <data key="d6">_contractWhitelist is used to validate addresses in IDepositExecute.sol transactions.</data>
+      <data key="d7">address validation, transaction security</data>
+      <data key="d8">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ArrayFixedSize" target="Critical program points are 7+ ">
+      <data key="d5">8.0</data>
+      <data key="d6">The contract ArrayFixedSize has critical program points that equal or exceed 7.</data>
+      <data key="d7">code complexity, assertion presence</data>
+      <data key="d8">chunk-b45eea23b06c7cccc14772d56dd0cbc2</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ArrayFixedSize" target="Fixed-size Array">
+      <data key="d5">8.0</data>
+      <data key="d6">The contract ArrayFixedSize uses a fixed-size array with assertions.</data>
+      <data key="d7">array type, assertion presence</data>
+      <data key="d8">chunk-b45eea23b06c7cccc14772d56dd0cbc2</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ArrayFixedSize" target="Assert Statement">
+      <data key="d5">8.0</data>
+      <data key="d6">The contract ArrayFixedSize includes multiple assert statements to ensure data integrity.</data>
+      <data key="d7">assertion presence, code validation</data>
+      <data key="d8">chunk-b45eea23b06c7cccc14772d56dd0cbc2</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ArrayFixedSize" target="Transaction Context">
+      <data key="d5">6.0</data>
+      <data key="d6">The transaction context for ArrayFixedSize is simple.</data>
+      <data key="d7">transaction context, simplicity</data>
+      <data key="d8">chunk-b45eea23b06c7cccc14772d56dd0cbc2</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ArrayFixedSize" target="ArrayDynamicStorage">
+      <data key="d5">6.0</data>
+      <data key="d6">Both contracts are Solidity-based and involve array management, but they differ in storage type and initialization logic.</data>
+      <data key="d7">contract relationship, array usage</data>
+      <data key="d8">chunk-f5db9991987c4fd1d1b55e25df0fbd93</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ArrayFixedSize" target="ArrayInit">
+      <data key="d5">4.0</data>
+      <data key="d6">Both contracts use fixed-size arrays but differ in their initialization logic and assertions.</data>
+      <data key="d7">contract relationship, array management</data>
+      <data key="d8">chunk-f5db9991987c4fd1d1b55e25df0fbd93</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ArrayNestedFixedSize" target="Critical program points are 20+ ">
+      <data key="d5">9.0</data>
+      <data key="d6">The contract ArrayNestedFixedSize has critical program points that significantly exceed 13+ in complexity.</data>
+      <data key="d7">complexity level, assertion detail</data>
+      <data key="d8">chunk-b45eea23b06c7cccc14772d56dd0cbc2</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ArrayNestedFixedSize" target="transaction-context">
+      <data key="d5">5.0</data>
+      <data key="d6">The transaction context for ArrayNestedFixedSize is simple, indicating minimal complexity or external interactions.</data>
+      <data key="d7">simple context, internal logic</data>
+      <data key="d8">chunk-6f8802d5b7f60985a7345ddf5d9c85cb</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ArrayNestedFixedSize" target="ArrayDynamicStorage">
+      <data key="d5">7.0</data>
+      <data key="d6">All four contracts are Solidity-based and involve array operations, although ArrayDynamicStorage uses dynamic storage and the others use fixed-size arrays with varying levels of complexity.</data>
+      <data key="d7">contract relationship, array usage</data>
+      <data key="d8">chunk-f5db9991987c4fd1d1b55e25df0fbd93</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ArrayDynamicStorage" target="Critical program points are 9+ ">
+      <data key="d5">8.0</data>
+      <data key="d6">The contract ArrayDynamicStorage has critical program points that equal or exceed 9. The value of sa[0] and sa[1] is asserted to be 10 and 11 respectively, and the length is also checked.</data>
+      <data key="d7">complexity level, assertion detail</data>
+      <data key="d8">chunk-b45eea23b06c7cccc14772d56dd0cbc2</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ArrayDynamicStorage" target="Dynamic Storage Array">
+      <data key="d5">8.0</data>
+      <data key="d6">The contract ArrayDynamicStorage utilizes a dynamic storage array and makes initial value assertions.</data>
+      <data key="d7">array type, initialization check</data>
+      <data key="d8">chunk-b45eea23b06c7cccc14772d56dd0cbc2</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ArrayDynamicStorage" target="ArrayInit">
+      <data key="d5">5.0</data>
+      <data key="d6">Both contracts are Solidity-based and perform assertions, though ArrayDynamicStorage uses dynamic storage while ArrayInit initializes multiple arrays.</data>
+      <data key="d7">contract relationship, assertion usage</data>
+      <data key="d8">chunk-f5db9991987c4fd1d1b55e25df0fbd93</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Foo" target="constructor () public {} ">
+      <data key="d5">7.0</data>
+      <data key="d6">The constructor of the contract Foo initializes variable 'a' to 1.</data>
+      <data key="d7">initialization, state setup</data>
+      <data key="d8">chunk-b45eea23b06c7cccc14772d56dd0cbc2</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Foo" target="Initialization Code">
+      <data key="d5">7.0</data>
+      <data key="d6">The constructor of the contract Foo is used to initialize variable 'a'.</data>
+      <data key="d7">initialization, code context</data>
+      <data key="d8">chunk-b45eea23b06c7cccc14772d56dd0cbc2</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="testBoundedForLoop()" target="assert()">
+      <data key="d5">7.0</data>
+      <data key="d6">Assert statements within testBoundedForLoop() function of LoopFor contract check conditions related to array 'a'.</data>
+      <data key="d7">loop, assertions</data>
+      <data key="d8">chunk-c67ff13ef76f5e0ac115907768857f6e</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Consts" target="Crowdsale">
+      <data key="d5">7.0</data>
+      <data key="d6">Both are contracts but do not directly interact within the provided code snippets; however, they share the context of being Solidity-based smart contracts.</data>
+      <data key="d7">contract types, smart contract</data>
+      <data key="d8">chunk-a77647b9e63bedf9a7876085e1af9bc8</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Consts" target="transaction-context">
+      <data key="d5">5.0</data>
+      <data key="d6">The transaction context for Consts is simple, indicating minimal complexity or external interactions.</data>
+      <data key="d7">simple context, internal logic</data>
+      <data key="d8">chunk-6f8802d5b7f60985a7345ddf5d9c85cb</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Branch" target="Arithmetics">
+      <data key="d5">8.0</data>
+      <data key="d6">Both are simple contracts with arithmetic operations, indicating a thematic similarity in their functionality.</data>
+      <data key="d7">arithmetic, logic</data>
+      <data key="d8">chunk-a77647b9e63bedf9a7876085e1af9bc8</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Branch" target="transaction-context">
+      <data key="d5">5.0</data>
+      <data key="d6">The transaction context for Branch is simple, similar to other contracts in the document.</data>
+      <data key="d7">simple context, internal logic</data>
+      <data key="d8">chunk-6f8802d5b7f60985a7345ddf5d9c85cb</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="JAY" target="Atomicity Violation">
+      <data key="d5">7.0</data>
+      <data key="d6">The JAY contract may be vulnerable to atomicity violation, which can affect transaction integrity.</data>
+      <data key="d7">smart contract vulnerability, atomicity issue</data>
+      <data key="d8">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="JAY" target="atomicity violation">
+      <data key="d5">7.0</data>
+      <data key="d6">The JAY contract may be vulnerable to atomicity violation, which can affect transaction integrity.</data>
+      <data key="d7">smart contract vulnerability, atomicity issue</data>
+      <data key="d8">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="JAY" target="asset swapping">
+      <data key="d5">9.0</data>
+      <data key="d6">The JAY contract involves asset swapping transactions to facilitate the exchange of tokens or assets."|&gt;&lt;"token swap, transaction flow</data>
+      <data key="d7">9</data>
+      <data key="d8">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="dev" target="start">
+      <data key="d5">6.0</data>
+      <data key="d6">Dev has a role in setting the start state for transactions, critical for validation logic.</data>
+      <data key="d7">developer influence, transaction initiation</data>
+      <data key="d8">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="MIN" target="buyNftFeeEth, sellNftFeeEth">
+      <data key="d5">5.0</data>
+      <data key="d6">The constant MIN affects fee calculations for both buying and selling NFTs in JAY contract.</data>
+      <data key="d7">fee calculation, threshold value</data>
+      <data key="d8">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="start" target="lockDev">
+      <data key="d5">4.0</data>
+      <data key="d6">Start and lockDev are related as the start state can prevent or allow operations by dev.&lt;"|&gt;&lt;"transaction control, state transition</data>
+      <data key="d7">4</data>
+      <data key="d8">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="value" target="Atomicity Violation, Inconsistent State Update, Business Logic Flaw">
+      <data key="d5">8.0</data>
+      <data key="d6">Value is critical in transaction validation, impacting multiple vulnerabilities such as atomicity and state consistency.</data>
+      <data key="d7">transaction value, smart contract integrity</data>
+      <data key="d8">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="value" target="atomicity violation, inconsistent state update, business logic flaw">
+      <data key="d5">8.0</data>
+      <data key="d6">Value is critical in transaction validation, impacting multiple vulnerabilities such as atomicity and state consistency.</data>
+      <data key="d7">transaction value, smart contract integrity</data>
+      <data key="d8">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="MonoX:BAD_AMOUNT" target="liquidity">
+      <data key="d5">6.0</data>
+      <data key="d6">The error MonoX:BAD_AMOUNT is triggered when liquidity is not sufficient for a transaction.</data>
+      <data key="d7">error handling, transaction validation</data>
+      <data key="d8">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="liquidity" target="to">
+      <data key="d5">7.0</data>
+      <data key="d6">Liquidity and the recipient address (to) are related in asset swapping transactions where assets are transferred to another address."|&gt;&lt;"asset transfer, liquidity requirement</data>
+      <data key="d7">7</data>
+      <data key="d8">chunk-a85619c36d6efa2371c1bfa24d3ce3a6</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="admin" target="market initialization">
+      <data key="d5">8.0</data>
+      <data key="d6">Admin has the authority to initialize markets by setting initial parameters.</data>
+      <data key="d7">parameter setting, administrative control</data>
+      <data key="d8">chunk-ee2e71198e3d7e3c9e9900a6206224b9</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="admin" target="tokenSale event">
+      <data key="d5">6.0</data>
+      <data key="d6">Admin plays a role in initiating token sales by setting up the necessary smart contracts and parameters.</data>
+      <data key="d7">transaction context, administrative control</data>
+      <data key="d8">chunk-ee2e71198e3d7e3c9e9900a6206224b9</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="market initialization" target="comptroller">
+      <data key="d5">7.0</data>
+      <data key="d6">Comptroller plays a role in validating and ensuring the correctness of market initialization procedures.</data>
+      <data key="d7">validation, oversight</data>
+      <data key="d8">chunk-ee2e71198e3d7e3c9e9900a6206224b9</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="interest rate model" target="borrowRateMaxMantissa">
+      <data key="d5">6.0</data>
+      <data key="d6">The interest rate model uses borrowRateMaxMantissa to limit borrowing rates within acceptable bounds.</data>
+      <data key="d7">rate limitation, parameter influence</data>
+      <data key="d8">chunk-ee2e71198e3d7e3c9e9900a6206224b9</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Comptroller Interface" target="CTokenInterface">
+      <data key="d5">7.0</data>
+      <data key="d6">Comptroller Interface is used to interact with CTokenInterface for managing market parameters and interactions.</data>
+      <data key="d7">interface interaction, parameter management</data>
+      <data key="d8">chunk-ee2e71198e3d7e3c9e9900a6206224b9</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Comptroller Interface" target="ErrorReporter Interface">
+      <data key="d5">5.0</data>
+      <data key="d6">The ErrorReporter Interface is utilized by Comptroller Interface to handle error reporting during market operations.</data>
+      <data key="d7">error handling, interface interaction</data>
+      <data key="d8">chunk-ee2e71198e3d7e3c9e9900a6206224b9</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="CToken.sol" target="Comptroller">
+      <data key="d5">17.0</data>
+      <data key="d6">The Comptroller interacts with CToken.sol through various validation functions, ensuring proper governance and security.&lt;SEP&gt;The Comptroller plays a role in validating and rejecting transactions related to CToken contracts.</data>
+      <data key="d7">governance, validation, interaction&lt;SEP&gt;protocol governance, validation authority</data>
+      <data key="d8">chunk-a738278cd494f90924318ab2fcb57fed</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="CToken.sol" target="receiver.onFlashLoan">
+      <data key="d5">6.0</data>
+      <data key="d6">CToken.sol and receiver.onFlashLoan are part of a system where CToken.sol defines token behavior while receiver.onFlashLoan handles specific transactional logic.</data>
+      <data key="d7">token definition, transaction handling</data>
+      <data key="d8">chunk-a738278cd494f90924318ab2fcb57fed</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="CToken.sol" target="setFlashPointCallback">
+      <data key="d5">7.0</data>
+      <data key="d6">CToken.sol defines functions like setFlashPointCallback which are used to manage and validate flash loan transactions.</data>
+      <data key="d7">protocol management, validation</data>
+      <data key="d8">chunk-a738278cd494f90924318ab2fcb57fed</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="CToken.sol" target="setFlashPoint">
+      <data key="d5">7.0</data>
+      <data key="d6">CToken.sol includes functions like setFlashPoint to manage and validate interactions related to flash loans.</data>
+      <data key="d7">protocol management, validation</data>
+      <data key="d8">chunk-a738278cd494f90924318ab2fcb57fed</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="CToken.sol" target="setFlashpoints">
+      <data key="d5">7.0</data>
+      <data key="d6">CToken(sol includes functions like setFlashpoints to manage and validate interactions related to flash loans, ensuring proper governance and security.</data>
+      <data key="d7">protocol management, validation</data>
+      <data key="d8">chunk-a738278cd494f90924318ab2fcb57fed</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Comptroller" target="receiver.onFlashLoan">
+      <data key="d5">7.0</data>
+      <data key="d6">The Comptroller's role is crucial in validating transactions that involve the receiver.onFlashLoan function to ensure no unauthorized activities occur.</data>
+      <data key="d7">validation, transaction governance</data>
+      <data key="d8">chunk-a738278cd494f90924318ab2fcb57fed</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Comptroller" target="Seize Allowed Function">
+      <data key="d5">8.0</data>
+      <data key="d6">The Comptroller is responsible for approving or rejecting the Seize Allowed function, ensuring compliance with regulations.</data>
+      <data key="d7">regulatory approval, security check</data>
+      <data key="d8">chunk-cd1cd6ef8a200cfbcb8a2a761a2a189a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Comptroller" target="Mint Allowed Function">
+      <data key="d5">8.0</data>
+      <data key="d6">The Comptroller is involved in approving or rejecting the Mint Allowed function, ensuring compliance with regulations.</data>
+      <data key="d7">regulatory approval, security check</data>
+      <data key="d8">chunk-cd1cd6ef8a200cfbcb8a2a761a2a189a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Market Not Fresh Error" target="Redeem Underlying Internal Function">
+      <data key="d5">7.0</data>
+      <data key="d6">Market not fresh errors can occur during redeem operations, affecting their execution and success.</data>
+      <data key="d7">transaction validation, error handling</data>
+      <data key="d8">chunk-cd1cd6ef8a200cfbcb8a2a761a2a189a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="SafeMath contract" target="Critical program points in SafeMath">
+      <data key="d5">10.0</data>
+      <data key="d6">The critical program points in the SafeMath contract are essential for its correct functioning and ensure that all operations are safe from overflows and underflows.</data>
+      <data key="d7">critical logic, smart contract security</data>
+      <data key="d8">chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Critical program points in SafeMath" target="require(c / a == b)">
+      <data key="d5">9.0</data>
+      <data key="d6">This invariant is critical as it ensures the arithmetic operation c / a equals b. Any failure here could lead to incorrect state or transactions.</data>
+      <data key="d7">arithmetic correctness, safety check</data>
+      <data key="d8">chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Critical program points in SafeMath" target="assert(b &lt;= a)">
+      <data key="d5">8.0</data>
+      <data key="d6">The assert statement checks if b is less than or equal to a. This is critical for preventing overflow conditions in the contract's logic.</data>
+      <data key="d7">boundary condition, overflow prevention</data>
+      <data key="d8">chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="TokenERC20 contract" target="require(balanceOf[msg.sender] &gt;= _value)">
+      <data key="d5">9.0</data>
+      <data key="d6">The require statement ensures that the sender has enough balance to transfer tokens. Any failure here could lead to token transfer failures.</data>
+      <data key="d7">token transfer, balance validation</data>
+      <data key="d8">chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="TokenERC20 contract" target="require(balanceOf[_from] &gt;= _value)">
+      <data key="d5">8.0</data>
+      <data key="d6">This invariant checks if the sender's balance is sufficient before transferring tokens, ensuring proper token transfers. Any failure here could lead to underflow conditions.</data>
+      <data key="d7">balance validation, overflow prevention</data>
+      <data key="d8">chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="TokenERC20 contract" target="require(_value &lt;= allowance[_from][msg.sender])">
+      <data key="d5">7.0</data>
+      <data key="d6">This invariant ensures that the transferred amount is within the allowed value by the sender. Any failure here could lead to incorrect state or transactions.</data>
+      <data key="d7">approval-based transfer, safety check</data>
+      <data key="d8">chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ArrayLength contract" target="require(d[1] == 5)">
+      <data key="d5">8.0</data>
+      <data key="d6">The require statement ensures that the first element of the input array d equals 5. Any failure here could result in incorrect state or transactions.</data>
+      <data key="d7">input validation, safety check</data>
+      <data key="d8">chunk-7cc9b03bf573772e7cf28e7db0fabf84</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ArrayInit" target="transaction-context">
+      <data key="d5">5.0</data>
+      <data key="d6">The transaction context for ArrayInit is also simple, similar to other contracts in the document.</data>
+      <data key="d7">simple context, internal logic</data>
+      <data key="d8">chunk-6f8802d5b7f60985a7345ddf5d9c85cb</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="AssemblyTest" target="transaction-context">
+      <data key="d5">5.0</data>
+      <data key="d6">The transaction context for AssemblyTest is simple, indicating minimal complexity or external interactions.</data>
+      <data key="d7">simple context, internal logic</data>
+      <data key="d8">chunk-6f8802d5b7f60985a7345ddf5d9c85cb</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="contract Consts" target="assert (b != c)">
+      <data key="d5">7.0</data>
+      <data key="d6">The contract Consts uses an assert statement to check that addresses b and c are not the same.</data>
+      <data key="d7">constructor validation, address comparison</data>
+      <data key="d8">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="contract Foo" target="assert (a == 1)">
+      <data key="d5">8.0</data>
+      <data key="d6">Contract Foo initializes variable 'a' with value 1 and later asserts this condition in its logic.</data>
+      <data key="d7">initialization check, assert statement</data>
+      <data key="d8">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="assert (x == a + 2)" target="contract A">
+      <data key="d5">9.0</data>
+      <data key="d6">The contract A uses an arithmetic assertion to ensure that the variable x equals a+2 after certain operations are performed on it.</data>
+      <data key="d7">arithmetic validation, invariant check</data>
+      <data key="d8">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="contract A" target="uint a, uint b">
+      <data key="d5">7.0</data>
+      <data key="d6">Variable 'a' and 'b' are used in multiple assert statements within contract A for various validations.</data>
+      <data key="d7">variable usage, validation checks</data>
+      <data key="d8">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="assert (x != 1)" target="contract D">
+      <data key="d5">8.0</data>
+      <data key="d6">Contract D includes an assert statement ensuring that variable 'x' is not equal to 1.</data>
+      <data key="d7">value validation, assertion</data>
+      <data key="d8">chunk-83e4d705442fb3157e78986bdd0da18b</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="&lt;&quot;None Identified&quot;&gt;" target="&lt;&quot;None Identified&quot;&gt;">
+      <data key="d5">0.0</data>
+      <data key="d6">&lt;"No relationships identified between any entities."&gt;</data>
+      <data key="d7">&lt;"None Identified"&gt;</data>
+      <data key="d8">chunk-0b3bb7f84b8f8810c52744084a582d0a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="&lt;&quot;ArrayInit&quot;" target="&lt;&quot;Consts&quot;">
+      <data key="d5">16.0</data>
+      <data key="d6">&lt;"Both ArrayInit and Consts involve constructor functions which can be considered part of the same project or codebase."</data>
+      <data key="d7">&lt;"codebase, related projects</data>
+      <data key="d8">chunk-0b3bb7f84b8f8810c52744084a582d0a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="&lt;&quot;ArrayInit&quot;" target="&lt;&quot;Assert&quot;">
+      <data key="d5">14.0</data>
+      <data key="d6">&lt;"Assert is used in both ArrayInit and Consts to validate conditions, indicating a common purpose for validation logic."</data>
+      <data key="d7">&lt;"validation logic, assertion usage</data>
+      <data key="d8">chunk-0b3bb7f84b8f8810c52744084a582d0a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="&lt;&quot;Consts&quot;" target="&lt;&quot;Assert&quot;">
+      <data key="d5">14.0</data>
+      <data key="d6">&lt;"Assert is also used in Consts to validate conditions, showing shared usage of the same validation mechanism."&lt;</data>
+      <data key="d7">validation logic, assertion usage</data>
+      <data key="d8">chunk-0b3bb7f84b8f8810c52744084a582d0a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+  </graph>
+</graphml>

@@ -1,0 +1,848 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d9" for="edge" attr.name="file_path" attr.type="string" />
+  <key id="d8" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d7" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d6" for="edge" attr.name="description" attr.type="string" />
+  <key id="d5" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d4" for="node" attr.name="file_path" attr.type="string" />
+  <key id="d3" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d2" for="node" attr.name="description" attr.type="string" />
+  <key id="d1" for="node" attr.name="entity_type" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_id" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="ExternalFunctionCall Contract">
+      <data key="d0">ExternalFunctionCall Contract</data>
+      <data key="d1">organization</data>
+      <data key="d2">The ExternalFunctionCall contract is a Solidity smart contract that defines functions `foo` and `testExternalFunctionCall`. It is used to break records during the World Athletics Championship.</data>
+      <data key="d3">chunk-c53bcb89f1d36a46f079245174533c69</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="B Contract">
+      <data key="d0">B Contract</data>
+      <data key="d1">organization</data>
+      <data key="d2">B Contract is a Solidity smart contract with functions `funcB`, constructor, and others. It plays a crucial role in arithmetic tests and function calls.</data>
+      <data key="d3">chunk-c53bcb89f1d36a46f079245174533c69</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="A Contract">
+      <data key="d0">A Contract</data>
+      <data key="d1">organization</data>
+      <data key="d2">A Contract is another Solidity smart contract that interacts with B Contract through function calls and constructor dependencies. It participates in complex transaction contexts and invariant checks.</data>
+      <data key="d3">chunk-c53bcb89f1d36a46f079245174533c69</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="LoopFor">
+      <data key="d0">LoopFor</data>
+      <data key="d1">organization</data>
+      <data key="d2">LoopFor is a contract that handles arithmetic operations and loop invariants.</data>
+      <data key="d3">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Lib">
+      <data key="d0">Lib</data>
+      <data key="d1">organization</data>
+      <data key="d2">Lib is a library that provides functions for cross-function arithmetics, including addition.</data>
+      <data key="d3">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="VeriSolContracts">
+      <data key="d0">VeriSolContracts</data>
+      <data key="d1">organization</data>
+      <data key="d2">VeriSolContracts is a set of contracts or libraries used in LoopFor and other contracts to handle verification and invariant checks.</data>
+      <data key="d3">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="IERC20.sol">
+      <data key="d0">IERC20.sol</data>
+      <data key="d1">category</data>
+      <data key="d2">IERC20.sol is a specification file that defines the interface for ERC-20 tokens, ensuring standardization in token transfers.</data>
+      <data key="d3">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="SafeMath.sol">
+      <data key="d0">SafeMath.sol</data>
+      <data key="d1">category</data>
+      <data key="d2">SafeMath.sol is a library providing safe arithmetic operations to avoid overflow and underflow errors.</data>
+      <data key="d3">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="msg.sender">
+      <data key="d0">msg.sender</data>
+      <data key="d1">person</data>
+      <data key="d2">msg.sender is a user of the contract, often an address that interacts with it.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="recipient">
+      <data key="d0">recipient</data>
+      <data key="d1">person</data>
+      <data key="d2">recipient is another user of the contract, receiving funds or tokens from transactions.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="_balances[sender]">
+      <data key="d0">_balances[sender]</data>
+      <data key="d1">category</data>
+      <data key="d2">_balances[sender] refers to the balance of the sender in a mapping within the contract.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="VeriSol.Old(_balances[recipient])">
+      <data key="d0">VeriSol.Old(_balances[recipient])</data>
+      <data key="d1">category</data>
+      <data key="d2">VeriSol.Old(_balances[recipient]) is an older version of the recipient's balance used for comparisons or validations.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="_totalSupply">
+      <data key="d0">_totalSupply</data>
+      <data key="d1">category</data>
+      <data key="d2">\"_totalSupply\" tracks the total supply of tokens or assets in a contract.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="_balances[msg.sender]">
+      <data key="d0">_balances[msg.sender]</data>
+      <data key="d1">category</data>
+      <data key="d2">\"_balances[msg.sender]\" is the balance associated with the sender's address in the contract.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="stakingToken">
+      <data key="d0">stakingToken</data>
+      <data key="d1">category</data>
+      <data key="d2">\"stakingToken\" refers to a token that can be used for staking or similar activities within the contract.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="amount">
+      <data key="d0">amount</data>
+      <data key="d1">category</data>
+      <data key="d2">\"amount\" is a variable representing the quantity of tokens or assets being transferred or withdrawn in transactions.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="a, b, c">
+      <data key="d0">a, b, c</data>
+      <data key="d1">category</data>
+      <data key="d2">Variables 'a', 'b', and 'c' are used for mathematical operations within the contract's logic.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="_to">
+      <data key="d0">_to</data>
+      <data key="d1">category</data>
+      <data key="d2">\"_to\" refers to the recipient address in a transfer or withdrawal function of the contract.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="owner">
+      <data key="d0">owner</data>
+      <data key="d1">person</data>
+      <data key="d2">\"owner\" is the user with administrative rights, often associated with contract ownership and management.&lt;SEP&gt;owner refers to the owner of the smart contract who has special privileges, such as setting certain parameters or executing administrative functions.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630&lt;SEP&gt;chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="newOwner">
+      <data key="d0">newOwner</data>
+      <data key="d1">person</data>
+      <data key="d2">\"newOwner\" refers to an address that is being set as a new owner in functions related to ownership transfer.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="paused">
+      <data key="d0">paused</data>
+      <data key="d1">category</data>
+      <data key="d2">\"paused\" is a state variable indicating whether the contract's functionality is temporarily disabled or not.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="goblin">
+      <data key="d0">goblin</data>
+      <data key="d1">person</data>
+      <data key="d2">\"goblin\" refers to an entity or object that has specific attributes and roles within the contract, possibly representing a non-human actor with certain permissions or limitations.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="id">
+      <data key="d0">id</data>
+      <data key="d1">category</data>
+      <data key="d2">\"id\" is used as an identifier for positions in mappings or arrays, often related to goblins or similar entities.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="nextPositionID">
+      <data key="d0">nextPositionID</data>
+      <data key="d1">category</data>
+      <data key="d2">\"nextPositionID\" is a variable that tracks the next available position ID within the contract's data structure.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="config">
+      <data key="d0">config</data>
+      <data key="d1">category</data>
+      <data key="d2">\"config\" refers to configuration settings or parameters used in the contract, possibly defining rules or behavior related to tokens or goblins.</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ReentrancyGuard">
+      <data key="d0">ReentrancyGuard</data>
+      <data key="d1">organization</data>
+      <data key="d2">ReentrancyGuard is an abstract contract designed to prevent reentrancy attacks in smart contracts.&lt;SEP&gt;ReentrancyGuard is an abstract contract for preventing reentrancy attacks in smart contracts.</data>
+      <data key="d3">chunk-38fde34d7adb700e8e07890f86fe5f6a&lt;SEP&gt;chunk-aea33e7eb4aa337056ef47da5255a233</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="SafeMath">
+      <data key="d0">SafeMath</data>
+      <data key="d1">category</data>
+      <data key="d2">SafeMath is a category of functions used for safe arithmetic operations to avoid overflow and underflow errors.</data>
+      <data key="d3">chunk-aea33e7eb4aa337056ef47da5255a233</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Address">
+      <data key="d0">Address</data>
+      <data key="d1">category</data>
+      <data key="d2">Address is a category representing an Ethereum address, often used in contract interactions and validation.</data>
+      <data key="d3">chunk-aea33e7eb4aa337056ef47da5255a233</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Ownable">
+      <data key="d0">Ownable</data>
+      <data key="d1">category</data>
+      <data key="d2">Ownable is a category of smart contracts that restricts certain functions to the owner of the contract.</data>
+      <data key="d3">chunk-aea33e7eb4aa337056ef47da5255a233</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="SafeERC20">
+      <data key="d0">SafeERC20</data>
+      <data key="d1">category</data>
+      <data key="d2">SafeERC20 is a category of functions used for safe ERC20 token interactions, designed to handle errors and ensure transactions succeed.</data>
+      <data key="d3">chunk-aea33e7eb4aa337056ef47da5255a233</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ERC20">
+      <data key="d0">ERC20</data>
+      <data key="d1">category</data>
+      <data key="d2">ERC20 is the standard interface for an Ethereum-based token contract, ensuring interoperability with other smart contracts.</data>
+      <data key="d3">chunk-aea33e7eb4aa337056ef47da5255a233</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="_status">
+      <data key="d0">_status</data>
+      <data key="d1">variable</data>
+      <data key="d2">_status is a state variable used to track whether the contract is being reentered.</data>
+      <data key="d3">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="_balances">
+      <data key="d0">_balances</data>
+      <data key="d1">variable</data>
+      <data key="d2">_balances is a state variable storing balances of token amounts for each user.</data>
+      <data key="d3">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="seller">
+      <data key="d0">seller</data>
+      <data key="d1">person</data>
+      <data key="d2">seller refers to an individual or entity selling tokens in a transaction.</data>
+      <data key="d3">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="tokenAmount">
+      <data key="d0">tokenAmount</data>
+      <data key="d1">variable</data>
+      <data key="d2">tokenAmount represents the amount of tokens being sold by the seller.</data>
+      <data key="d3">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="bnbAmount">
+      <data key="d0">bnbAmount</data>
+      <data key="d1">variable</data>
+      <data key="d2">bnbAmount is the amount of BNB (a cryptocurrency) used for purchasing tokens.</data>
+      <data key="d3">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="address(this)">
+      <data key="d0">address(this)</data>
+      <data key="d1">organization</data>
+      <data key="d2">address(this) refers to the current contract's address, often used in security checks.</data>
+      <data key="d3">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="user">
+      <data key="d0">user</data>
+      <data key="d1">person</data>
+      <data key="d2">user represents a generic user interacting with the smart contract, such as buying or selling tokens.</data>
+      <data key="d3">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="_ENTERED">
+      <data key="d0">_ENTERED</data>
+      <data key="d1">constant</data>
+      <data key="d2">_ENTERED is a constant used to check if the contract is already in a reentrant state.</data>
+      <data key="d3">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="OpenZeppelin Contracts">
+      <data key="d0">OpenZeppelin Contracts</data>
+      <data key="d1">organization</data>
+      <data key="d2">OpenZeppelin is a library provider for smart contract developers, offering various security and access control solutions.</data>
+      <data key="d3">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Revest">
+      <data key="d0">Revest</data>
+      <data key="d1">organization</data>
+      <data key="d2">Revest appears to be a project or organization involved in the development of specific smart contracts or protocols.</data>
+      <data key="d3">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ERC1155.sol">
+      <data key="d0">ERC1155.sol</data>
+      <data key="d1">category</data>
+      <data key="d2">ERC1155 is an ERC-721 extension for supporting multiple token types with a single contract, commonly used in NFTs and fungible tokens.</data>
+      <data key="d3">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="IRevest.sol">
+      <data key="d0">IRevest.sol</data>
+      <data key="d1">organization</data>
+      <data key="d2">IRevest is likely an interface or contract related to the Revest project, possibly defining interactions or requirements for the system.</data>
+      <data key="d3">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="IAddressRegistry.sol">
+      <data key="d0">IAddressRegistry.sol</data>
+      <data key="d1">organization</data>
+      <data key="d2">IAddressRegistry might be a utility or library providing address registry functionalities for smart contracts.</data>
+      <data key="d3">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ERC20.sol">
+      <data key="d0">ERC20.sol</data>
+      <data key="d1">category</data>
+      <data key="d2">ERC20 is an Ethereum standard for creating fungible token contracts, commonly used in various decentralized finance (DeFi) applications and cross-bridge transactions.</data>
+      <data key="d3">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="LibAsset.sol">
+      <data key="d0">LibAsset.sol</data>
+      <data key="d1">organization</data>
+      <data key="d2">LibAsset appears to be a library providing asset management functionalities within the smart contract ecosystem of Revest or similar projects.</data>
+      <data key="d3">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ILiFi.sol">
+      <data key="d0">ILiFi.sol</data>
+      <data key="d1">organization</data>
+      <data key="d2">ILiFi is an interface or contract related to cross-chain transactions, possibly defining interactions for LiFi bridge operations.</data>
+      <data key="d3">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="LibSwap.sol">
+      <data key="d0">LibSwap.sol</data>
+      <data key="d1">organization</data>
+      <data key="d2">LibSwap likely provides functionalities for swapping assets within smart contracts, commonly used in decentralized exchanges and cross-bridge scenarios.</data>
+      <data key="d3">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ICBridge.sol">
+      <data key="d0">ICBridge.sol</data>
+      <data key="d1">organization</data>
+      <data key="d2">ICBridge might be an interface or contract related to bridging operations between different blockchain networks, often used in cross-chain transactions.</data>
+      <data key="d3">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="LibDiamond.sol">
+      <data key="d0">LibDiamond.sol</data>
+      <data key="d1">organization</data>
+      <data key="d2">LibDiamond is a library providing diamond proxy functionalities for smart contracts, enhancing the security and flexibility of code execution.</data>
+      <data key="d3">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="World Athletics Championship">
+      <data key="d0">World Athletics Championship</data>
+      <data key="d1">event</data>
+      <data key="d2">The World Athletics Championship is a global sports competition featuring top athletes in track and field.</data>
+      <data key="d3">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Tokyo">
+      <data key="d0">Tokyo</data>
+      <data key="d1">location</data>
+      <data key="d2">Tokyo is the host city of the World Athletics Championship.</data>
+      <data key="d3">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Noah Carter">
+      <data key="d0">Noah Carter</data>
+      <data key="d1">person</data>
+      <data key="d2">Noah Carter is a sprinter who set a new record in the 100m sprint at the World Athletics Championship.</data>
+      <data key="d3">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="100m Sprint Record">
+      <data key="d0">100m Sprint Record</data>
+      <data key="d1">record</data>
+      <data key="d2">The 100m sprint record is a benchmark in athletics, recently broken by Noah Carter.</data>
+      <data key="d3">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Carbon-Fiber Spikes">
+      <data key="d0">Carbon-Fiber Spikes</data>
+      <data key="d1">equipment</data>
+      <data key="d2">Carbon-fiber spikes are advanced sprinting shoes that provide enhanced speed and traction.</data>
+      <data key="d3">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="World Athletics Federation">
+      <data key="d0">World Athletics Federation</data>
+      <data key="d1">organization</data>
+      <data key="d2">The World Athletics Federation is the governing body overseeing the World Athletics Championship and record validations.</data>
+      <data key="d3">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="100m Sprint Event">
+      <data key="d0">100m Sprint Event</data>
+      <data key="d1">event</data>
+      <data key="d2">The 100m sprint event is a track and field competition where athletes compete to run the shortest distance in the fastest time.</data>
+      <data key="d3">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="IDepositExecute.sol">
+      <data key="d0">IDepositExecute.sol</data>
+      <data key="d1">category</data>
+      <data key="d2">IDepositExecute.sol is an interface or contract related to deposit and execution logic within the code context.</data>
+      <data key="d3">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="HandlerHelpers.sol">
+      <data key="d0">HandlerHelpers.sol</data>
+      <data key="d1">category</data>
+      <data key="d2">HandlerHelpers.sol seems to be a helper file containing useful functions or constants for contracts.</data>
+      <data key="d3">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ERC721Safe.sol">
+      <data key="d0">ERC721Safe.sol</data>
+      <data key="d1">category</data>
+      <data key="d2">ERC721Safe.sol is likely a contract implementing safe operations for ERC721 tokens.</data>
+      <data key="d3">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="openzeppelin/contracts/introspection/ERC165Checker.sol">
+      <data key="d0">openzeppelin/contracts/introspection/ERC165Checker.sol</data>
+      <data key="d1">organization</data>
+      <data key="d2">OpenZeppelin is an organization providing reusable smart contracts and libraries.</data>
+      <data key="d3">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="openzeppelin/contracts/token/ERC721/IERC721Metadata.sol">
+      <data key="d0">openzeppelin/contracts/token/ERC721/IERC721Metadata.sol</data>
+      <data key="d1">organization</data>
+      <data key="d2">OpenZeppelin provides ERC721 metadata interfaces.</data>
+      <data key="d3">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="_contractWhitelist">
+      <data key="d0">_contractWhitelist</data>
+      <data key="d1">category</data>
+      <data key="d2">_contractWhitelist is a mapping used to whitelist certain contract addresses in the context of smart contracts.</data>
+      <data key="d3">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="EthCrossChain">
+      <data key="d0">EthCrossChain</data>
+      <data key="d1">organization</data>
+      <data key="d2">EthCrossChain is a mechanism or protocol used for cross-chain transactions in blockchain technology.</data>
+      <data key="d3">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="OpenZeppelin">
+      <data key="d0">OpenZeppelin</data>
+      <data key="d1">organization</data>
+      <data key="d2">OpenZeppelin is a provider of reusable smart contracts and libraries used in blockchain development.</data>
+      <data key="d3">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Transaction Context (Cross Bridge)">
+      <data key="d0">Transaction Context (Cross Bridge)</data>
+      <data key="d1">geo</data>
+      <data key="d2">The transaction context indicates that the transactions are part of cross-bridge operations, likely involving different blockchain networks.</data>
+      <data key="d3">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="Critical Program Points (43+ 83+)">
+      <data key="d0">Critical Program Points (43+ 83+)</data>
+      <data key="d1">event</data>
+      <data key="d2">Critical program points refer to specific lines in the code where important conditions or checks are performed.</data>
+      <data key="d3">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ArrayNestedFixedSize">
+      <data key="d0">ArrayNestedFixedSize</data>
+      <data key="d1">organization</data>
+      <data key="d2">ArrayNestedFixedSize is a contract that defines a multi-dimensional fixed-size array and includes several invariants to ensure its integrity.</data>
+      <data key="d3">chunk-244b64149b11d5d2d9f7afe4d0185b20</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ArrayFixedSize">
+      <data key="d0">ArrayFixedSize</data>
+      <data key="d1">organization</data>
+      <data key="d2">ArrayFixedSize is a simple contract with a single dimension fixed-size array, which contains two elements, and has defined invariants for their values.</data>
+      <data key="d3">chunk-244b64149b11d5d2d9f7afe4d0185b20</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="ArrayDynamicStorage">
+      <data key="d0">ArrayDynamicStorage</data>
+      <data key="d1">organization</data>
+      <data key="d2">ArrayDynamicStorage is a contract that uses dynamic storage arrays to store integers, and includes specific assertions to ensure the initial state of its data.</data>
+      <data key="d3">chunk-244b64149b11d5d2d9f7afe4d0185b20</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <node id="_balances[recipient]">
+      <data key="d0">_balances[recipient]</data>
+      <data key="d3">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d2">The comparison between _balances[recipient] and VeriSol.Old(_balances[recipient]) is used for validations or checks within the contract's logic.</data>
+      <data key="d1">UNKNOWN</data>
+      <data key="d4">unknown_source</data>
+    </node>
+    <edge source="ExternalFunctionCall Contract" target="B Contract">
+      <data key="d5">12.0</data>
+      <data key="d6">The ExternalFunctionCall contract may interact with B Contract to call its functions as part of the test scenarios.</data>
+      <data key="d7">contract interaction, test scenario</data>
+      <data key="d8">chunk-c53bcb89f1d36a46f079245174533c69</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="B Contract" target="A Contract">
+      <data key="d5">14.0</data>
+      <data key="d6">A Contract interacts with B Contract through function calls and constructor dependencies. </data>
+      <data key="d7">contract dependency, function interaction</data>
+      <data key="d8">chunk-c53bcb89f1d36a46f079245174533c69</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="LoopFor" target="VeriSolContracts">
+      <data key="d5">8.0</data>
+      <data key="d6">LoopFor uses VeriSolContracts for invariant checks and other verification logic.</data>
+      <data key="d7">contract dependency, verification mechanism</data>
+      <data key="d8">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="LoopFor" target="Lib">
+      <data key="d5">7.0</data>
+      <data key="d6">Lib is used in LoopFor to perform cross-function arithmetic operations.</data>
+      <data key="d7">function dependency, arithmetics support</data>
+      <data key="d8">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="LoopFor" target="SafeMath.sol">
+      <data key="d5">6.0</data>
+      <data key="d6">LoopFor uses SafeMath.sol to handle safe arithmetic operations within its functions.</data>
+      <data key="d7">library dependency, safety measures</data>
+      <data key="d8">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="VeriSolContracts" target="IERC20.sol">
+      <data key="d5">5.0</data>
+      <data key="d6">VeriSolContracts might be relevant for ERC-20 token handling, though not directly implemented here.</data>
+      <data key="d7">contract interaction, indirect relation</data>
+      <data key="d8">chunk-cb98eb5257cce0926c33c9cecbe74f8e</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="msg.sender" target="recipient">
+      <data key="d5">8.0</data>
+      <data key="d6">The transaction context involves interactions between msg.sender and recipient, where funds are transferred from one to another.</data>
+      <data key="d7">transaction flow, interaction</data>
+      <data key="d8">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="msg.sender" target="_to">
+      <data key="d5">8.0</data>
+      <data key="d6">In the context of asset swapping, msg.sender sends tokens to _to (the recipient), indicating a transfer of assets within the contract.</data>
+      <data key="d7">asset transfer, user interaction</data>
+      <data key="d8">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="VeriSol.Old(_balances[recipient])" target="_balances[recipient]">
+      <data key="d5">9.0</data>
+      <data key="d6">The comparison between _balances[recipient] and VeriSol.Old(_balances[recipient]) is used for validations or checks within the contract's logic.</data>
+      <data key="d7">balance validation, historical reference</data>
+      <data key="d8">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="owner" target="newOwner">
+      <data key="d5">7.0</data>
+      <data key="d6">The owner can transfer ownership to a newOwner in the contract, changing control dynamics.</data>
+      <data key="d7">ownership transfer, management</data>
+      <data key="d8">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="owner" target="_status">
+      <data key="d5">7.0</data>
+      <data key="d6">owner has the authority to set _status in ReentrancyGuard for administrative purposes.</data>
+      <data key="d7">administrative control, security setting</data>
+      <data key="d8">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="goblin" target="id">
+      <data key="d5">6.0</data>
+      <data key="d6">goblin is associated with id, which identifies its position or role within the contract's data structure.</data>
+      <data key="d7">entity identification, role assignment</data>
+      <data key="d8">chunk-768e748d41437c67dab22495d0e54630</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ReentrancyGuard" target="SafeMath">
+      <data key="d5">7.0</data>
+      <data key="d6">Both ReentrancyGuard and SafeMath are critical components in smart contract security, working together to prevent common vulnerabilities.</data>
+      <data key="d7">security measures, protection against attacks</data>
+      <data key="d8">chunk-aea33e7eb4aa337056ef47da5255a233</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ReentrancyGuard" target="Ownable">
+      <data key="d5">8.0</data>
+      <data key="d6">Ownable contracts can implement ReentrancyGuard to prevent unauthorized access and ensure only the owner can execute certain functions.</data>
+      <data key="d7">ownership restriction, security implementation</data>
+      <data key="d8">chunk-aea33e7eb4aa337056ef47da5255a233</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ReentrancyGuard" target="_status">
+      <data key="d5">8.0</data>
+      <data key="d6">ReentrancyGuard uses _status to prevent reentrant calls by checking its state.</data>
+      <data key="d7">contract prevention mechanism, security check</data>
+      <data key="d8">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ReentrancyGuard" target="_balances">
+      <data key="d5">7.0</data>
+      <data key="d6">_balances is managed by ReentrancyGuard to track user token balances during transactions.</data>
+      <data key="d7">state management, balance tracking</data>
+      <data key="d8">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ReentrancyGuard" target="seller">
+      <data key="d5">8.0</data>
+      <data key="d6">Seller is involved in transactions managed by ReentrancyGuard, which prevents reentrant calls during sell operations.</data>
+      <data key="d7">transaction prevention, security mechanism</data>
+      <data key="d8">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="SafeMath" target="Address">
+      <data key="d5">6.0</data>
+      <data key="d6">Address category functions often use SafeMath for safe arithmetic operations within the contract.</data>
+      <data key="d7">arithmetic safety, address validation</data>
+      <data key="d8">chunk-aea33e7eb4aa337056ef47da5255a233</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="SafeMath" target="Ownable">
+      <data key="d5">6.0</data>
+      <data key="d6">SafeMath is used in Ownable contracts to ensure arithmetic operations are performed safely, preventing overflow and underflow errors.</data>
+      <data key="d7">arithmetic safety, access control</data>
+      <data key="d8">chunk-aea33e7eb4aa337056ef47da5255a233</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Address" target="SafeERC20">
+      <data key="d5">7.0</data>
+      <data key="d6">SafeERC20 category often interacts with Address category for safe token transfers and balance checks.</data>
+      <data key="d7">token interaction, address management</data>
+      <data key="d8">chunk-aea33e7eb4aa337056ef47da5255a233</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="seller" target="tokenAmount">
+      <data key="d5">6.0</data>
+      <data key="d6">seller uses tokenAmount to specify the quantity of tokens being sold in a transaction.</data>
+      <data key="d7">transaction details, sales specification</data>
+      <data key="d8">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="bnbAmount" target="address(this)">
+      <data key="d5">9.0</data>
+      <data key="d6">bnbAmount is compared against address(this).balance to ensure sufficient funds for purchases.</data>
+      <data key="d7">funds validation, security check</data>
+      <data key="d8">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="bnbAmount" target="user">
+      <data key="d5">9.0</data>
+      <data key="d6">BnbAmount affects user interactions with the smart contract, as it's used for purchasing tokens and validating balance against user actions.</data>
+      <data key="d7">funds validation, interaction control</data>
+      <data key="d8">chunk-38fde34d7adb700e8e07890f86fe5f6a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="OpenZeppelin Contracts" target="Revest">
+      <data key="d5">16.0</data>
+      <data key="d6">OpenZeppelin provides security and access control solutions used in the Revest project.&lt;SEP&gt;Revest utilizes OpenZeppelin's security and access control solutions to ensure robustness in its smart contract development.</data>
+      <data key="d7">library usage, security measures&lt;SEP&gt;security, library usage</data>
+      <data key="d8">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="OpenZeppelin Contracts" target="IRevest.sol">
+      <data key="d5">6.0</data>
+      <data key="d6">IRevest likely leverages OpenZeppelin's security and access control functionalities to ensure robust interactions within the Revest smart contract framework.</data>
+      <data key="d7">interface integration, security checks</data>
+      <data key="d8">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="OpenZeppelin Contracts" target="IAddressRegistry.sol">
+      <data key="d5">5.0</data>
+      <data key="d6">IAddressRegistry might use OpenZeppelin's utility libraries for managing address registrations in a secure manner.</data>
+      <data key="d7">utility library usage, address management</data>
+      <data key="d8">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="OpenZeppelin Contracts" target="LibAsset.sol">
+      <data key="d5">4.0</data>
+      <data key="d6">LibAsset might use OpenZeppelin's utilities to enhance asset management functionalities in smart contracts.</data>
+      <data key="d7">library integration, utility usage</data>
+      <data key="d8">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Revest" target="ERC1155.sol">
+      <data key="d5">14.0</data>
+      <data key="d6">ERC1155 is part of the smart contract ecosystem for the Revest project, potentially used in minting or managing tokens.&lt;SEP&gt;Revest leverages ERC1155 for handling multiple token types within its ecosystem, enhancing flexibility and functionality.</data>
+      <data key="d7">token management, NFTs</data>
+      <data key="d8">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Revest" target="IRevest.sol">
+      <data key="d5">6.0</data>
+      <data key="d6">IRevest is an integral part of the Revest project's smart contract framework, defining necessary interactions and requirements.</data>
+      <data key="d7">contract integration, interface definition</data>
+      <data key="d8">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Revest" target="ERC20.sol">
+      <data key="d5">5.0</data>
+      <data key="d6">Revest likely uses ERC20 for creating fungible token contracts within its ecosystem, facilitating DeFi applications and cross-bridge transactions.</data>
+      <data key="d7">token management, financial instruments</data>
+      <data key="d8">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Revest" target="ILiFi.sol">
+      <data key="d5">5.0</data>
+      <data key="d6">ILiFi is likely used by Revest for defining cross-chain transaction interactions within its ecosystem.</data>
+      <data key="d7">cross-bridge, interface definition</data>
+      <data key="d8">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Revest" target="LibSwap.sol">
+      <data key="d5">4.0</data>
+      <data key="d6">LibSwap provides functionalities that are essential for smart contract operations within the Revest project's ecosystem.</data>
+      <data key="d7">swapping assets, decentralized exchanges</data>
+      <data key="d8">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Revest" target="ICBridge.sol">
+      <data key="d5">3.0</data>
+      <data key="d6">ICBridge might be used by Revest for bridging operations between different blockchain networks.</data>
+      <data key="d7">cross-chain transactions, network interoperability</data>
+      <data key="d8">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Revest" target="LibDiamond.sol">
+      <data key="d5">4.0</data>
+      <data key="d6">LibDiamond enhances the security and flexibility of smart contracts within the Revest project's framework.</data>
+      <data key="d7">security, proxy functionalities</data>
+      <data key="d8">chunk-1aac3487ac21cb4a0822d6311407a94c</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="World Athletics Championship" target="Tokyo">
+      <data key="d5">16.0</data>
+      <data key="d6">The World Athletics Championship is being hosted in Tokyo.</data>
+      <data key="d7">event location, international competition</data>
+      <data key="d8">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="World Athletics Championship" target="100m Sprint Event">
+      <data key="d5">9.0</data>
+      <data key="d6">The World Athletics Championship includes various events like the 100m sprint event.</data>
+      <data key="d7">event inclusion, competition framework</data>
+      <data key="d8">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="World Athletics Championship" target="Noah Carter">
+      <data key="d5">8.0</data>
+      <data key="d6">Noah Carter participated in the World Athletics Championship as a top athlete competing in the 100m sprint event.</data>
+      <data key="d7">participant inclusion, competition participation</data>
+      <data key="d8">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Noah Carter" target="100m Sprint Record">
+      <data key="d5">10.0</data>
+      <data key="d6">Noah Carter set a new 100m sprint record at the championship.</data>
+      <data key="d7">athlete achievement, record-breaking</data>
+      <data key="d8">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Noah Carter" target="Carbon-Fiber Spikes">
+      <data key="d5">7.0</data>
+      <data key="d6">Noah Carter used carbon-fiber spikes to enhance performance during the race.</data>
+      <data key="d7">athletic equipment, performance boost</data>
+      <data key="d8">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="100m Sprint Record" target="World Athletics Federation">
+      <data key="d5">9.0</data>
+      <data key="d6">The World Athletics Federation is responsible for validating and recognizing new sprint records.</data>
+      <data key="d7">sports regulation, record certification</data>
+      <data key="d8">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="Carbon-Fiber Spikes" target="World Athletics Federation">
+      <data key="d5">6.0</data>
+      <data key="d6">The World Athletics Federation uses advanced equipment like carbon-fiber spikes to ensure fair and accurate performance assessments.</data>
+      <data key="d7">equipment validation, regulatory oversight</data>
+      <data key="d8">chunk-c88370ce14d6a3773d4f742921c45a77</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="IDepositExecute.sol" target="EthCrossChain">
+      <data key="d5">8.0</data>
+      <data key="d6">EthCrossChain requires interaction with IDepositExecute.sol for proper function call validation.</data>
+      <data key="d7">cross-chain functionality, dependency</data>
+      <data key="d8">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="IDepositExecute.sol" target="HandlerHelpers.sol">
+      <data key="d5">6.0</data>
+      <data key="d6">IDepositExecute.sol likely imports HandlerHelpers.sol for helper functions or constants.</data>
+      <data key="d7">functionality support, dependency</data>
+      <data key="d8">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="IDepositExecute.sol" target="_contractWhitelist">
+      <data key="d5">8.0</data>
+      <data key="d6">_contractWhitelist is used in IDepositExecute.sol for validating token addresses during cross-chain transactions.</data>
+      <data key="d7">validation, whitelist usage</data>
+      <data key="d8">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="openzeppelin/contracts/introspection/ERC165Checker.sol" target="EthCrossChain">
+      <data key="d5">7.0</data>
+      <data key="d6">EthCrossChain may use ERC165Checker for introspection checks to validate contract interactions.</data>
+      <data key="d7">contract validation, cross-chain checks</data>
+      <data key="d8">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="openzeppelin/contracts/introspection/ERC165Checker.sol" target="openzeppelin/contracts/token/ERC721/IERC721Metadata.sol">
+      <data key="d5">9.0</data>
+      <data key="d6">OpenZeppelin provides both metadata and introspection functionalities which are interdependent.</data>
+      <data key="d7">metadata, contract validation</data>
+      <data key="d8">chunk-46d0558e52a5e8a639d8e060b02f715a</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ArrayNestedFixedSize" target="ArrayFixedSize">
+      <data key="d5">6.0</data>
+      <data key="d6">Both contracts are defined in Solidity with different types of array usage, indicating similar programming practices within the organization.</data>
+      <data key="d7">programming practice similarity</data>
+      <data key="d8">chunk-244b64149b11d5d2d9f7afe4d0185b20</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+    <edge source="ArrayNestedFixedSize" target="ArrayDynamicStorage">
+      <data key="d5">8.0</data>
+      <data key="d6">All three contracts follow a pattern of defining critical points and invariants, suggesting they belong to the same organizational framework for security measures.</data>
+      <data key="d7">code consistency, security practices</data>
+      <data key="d8">chunk-244b64149b11d5d2d9f7afe4d0185b20</data>
+      <data key="d9">unknown_source</data>
+    </edge>
+  </graph>
+</graphml>
